@@ -3,6 +3,23 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Bipartisan color palette */
+  --purple-primary: #7c3aed;      /* Main purple - blend of red/blue */
+  --purple-dark: #5b21b6;
+  --purple-light: #a78bfa;
+  --purple-lighter: #e9d5ff;
+
+  --red-conservative: #dc2626;     /* Conservative red accent */
+  --red-light: #fca5a5;
+
+  --blue-progressive: #2563eb;     /* Progressive blue accent */
+  --blue-light: #93c5fd;
+
+  --neutral-dark: #1f2937;
+  --neutral-medium: #6b7280;
+  --neutral-light: #f3f4f6;
+  --neutral-lighter: #f9fafb;
 }
 
 @theme inline {
@@ -10,6 +27,13 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Custom bipartisan colors for Tailwind */
+  --color-purple-primary: var(--purple-primary);
+  --color-purple-dark: var(--purple-dark);
+  --color-purple-light: var(--purple-light);
+  --color-red-conservative: var(--red-conservative);
+  --color-blue-progressive: var(--blue-progressive);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +46,88 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom gradient backgrounds */
+.gradient-bipartisan {
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 50%, #dc2626 100%);
+}
+
+.gradient-purple {
+  background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+}
+
+/* Political spectrum bar */
+.political-spectrum {
+  background: linear-gradient(90deg, #2563eb 0%, #7c3aed 50%, #dc2626 100%);
+  height: 4px;
+  width: 100%;
+}
+
+/* Hover effects */
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Focus styles for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--purple-primary);
+  outline-offset: 2px;
+}
+
+/* Subtle American flag theme elements */
+.stars-background {
+  position: relative;
+}
+
+.stars-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    radial-gradient(circle, rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.stars-subtle {
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    radial-gradient(circle at 60% 70%, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Subtle stripe pattern for backgrounds */
+.stripes-subtle {
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 20px,
+    rgba(255, 255, 255, 0.02) 20px,
+    rgba(255, 255, 255, 0.02) 40px
+  );
+}
+
+/* Patriotic accent for borders and dividers */
+.border-patriotic {
+  border-image: linear-gradient(90deg, #2563eb 0%, rgba(255, 255, 255, 0.3) 33%, #dc2626 66%, rgba(255, 255, 255, 0.3) 100%) 1;
 }

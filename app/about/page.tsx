@@ -7,54 +7,57 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-16">
-      <h1 className="text-4xl font-bold text-gray-900 mb-8">
-        About The Moderate Populist
-      </h1>
+    <div className="bg-white min-h-screen">
+      <div className="max-w-4xl mx-auto px-4 py-16">
+        <h1 className="text-4xl font-bold text-gray-900 mb-8">
+          About The Moderate Populist
+        </h1>
 
-      <div className="prose prose-lg max-w-none">
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">What This Is</h2>
-          <p className="text-gray-700 mb-4">
-            <strong>The Moderate Populist is a one-person project.</strong> Not a movement. Not an organization.
-            Not a PAC or nonprofit. Just one person trying to lower the political temperature and remind fellow
-            Americans of something important: <strong>It's not the end of the world.</strong>
-          </p>
-          <p className="text-gray-700 mb-4">
-            Social media and cable news profit from making you angry and scared. They amplify the extremes and
-            bury the reality—that most Americans, regardless of party, are reasonable people who want similar things:
-            safe communities, good schools, affordable healthcare, economic opportunity, and a government that actually works.
-          </p>
-          <p className="text-gray-700 mb-4">
-            The real solution isn't online. It's not in another article, another podcast, or another outrage cycle.
-            <strong> The solution is simple: get out from behind your screen and talk to real people.</strong>
-          </p>
-        </section>
-
+        <div className="max-w-none">
         <section className="mb-12 bg-gradient-to-br from-amber-50 to-orange-50 border-2 border-amber-200 rounded-xl p-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">The Mission</h2>
           <p className="text-xl text-gray-800 mb-4 font-semibold">
-            Lower the political temperature. Encourage people to talk with one another.
+            Seeking knowledge, furthering understanding - Beyond the political Divide
+          </p>
+          <p className="text-lg text-gray-700 leading-relaxed mb-4">
+            This platform exists to bridge political divisions through fact-based dialogue and mutual respect.
+            We believe most Americans want similar outcomes—safe communities, good schools, affordable healthcare,
+            economic opportunity, and effective government—even when they disagree on how to achieve them.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">
-            That's it. That's the whole mission. This site exists to remind you that things aren't as bad as they seem,
-            that the people who vote differently than you aren't your enemies, and that real human connection—
-            face-to-face conversation—is the antidote to our current political dysfunction.
+            Our mission is to lower the political temperature, highlight common ground, and encourage
+            respectful conversation across differences. Democracy thrives when citizens engage with empathy,
+            evidence, and a commitment to understanding perspectives different from their own.
           </p>
         </section>
 
-        <section className="mb-12 bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 rounded-xl p-8 text-white">
-          <h2 className="text-3xl font-bold mb-4">A Space for All Americans</h2>
-          <p className="text-lg mb-4 leading-relaxed">
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">About the Creator</h2>
+          <p className="text-gray-700 mb-4">
+            <strong>The Moderate Populist is a one-person project</strong>—not a movement, organization, or PAC.
+            Created by an individual concerned about growing political polarization and the erosion of civil discourse
+            in American democracy.
+          </p>
+          <p className="text-gray-700 mb-4">
+            This project stems from a belief that social media and partisan news amplify extremes while burying
+            the reality: most Americans are reasonable people seeking practical solutions to shared challenges.
+            The goal is to provide a resource that cuts through noise, presents evidence-based perspectives,
+            and reminds us of our shared humanity.
+          </p>
+        </section>
+
+        <section className="mb-12 bg-gradient-to-br from-blue-50 via-purple-50 to-red-50 border-2 border-purple-200 rounded-xl p-8">
+          <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 bg-clip-text text-transparent">A Space for All Americans</h2>
+          <p className="text-lg mb-4 leading-relaxed text-gray-800">
             Whether you're a Republican or Democrat, whether you supported Trump or Biden, whether you identify
             as conservative, progressive, libertarian, or somewhere in between—<strong>you belong here</strong>.
           </p>
-          <p className="text-lg mb-4 leading-relaxed">
+          <p className="text-lg mb-4 leading-relaxed text-gray-800">
             We don't filter for "moderates" or people in the middle. We welcome passionate conservatives and committed
             progressives. We respect MAGA supporters and democratic socialists equally. What matters isn't where you
             stand on the political spectrum—it's your willingness to engage respectfully with those who see things differently.
           </p>
-          <p className="text-lg leading-relaxed">
+          <p className="text-lg leading-relaxed text-gray-800">
             This platform was built on the premise that Americans have far more in common than our political divisions suggest,
             and that democracy requires citizens who can work together despite disagreements.
           </p>
@@ -144,33 +147,33 @@ export default function AboutPage() {
           </p>
         </section>
 
-        <section className="bg-gradient-to-br from-blue-50 via-purple-50 to-red-50 p-8 rounded-lg border-2 border-purple-200">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">What You Can Do</h2>
-          <p className="text-gray-700 mb-4 text-lg font-semibold">
-            Don't just read this site. Actually do something with it.
-          </p>
-          <div className="space-y-4 text-gray-700">
-            <p className="leading-relaxed">
-              <strong>1. Get offline.</strong> Close this tab after you're done and go talk to someone face-to-face.
-              Your Trump-supporting neighbor. Your progressive coworker. Your centrist friend. Anyone who sees things differently.
-            </p>
-            <p className="leading-relaxed">
-              <strong>2. Listen more than you talk.</strong> Ask questions instead of making accusations.
-              Try to understand why they believe what they believe.
-            </p>
-            <p className="leading-relaxed">
-              <strong>3. Recognize that most people are reasonable.</strong> Even when you disagree,
-              you'll probably find they're decent humans trying to do what's right for their families and communities.
-            </p>
-            <p className="leading-relaxed">
-              <strong>4. Stop doomscrolling.</strong> Limit your news consumption. Spend less time online and more time
-              with real people in the real world.
-            </p>
-            <p className="leading-relaxed font-semibold text-lg text-purple-700 mt-6">
-              That's it. That's how you help. Democracy doesn't need your doom and anger. It needs your humanity and willingness to talk.
-            </p>
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Core Principles</h2>
+          <div className="space-y-6">
+            <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+              <h3 className="text-xl font-semibold mb-2 text-blue-900">🛡️ Defend Democratic Institutions</h3>
+              <p className="text-gray-700">
+                Protect checks and balances, free press, independent courts, and peaceful transfer of power.
+                Authoritarianism is a threat from any direction.
+              </p>
+            </div>
+            <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
+              <h3 className="text-xl font-semibold mb-2 text-purple-900">🤝 Respect for All Americans</h3>
+              <p className="text-gray-700">
+                Reject racism, bigotry, and scapegoating in all forms. Our differences in race, religion,
+                background, and beliefs make us stronger. Common humanity comes first.
+              </p>
+            </div>
+            <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
+              <h3 className="text-xl font-semibold mb-2 text-red-900">⚖️ Evidence Over Ideology</h3>
+              <p className="text-gray-700">
+                Champion policies grounded in facts and results. Solutions require listening to different
+                perspectives with respect and intellectual honesty.
+              </p>
+            </div>
           </div>
         </section>
+        </div>
       </div>
     </div>
   );

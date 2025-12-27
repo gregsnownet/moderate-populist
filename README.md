@@ -219,4 +219,4 @@ For questions or feedback, please open an issue in this repository.
 
 ---
 
-**The Moderate Populist** - Finding common ground on the issues that matter.
+**The Moderate Populist** - Seeking knowledge, furthering understanding - Beyond the political Divide.

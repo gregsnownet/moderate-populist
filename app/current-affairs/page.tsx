@@ -25,17 +25,17 @@ export default function CurrentAffairsPage() {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <div className="min-h-screen bg-white">
       {/* Header */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 py-20 px-4 stars-background">
-        <div className="max-w-7xl mx-auto text-center text-white">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+      <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-purple-50 to-red-50 border-b-4 border-purple-200 py-20 px-4">
+        <div className="max-w-7xl mx-auto text-center">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 bg-clip-text text-transparent">
             Current Affairs
           </h1>
-          <p className="text-2xl md:text-3xl font-light mb-4">
+          <p className="text-2xl md:text-3xl text-gray-700 mb-4 font-light">
             Reflections on the Conversations Shaping America
           </p>
-          <p className="text-lg md:text-xl max-w-4xl mx-auto opacity-90">
+          <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto">
             Exploring today's most important topics through a bipartisan lens—
             finding common ground even on the most divisive issues
           </p>
@@ -83,7 +83,7 @@ export default function CurrentAffairsPage() {
       </section>
 
       {/* Articles Grid */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           {sortedArticles.length > 0 ? (
             <>
@@ -109,7 +109,7 @@ export default function CurrentAffairsPage() {
       </section>
 
       {/* Contributing Notice */}
-      <section className="py-16 px-4 bg-blue-50">
+      <section className="py-16 px-4 bg-gradient-to-br from-purple-50 to-blue-50 border-t-2 border-purple-200">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Join the Conversation

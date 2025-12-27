@@ -32,14 +32,14 @@ export default function ResourcesPage() {
   const resourceCategories = getAllResourceCategories();
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
       {/* Header */}
-      <section className="bg-gradient-to-b from-blue-600 to-blue-700 text-white py-16 px-4">
-        <div className="max-w-6xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+      <section className="bg-gradient-to-br from-blue-50 via-purple-50 to-red-50 border-b-4 border-purple-200 py-16 px-4">
+        <div className="max-w-6xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 bg-clip-text text-transparent">
             Resources
           </h1>
-          <p className="text-xl md:text-2xl font-light max-w-3xl">
+          <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto">
             Curated articles, podcasts, videos, and research on the issues that matter
           </p>
         </div>
@@ -162,7 +162,7 @@ export default function ResourcesPage() {
       </section>
 
       {/* Resources Grid */}
-      <section className="py-12 px-4">
+      <section className="py-12 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           {filteredResources.length > 0 ? (
             <>
@@ -200,14 +200,14 @@ export default function ResourcesPage() {
       </section>
 
       {/* How to Add Resources */}
-      <section className="bg-blue-50 py-12 px-4">
+      <section className="bg-gradient-to-br from-purple-50 to-blue-50 border-t-2 border-purple-200 py-12 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
             Add Your Own Resources
           </h2>
           <p className="text-gray-700 mb-4">
             To add articles, podcasts, or other resources to this page, edit the{' '}
-            <code className="bg-gray-200 px-2 py-1 rounded text-sm">lib/data/resources.ts</code> file.
+            <code className="bg-white px-2 py-1 rounded text-sm border border-gray-300">lib/data/resources.ts</code> file.
           </p>
           <p className="text-gray-700">
             Follow the structure of the sample resources and add your own links. The page will automatically

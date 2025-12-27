@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "The Moderate Populist - Where Moderates Drive Change",
-  description: "Practical populism for moderate Americans who believe in citizen power and democratic change. Explore evidence-based perspectives that put people over partisanship.",
+  title: "The Moderate Populist - Seeking knowledge, furthering understanding",
+  description: "Beyond the political Divide - Seeking knowledge, furthering understanding. Explore evidence-based perspectives that put people over partisanship.",
 };
 
 export default function RootLayout({
@@ -51,6 +51,13 @@ export default function RootLayout({
                     className="text-gray-700 hover:text-purple-600 font-medium transition-colors relative group"
                   >
                     Issues
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-600 group-hover:w-full transition-all"></span>
+                  </Link>
+                  <Link
+                    href="/solutions"
+                    className="text-gray-700 hover:text-purple-600 font-medium transition-colors relative group"
+                  >
+                    Solutions
                     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-600 group-hover:w-full transition-all"></span>
                   </Link>
                   <Link
@@ -97,13 +104,14 @@ export default function RootLayout({
                 <div>
                   <h3 className="font-bold text-lg mb-4">The Moderate Populist</h3>
                   <p className="text-purple-100 text-sm leading-relaxed">
-                    Bridging political divides through fact-based dialogue and shared understanding.
+                    Seeking knowledge, furthering understanding - Beyond the political Divide.
                   </p>
                 </div>
                 <div>
                   <h4 className="font-semibold mb-4">Navigate</h4>
                   <ul className="space-y-2 text-sm">
                     <li><Link href="/" className="text-purple-100 hover:text-white transition-colors">Issues</Link></li>
+                    <li><Link href="/solutions" className="text-purple-100 hover:text-white transition-colors">Solutions</Link></li>
                     <li><Link href="/resources" className="text-purple-100 hover:text-white transition-colors">Resources</Link></li>
                     <li><Link href="/about" className="text-purple-100 hover:text-white transition-colors">About</Link></li>
                   </ul>

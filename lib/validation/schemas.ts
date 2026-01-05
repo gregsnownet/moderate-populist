@@ -91,10 +91,10 @@ export function validateInput<T>(
 export function formatZodErrors(errors: z.ZodError): Record<string, string> {
   const formatted: Record<string, string> = {};
 
-  for (const error of errors.errors) {
-    const path = error.path.join('.');
+  for (const issue of errors.issues) {
+    const path = issue.path.join('.');
     if (!formatted[path]) {
-      formatted[path] = error.message;
+      formatted[path] = issue.message;
     }
   }
 

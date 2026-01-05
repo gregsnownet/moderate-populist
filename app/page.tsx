@@ -48,13 +48,11 @@ export default function Home() {
             </h1>
 
             <p className="text-2xl md:text-3xl text-gray-700 mb-6 font-light">
-              Seeking knowledge, furthering understanding - Beyond the political Divide
+              Seeking knowledge, furthering understanding - Beyond the Political Divide
             </p>
 
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed">
-              A one-person effort to lower the political temperature and remind you:
-              the situation we're in right now is <span className="font-bold text-gray-900">not the end of the world</span>.
-              The answer isn't online—it's in real conversations with real people.
+              A one-person effort with the help of a large language model to build this website with the goal to help all Americans find new ways of communicating, expressing and respecting our differences.
             </p>
 
             {/* CTA Buttons */}

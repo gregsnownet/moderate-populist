@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'About | The Moderate Populist',
-  description: 'A one-person effort to lower the political temperature and get people talking to each other again.',
+  description: 'A one-person effort with the help of a large language model to build this website with the goal to help all Americans find new ways of communicating, expressing and respecting our differences.',
 };
 
 export default function AboutPage() {
@@ -17,7 +17,7 @@ export default function AboutPage() {
         <section className="mb-12 bg-gradient-to-br from-amber-50 to-orange-50 border-2 border-amber-200 rounded-xl p-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">The Mission</h2>
           <p className="text-xl text-gray-800 mb-4 font-semibold">
-            Seeking knowledge, furthering understanding - Beyond the political Divide
+            Seeking knowledge, furthering understanding - Beyond the Political Divide
           </p>
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
             This platform exists to bridge political divisions through fact-based dialogue and mutual respect.

@@ -1,6 +1,7 @@
 import { Issue } from '@/types/issue';
 import IssueSection from './IssueSection';
 import Link from 'next/link';
+import { CommentSection } from './comments/CommentSection';
 
 interface IssuePageProps {
   issue: Issue;
@@ -279,20 +280,10 @@ export default function IssuePage({ issue }: IssuePageProps) {
             ))}
           </div>
 
-          <div className="mt-8 p-6 gradient-bipartisan rounded-xl text-white">
-            <div className="flex items-start gap-4">
-              <div className="text-4xl">💬</div>
-              <div>
-                <h4 className="font-bold text-xl mb-2">Join the Conversation (Coming Soon)</h4>
-                <p className="text-white/90 leading-relaxed">
-                  These questions will be open for respectful debate and discussion.
-                  Users will be able to share perspectives from across the political spectrum,
-                  find common ground, and work toward solutions together.
-                </p>
-              </div>
-            </div>
-          </div>
         </IssueSection>
+
+        {/* Comments Section */}
+        <CommentSection issueId={issue.id} />
       </article>
     </div>
   );

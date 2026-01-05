@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Logo from "@/components/Logo";
+import { AuthProvider } from "@/components/auth/AuthProvider";
+import { UserMenu } from "@/components/auth/UserMenu";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +31,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <AuthProvider>
         <div className="flex flex-col min-h-screen">
           {/* Political Spectrum Bar */}
           <div className="political-spectrum"></div>
@@ -83,6 +86,11 @@ export default function RootLayout({
                   </Link>
                 </div>
 
+                {/* User Menu */}
+                <div className="hidden md:block">
+                  <UserMenu />
+                </div>
+
                 {/* Mobile Menu Button */}
                 <button className="md:hidden p-2 text-gray-600 hover:text-purple-600">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -134,6 +142,7 @@ export default function RootLayout({
             </div>
           </footer>
         </div>
+        </AuthProvider>
       </body>
     </html>
   );

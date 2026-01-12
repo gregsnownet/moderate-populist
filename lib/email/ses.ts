@@ -1,20 +1,28 @@
 import { SESClient, SendEmailCommand } from '@aws-sdk/client-ses';
 
-// Use APP_AWS_* env vars for Amplify Hosting (can't use AWS_* prefix)
-// Falls back to default credential chain for local development
-const sesConfig: ConstructorParameters<typeof SESClient>[0] = {
-  region: process.env.APP_AWS_REGION || process.env.AWS_REGION || 'us-east-1',
-};
+// Create client lazily to ensure environment variables are available
+let _sesClient: SESClient | null = null;
 
-// If custom credentials are provided (for Amplify Hosting), use them
-if (process.env.APP_AWS_ACCESS_KEY_ID && process.env.APP_AWS_SECRET_ACCESS_KEY) {
-  sesConfig.credentials = {
-    accessKeyId: process.env.APP_AWS_ACCESS_KEY_ID,
-    secretAccessKey: process.env.APP_AWS_SECRET_ACCESS_KEY,
+function getSESClient(): SESClient {
+  if (_sesClient) return _sesClient;
+
+  // Use APP_AWS_* env vars for Amplify Hosting (can't use AWS_* prefix)
+  // Falls back to default credential chain for local development
+  const sesConfig: ConstructorParameters<typeof SESClient>[0] = {
+    region: process.env.APP_AWS_REGION || process.env.AWS_REGION || 'us-east-1',
   };
-}
 
-const sesClient = new SESClient(sesConfig);
+  // If custom credentials are provided (for Amplify Hosting), use them
+  if (process.env.APP_AWS_ACCESS_KEY_ID && process.env.APP_AWS_SECRET_ACCESS_KEY) {
+    sesConfig.credentials = {
+      accessKeyId: process.env.APP_AWS_ACCESS_KEY_ID,
+      secretAccessKey: process.env.APP_AWS_SECRET_ACCESS_KEY,
+    };
+  }
+
+  _sesClient = new SESClient(sesConfig);
+  return _sesClient;
+}
 
 const FROM_EMAIL = process.env.SES_FROM_EMAIL || 'noreply@moderatepopulist.org';
 
@@ -49,5 +57,5 @@ export async function sendEmail(params: SendEmailParams): Promise<void> {
     },
   });
 
-  await sesClient.send(command);
+  await getSESClient().send(command);
 }

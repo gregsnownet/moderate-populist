@@ -63,8 +63,10 @@ export async function POST(request: NextRequest) {
     });
   } catch (error) {
     console.error('Login error:', error);
+    // Return more specific error message in development/for debugging
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
     return NextResponse.json(
-      { error: 'An error occurred during login' },
+      { error: `An error occurred during login: ${errorMessage}` },
       { status: 500 }
     );
   }

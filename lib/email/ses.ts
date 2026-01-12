@@ -1,8 +1,20 @@
 import { SESClient, SendEmailCommand } from '@aws-sdk/client-ses';
 
-const sesClient = new SESClient({
-  region: process.env.AWS_REGION || 'us-east-1',
-});
+// Use APP_AWS_* env vars for Amplify Hosting (can't use AWS_* prefix)
+// Falls back to default credential chain for local development
+const sesConfig: ConstructorParameters<typeof SESClient>[0] = {
+  region: process.env.APP_AWS_REGION || process.env.AWS_REGION || 'us-east-1',
+};
+
+// If custom credentials are provided (for Amplify Hosting), use them
+if (process.env.APP_AWS_ACCESS_KEY_ID && process.env.APP_AWS_SECRET_ACCESS_KEY) {
+  sesConfig.credentials = {
+    accessKeyId: process.env.APP_AWS_ACCESS_KEY_ID,
+    secretAccessKey: process.env.APP_AWS_SECRET_ACCESS_KEY,
+  };
+}
+
+const sesClient = new SESClient(sesConfig);
 
 const FROM_EMAIL = process.env.SES_FROM_EMAIL || 'noreply@moderatepopulist.org';
 

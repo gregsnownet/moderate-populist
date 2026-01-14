@@ -28,6 +28,8 @@ export default function RegisterForm() {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [emailSent, setEmailSent] = useState(true);
+  const [emailErrorMsg, setEmailErrorMsg] = useState<string | null>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -79,6 +81,8 @@ export default function RegisterForm() {
         return;
       }
 
+      setEmailSent(data.emailSent ?? true);
+      setEmailErrorMsg(data.emailError ?? null);
       setSuccess(true);
     } catch {
       setErrors({ general: 'An error occurred. Please try again.' });
@@ -90,16 +94,40 @@ export default function RegisterForm() {
   if (success) {
     return (
       <div className="text-center">
-        <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-          <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-          </svg>
+        <div className={`w-16 h-16 ${emailSent ? 'bg-green-100' : 'bg-amber-100'} rounded-full flex items-center justify-center mx-auto mb-4`}>
+          {emailSent ? (
+            <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            </svg>
+          ) : (
+            <svg className="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+          )}
         </div>
-        <h2 className="text-2xl font-semibold text-zinc-800 mb-2">Check Your Email</h2>
-        <p className="text-zinc-600 mb-6">
-          We&apos;ve sent a verification link to <strong>{formData.email}</strong>.
-          Please check your inbox and click the link to activate your account.
-        </p>
+        <h2 className="text-2xl font-semibold text-zinc-800 mb-2">
+          {emailSent ? 'Check Your Email' : 'Account Created'}
+        </h2>
+        {emailSent ? (
+          <p className="text-zinc-600 mb-6">
+            We&apos;ve sent a verification link to <strong>{formData.email}</strong>.
+            Please check your inbox and click the link to activate your account.
+          </p>
+        ) : (
+          <div className="mb-6">
+            <p className="text-amber-700 mb-2">
+              Your account was created, but we couldn&apos;t send the verification email.
+            </p>
+            {emailErrorMsg && (
+              <p className="text-sm text-red-600 bg-red-50 p-2 rounded">
+                Error: {emailErrorMsg}
+              </p>
+            )}
+            <p className="text-zinc-600 mt-2">
+              Please contact support at <strong>themoderate@moderatepopulist.org</strong> to verify your account manually.
+            </p>
+          </div>
+        )}
         <Link
           href="/login"
           className="text-blue-600 hover:text-blue-700 font-medium"

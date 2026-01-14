@@ -70,6 +70,8 @@ export async function POST(request: NextRequest) {
     await createUser(user);
 
     // Send verification email
+    let emailSent = false;
+    let emailError: string | null = null;
     try {
       await sendEmail({
         to: email,
@@ -77,15 +79,21 @@ export async function POST(request: NextRequest) {
         htmlBody: getVerificationEmailHtml(username, verificationToken),
         textBody: getVerificationEmailText(username, verificationToken),
       });
-    } catch (emailError) {
-      console.error('Failed to send verification email:', emailError);
+      emailSent = true;
+    } catch (err) {
+      console.error('Failed to send verification email:', err);
+      emailError = err instanceof Error ? err.message : 'Unknown email error';
       // Don't fail registration if email fails - user can request resend
     }
 
     return NextResponse.json(
       {
-        message: 'Registration successful. Please check your email to verify your account.',
+        message: emailSent
+          ? 'Registration successful. Please check your email to verify your account.'
+          : 'Registration successful, but we could not send the verification email. Please contact support.',
         userId,
+        emailSent,
+        ...(emailError && { emailError }),
       },
       { status: 201 }
     );

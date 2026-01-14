@@ -101,6 +101,97 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Where We Stand - Core Values */}
+      <section className="py-16 px-4 bg-gradient-to-br from-slate-50 via-gray-50 to-zinc-50 border-y-4 border-slate-300">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-4xl font-bold mb-4">
+              <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 bg-clip-text text-transparent">
+                Where We Stand
+              </span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Common-sense values that unite Americans across the political spectrum
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <div className="bg-white p-6 rounded-xl shadow-md border-l-4 border-blue-500 hover:shadow-lg transition-shadow">
+              <div className="text-3xl mb-3">🛡️</div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Secure Borders</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                A nation has the right and duty to control who enters. Secure borders and compassionate immigration policy aren't mutually exclusive.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-md border-l-4 border-purple-500 hover:shadow-lg transition-shadow">
+              <div className="text-3xl mb-3">🏙️</div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Safe & Clean Cities</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Every American deserves to live in communities that are safe, clean, and well-maintained. Public safety is not a partisan issue.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-md border-l-4 border-red-500 hover:shadow-lg transition-shadow">
+              <div className="text-3xl mb-3">🚫</div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Racism is Wrong</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Judging people by skin color or ethnicity is morally wrong. Period. We stand against racism in all its forms, from all directions.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-md border-l-4 border-green-500 hover:shadow-lg transition-shadow">
+              <div className="text-3xl mb-3">🗽</div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Individual Freedom</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Personal liberty is foundational to America. Government should protect rights, not control how citizens live their lives.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-md border-l-4 border-yellow-500 hover:shadow-lg transition-shadow">
+              <div className="text-3xl mb-3">📈</div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Free Markets</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Economic freedom creates prosperity. Markets work best with fair rules, not crony capitalism or government picking winners.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-md border-l-4 border-indigo-500 hover:shadow-lg transition-shadow">
+              <div className="text-3xl mb-3">💪</div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Self-Worth</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Every person has inherent dignity and value. Work, family, and community contribution build self-respect and purpose.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-md border-l-4 border-teal-500 hover:shadow-lg transition-shadow">
+              <div className="text-3xl mb-3">👤</div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Individualism</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Judge people as individuals, not as members of groups. Personal responsibility and merit matter. Identity politics divides us.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-md border-l-4 border-orange-500 hover:shadow-lg transition-shadow">
+              <div className="text-3xl mb-3">🤝</div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Mutual Respect</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Disagreement doesn't require disrespect. We can debate ideas vigorously while treating fellow citizens with dignity.
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 rounded-xl p-1">
+            <div className="bg-white rounded-lg p-6 text-center">
+              <p className="text-lg text-gray-800 font-semibold">
+                These aren't radical positions—they're the common-sense values most Americans share.
+                We reject the extremes that caricature these principles to divide us.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Core Message */}
       <section className="py-16 px-4 bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 border-y-4 border-amber-300">
         <div className="max-w-5xl mx-auto">

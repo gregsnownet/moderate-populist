@@ -57,6 +57,11 @@ export function UserMenu() {
         <span className="text-sm font-medium text-zinc-700 hidden sm:block">
           {user.username}
         </span>
+        {user.role === 'admin' && (
+          <span className="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full font-medium hidden sm:block">
+            Admin
+          </span>
+        )}
         <svg
           className={`w-4 h-4 text-zinc-500 transition-transform ${isOpen ? 'rotate-180' : ''}`}
           fill="none"

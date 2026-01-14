@@ -4,7 +4,7 @@ import { DynamoDBDocumentClient } from '@aws-sdk/lib-dynamodb';
 // Create client lazily to ensure environment variables are available
 let _docClient: DynamoDBDocumentClient | null = null;
 
-function getDocClient(): DynamoDBDocumentClient {
+export function getDocClient(): DynamoDBDocumentClient {
   if (_docClient) return _docClient;
 
   // Use APP_AWS_* env vars for Amplify Hosting (can't use AWS_* prefix)
@@ -32,11 +32,17 @@ function getDocClient(): DynamoDBDocumentClient {
   return _docClient;
 }
 
-// Export as a getter to ensure lazy initialization
-export const docClient = {
-  send: <T>(command: Parameters<DynamoDBDocumentClient['send']>[0]) =>
-    getDocClient().send(command) as Promise<T>,
-};
+// For backwards compatibility, export docClient as a proxy to the lazy getter
+export const docClient = new Proxy({} as DynamoDBDocumentClient, {
+  get(_, prop) {
+    const client = getDocClient();
+    const value = (client as unknown as Record<string, unknown>)[prop as string];
+    if (typeof value === 'function') {
+      return value.bind(client);
+    }
+    return value;
+  },
+});
 
 export const USERS_TABLE = process.env.DYNAMODB_USERS_TABLE || 'ModeratePopulist_Users';
 export const COMMENTS_TABLE = process.env.DYNAMODB_COMMENTS_TABLE || 'ModeratePopulist_Comments';

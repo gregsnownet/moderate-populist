@@ -71,8 +71,9 @@ export async function GET(request: NextRequest) {
     });
   } catch (error) {
     console.error('Email verification error:', error);
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
     return NextResponse.json(
-      { error: 'An error occurred during email verification' },
+      { error: `An error occurred during email verification: ${errorMessage}` },
       { status: 500 }
     );
   }

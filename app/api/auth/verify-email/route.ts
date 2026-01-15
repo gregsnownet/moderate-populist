@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getUserById, verifyUserEmail } from '@/lib/db/users';
+import { verifyUserEmail } from '@/lib/db/users';
 import { docClient, USERS_TABLE } from '@/lib/db/dynamodb';
-import { QueryCommand } from '@aws-sdk/lib-dynamodb';
+import { ScanCommand } from '@aws-sdk/lib-dynamodb';
 import type { UserDBItem } from '@/types/user';
 
 export async function GET(request: NextRequest) {
@@ -15,30 +15,15 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    // Find user by verification token using a scan (not ideal but works for this use case)
-    const result = await docClient.send(
-      new QueryCommand({
-        TableName: USERS_TABLE,
-        IndexName: 'email-index',
-        // We need to scan for the token, but since we can't query by token directly,
-        // we'll use a different approach - redirect to a page that handles it
-        // For now, let's do a simple scan
-        FilterExpression: 'verificationToken = :token',
-        ExpressionAttributeValues: {
-          ':token': token,
-        },
-        // Note: In production with many users, consider adding a GSI on verificationToken
-      })
-    );
-
-    // Since QueryCommand requires a key, we need to use ScanCommand for token lookup
-    const { ScanCommand } = await import('@aws-sdk/lib-dynamodb');
+    // Find user by verification token using a scan
+    // Note: In production with many users, consider adding a GSI on verificationToken
     const scanResult = await docClient.send(
       new ScanCommand({
         TableName: USERS_TABLE,
-        FilterExpression: 'verificationToken = :token',
+        FilterExpression: 'verificationToken = :token AND sk = :sk',
         ExpressionAttributeValues: {
           ':token': token,
+          ':sk': 'PROFILE',
         },
       })
     );

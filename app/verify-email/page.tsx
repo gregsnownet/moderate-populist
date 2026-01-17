@@ -84,12 +84,22 @@ function VerifyEmailContent() {
               </div>
               <h2 className="text-xl font-semibold text-zinc-800 mb-2">Verification Failed</h2>
               <p className="text-zinc-600 mb-6">{message}</p>
-              <Link
-                href="/login"
-                className="inline-block py-3 px-6 bg-zinc-800 text-white font-medium rounded-lg hover:bg-zinc-700 transition-colors"
-              >
-                Back to Login
-              </Link>
+              <div className="flex flex-col gap-3">
+                {message.includes('expired') && (
+                  <Link
+                    href="/resend-verification"
+                    className="inline-block py-3 px-6 bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
+                  >
+                    Request New Verification Email
+                  </Link>
+                )}
+                <Link
+                  href="/login"
+                  className="inline-block py-3 px-6 bg-zinc-800 text-white font-medium rounded-lg hover:bg-zinc-700 transition-colors"
+                >
+                  Back to Login
+                </Link>
+              </div>
             </>
           )}
         </div>

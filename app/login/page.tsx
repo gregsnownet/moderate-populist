@@ -24,6 +24,14 @@ export default function LoginPage() {
             Sign In
           </h2>
           <LoginForm />
+          <div className="mt-6 pt-6 border-t border-zinc-200 text-center">
+            <p className="text-sm text-zinc-600">
+              Didn&apos;t receive your verification email?{' '}
+              <Link href="/resend-verification" className="text-blue-600 hover:text-blue-700 font-medium">
+                Resend it
+              </Link>
+            </p>
+          </div>
         </div>
       </div>
     </main>

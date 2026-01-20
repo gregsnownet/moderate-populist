@@ -52,7 +52,8 @@ export function AuthProvider({ children }: AuthProviderProps) {
       const data = await response.json();
 
       if (response.ok) {
-        setUser(data.user);
+        // Force a fresh fetch from the server to ensure we have the correct user data
+        await refresh();
         return { success: true };
       } else {
         return { success: false, error: data.error };
@@ -68,9 +69,10 @@ export function AuthProvider({ children }: AuthProviderProps) {
     } catch {
       // Ignore errors
     } finally {
+      // Clear user state immediately
       setUser(null);
-      router.push('/');
-      router.refresh();
+      // Force a hard reload to clear all cached state
+      window.location.href = '/';
     }
   };
 

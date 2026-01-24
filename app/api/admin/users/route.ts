@@ -22,6 +22,10 @@ export async function GET(request: NextRequest) {
       ...toPublicUser(user),
       banned: user.banned,
       updatedAt: user.updatedAt,
+      registrationIp: user.registrationIp,
+      registrationCountry: user.registrationCountry,
+      lastLoginAt: user.lastLoginAt,
+      lastLoginIp: user.lastLoginIp,
     }));
 
     return NextResponse.json({

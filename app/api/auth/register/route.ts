@@ -5,11 +5,16 @@ import { hashPassword } from '@/lib/auth/password';
 import { createUser, getUserByEmail, getUserByUsername, setVerificationToken } from '@/lib/db/users';
 import { sendEmail } from '@/lib/email/ses';
 import { getVerificationEmailHtml, getVerificationEmailText } from '@/lib/email/templates/verification';
+import { getClientIp, getCountryFromIp } from '@/lib/utils/ip';
 import type { User } from '@/types/user';
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
+
+    // Get IP address and country
+    const registrationIp = getClientIp(request);
+    const registrationCountry = await getCountryFromIp(registrationIp);
 
     // Validate input
     const validation = validateInput(registerSchema, body);
@@ -65,6 +70,8 @@ export async function POST(request: NextRequest) {
       verificationToken,
       verificationTokenExpiry,
       sessionVersion: 1,
+      registrationIp: registrationIp || undefined,
+      registrationCountry: registrationCountry || undefined,
     };
 
     await createUser(user);
@@ -84,6 +91,38 @@ export async function POST(request: NextRequest) {
       console.error('Failed to send verification email:', err);
       emailError = err instanceof Error ? err.message : 'Unknown email error';
       // Don't fail registration if email fails - user can request resend
+    }
+
+    // Send admin notification email
+    try {
+      await sendEmail({
+        to: process.env.ADMIN_EMAIL || 'themoderate@moderatepopulist.org',
+        subject: 'New User Registration - Moderate Populist',
+        htmlBody: `
+          <h2>New User Registered</h2>
+          <p><strong>Username:</strong> ${username}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Country:</strong> ${country}</p>
+          <p><strong>State:</strong> ${state}</p>
+          <p><strong>Registration IP:</strong> ${registrationIp || 'Unknown'}</p>
+          <p><strong>Registration Country:</strong> ${registrationCountry || 'Unknown'}</p>
+          <p><strong>Registration Date:</strong> ${now}</p>
+        `,
+        textBody: `
+New User Registered
+
+Username: ${username}
+Email: ${email}
+Country: ${country}
+State: ${state}
+Registration IP: ${registrationIp || 'Unknown'}
+Registration Country: ${registrationCountry || 'Unknown'}
+Registration Date: ${now}
+        `,
+      });
+    } catch (err) {
+      // Log error but don't fail registration
+      console.error('Failed to send admin notification email:', err);
     }
 
     return NextResponse.json(

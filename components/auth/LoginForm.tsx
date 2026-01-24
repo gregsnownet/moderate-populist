@@ -1,11 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 export default function LoginForm() {
-  const router = useRouter();
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -44,9 +42,8 @@ export default function LoginForm() {
         return;
       }
 
-      // Redirect to home page on successful login
-      router.push('/');
-      router.refresh();
+      // Force a hard reload to ensure fresh user data
+      window.location.href = '/';
     } catch {
       setErrors({ general: 'An error occurred. Please try again.' });
     } finally {

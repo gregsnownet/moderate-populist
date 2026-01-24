@@ -2,7 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { loginSchema, validateInput, formatZodErrors } from '@/lib/validation/schemas';
 import { verifyPassword } from '@/lib/auth/password';
 import { generateTokens, setAuthCookies } from '@/lib/auth/jwt';
-import { getUserByEmail, toPublicUser } from '@/lib/db/users';
+import { getUserByEmail, toPublicUser, updateLastLogin } from '@/lib/db/users';
+import { getClientIp } from '@/lib/utils/ip';
 
 export async function POST(request: NextRequest) {
   try {
@@ -52,6 +53,10 @@ export async function POST(request: NextRequest) {
         { status: 401 }
       );
     }
+
+    // Update last login information
+    const loginIp = getClientIp(request);
+    await updateLastLogin(user.userId, loginIp);
 
     // Generate tokens and set cookies
     const tokens = generateTokens(user);

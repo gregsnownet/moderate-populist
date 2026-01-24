@@ -6,6 +6,10 @@ import type { PublicUser } from '@/types/user';
 interface AdminUser extends PublicUser {
   banned: boolean;
   updatedAt: string;
+  registrationIp?: string;
+  registrationCountry?: string;
+  lastLoginAt?: string;
+  lastLoginIp?: string;
 }
 
 function formatDate(dateString: string): string {
@@ -14,6 +18,17 @@ function formatDate(dateString: string): string {
     month: 'short',
     day: 'numeric',
     year: 'numeric',
+  });
+}
+
+function formatDateTime(dateString: string): string {
+  const date = new Date(dateString);
+  return date.toLocaleString('en-US', {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric',
+    hour: 'numeric',
+    minute: '2-digit',
   });
 }
 
@@ -165,9 +180,10 @@ export default function UsersManagement() {
                 <tr>
                   <th className="text-left px-6 py-3 text-sm font-medium text-zinc-600">User</th>
                   <th className="text-left px-6 py-3 text-sm font-medium text-zinc-600">Location</th>
+                  <th className="text-left px-6 py-3 text-sm font-medium text-zinc-600">Registration</th>
+                  <th className="text-left px-6 py-3 text-sm font-medium text-zinc-600">Last Login</th>
                   <th className="text-left px-6 py-3 text-sm font-medium text-zinc-600">Role</th>
                   <th className="text-left px-6 py-3 text-sm font-medium text-zinc-600">Status</th>
-                  <th className="text-left px-6 py-3 text-sm font-medium text-zinc-600">Joined</th>
                   <th className="text-right px-6 py-3 text-sm font-medium text-zinc-600">Actions</th>
                 </tr>
               </thead>
@@ -187,6 +203,35 @@ export default function UsersManagement() {
                     </td>
                     <td className="px-6 py-4 text-sm text-zinc-600">
                       {user.state}, {user.country}
+                    </td>
+                    <td className="px-6 py-4 text-sm text-zinc-600">
+                      <div>
+                        <p className="text-zinc-800">{formatDate(user.createdAt)}</p>
+                        {user.registrationIp && (
+                          <p className="text-xs text-zinc-500 mt-1">
+                            IP: {user.registrationIp}
+                          </p>
+                        )}
+                        {user.registrationCountry && (
+                          <p className="text-xs text-zinc-500">
+                            {user.registrationCountry}
+                          </p>
+                        )}
+                      </div>
+                    </td>
+                    <td className="px-6 py-4 text-sm text-zinc-600">
+                      {user.lastLoginAt ? (
+                        <div>
+                          <p className="text-zinc-800">{formatDateTime(user.lastLoginAt)}</p>
+                          {user.lastLoginIp && (
+                            <p className="text-xs text-zinc-500 mt-1">
+                              IP: {user.lastLoginIp}
+                            </p>
+                          )}
+                        </div>
+                      ) : (
+                        <span className="text-zinc-400">Never</span>
+                      )}
                     </td>
                     <td className="px-6 py-4">
                       <span className={`text-xs px-2 py-1 rounded font-medium ${
@@ -211,9 +256,6 @@ export default function UsersManagement() {
                           Unverified
                         </span>
                       )}
-                    </td>
-                    <td className="px-6 py-4 text-sm text-zinc-600">
-                      {formatDate(user.createdAt)}
                     </td>
                     <td className="px-6 py-4">
                       <div className="flex items-center justify-end gap-2">

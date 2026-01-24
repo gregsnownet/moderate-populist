@@ -1969,6 +1969,250 @@ export const issues: Issue[] = [
         "How do we create space for people to live by their religious convictions without imposing them on others?"
       ]
     }
+  },
+  {
+    id: "greenland-territorial-expansion",
+    title: "Greenland & U.S. Territorial Expansion",
+    category: "government",
+    description: "Trump's interest in acquiring Greenland reignites debates about American territorial expansion and strategic interests",
+    explainer: {
+      title: "What's the Challenge?",
+      content: "President-elect Donald Trump has repeatedly expressed interest in the United States purchasing or acquiring Greenland, the world's largest island, which is an autonomous territory of Denmark. Trump first raised this idea in 2019 (calling it 'essentially a large real estate deal'), and has renewed the discussion in 2025, refusing to rule out military or economic coercion to achieve this goal. Greenland is strategically important for Arctic military positioning, mineral resources including rare earth elements critical for technology and defense, and melting ice opening new shipping routes. Denmark and Greenland have firmly rejected any sale, but Trump's statements have sparked debate about American territorial ambitions, sovereignty, alliance relationships, and whether 19th-century-style territorial expansion has any place in 21st-century geopolitics."
+    },
+    commonGround: {
+      title: "Where Most Americans Agree",
+      points: [
+        "The Arctic region is strategically important for U.S. national security",
+        "China and Russia are expanding their presence in the Arctic and it deserves attention",
+        "Rare earth minerals and natural resources matter for American economic security",
+        "Climate change is opening new Arctic shipping routes and creating new strategic considerations",
+        "Greenland's location is geographically significant for military and economic purposes",
+        "Alliance relationships with democratic partners like Denmark are valuable",
+        "Any territorial changes should respect the self-determination of people involved",
+        "The U.S. should protect its strategic interests in the Arctic region"
+      ],
+      surveySource: "Arctic Policy Polling, Foreign Policy Surveys 2024-2025"
+    },
+    perspectives: {
+      left: {
+        title: "Progressive Perspective",
+        points: [
+          "Trump's Greenland obsession is neo-colonial thinking that treats people and land as commodities to be bought",
+          "Threatening allies like Denmark with military or economic coercion is dangerous and alienates democratic partners",
+          "Greenlandic people have a right to self-determination—their land isn't for sale regardless of American desires",
+          "This rhetoric damages America's credibility and makes us look like an imperial bully",
+          "The focus should be on climate change in the Arctic, not territorial conquest",
+          "Trump's transactional approach to foreign policy treats alliances as business deals rather than shared values"
+        ]
+      },
+      right: {
+        title: "Conservative Perspective",
+        points: [
+          "Trump is right to think strategically about American interests in the Arctic as China and Russia expand there",
+          "Greenland's strategic location and resources are too important to ignore in great power competition",
+          "The U.S. has successfully acquired territory before (Louisiana Purchase, Alaska) when strategic interests demanded it",
+          "Denmark hasn't adequately defended or developed Greenland—American investment could benefit everyone",
+          "Being willing to use economic and military leverage shows strength, not weakness",
+          "Liberal critics mock Trump but offer no alternative strategy for countering China and Russia in the Arctic",
+          "America First means protecting American strategic interests, including in the Arctic"
+        ]
+      }
+    },
+    keyFacts: {
+      title: "Evidence-Based Facts",
+      facts: [
+        {
+          statement: "Greenland has a population of about 57,000 people, predominantly Inuit, and has been self-governing under Danish sovereignty since 1979",
+          source: "Government of Greenland",
+          sourceUrl: "https://naalakkersuisut.gl"
+        },
+        {
+          statement: "The U.S. already has Pituffik Space Base (formerly Thule Air Base) in Greenland, a critical early warning radar installation",
+          source: "U.S. Space Force",
+          sourceUrl: "https://www.spaceforce.mil"
+        },
+        {
+          statement: "Greenland holds significant deposits of rare earth elements, uranium, and other minerals increasingly important for technology and defense",
+          source: "U.S. Geological Survey",
+          sourceUrl: "https://www.usgs.gov"
+        },
+        {
+          statement: "The U.S. offered to purchase Greenland in 1946 for $100 million; Denmark refused then as now",
+          source: "Historical Records, U.S. State Department",
+          sourceUrl: "https://history.state.gov"
+        },
+        {
+          statement: "China has attempted investments in Greenland's mining and infrastructure, raising U.S. security concerns",
+          source: "Department of Defense Arctic Strategy",
+          sourceUrl: "https://www.defense.gov"
+        }
+      ]
+    },
+    resources: {
+      title: "Learn More",
+      links: [
+        {
+          title: "Department of Defense Arctic Strategy",
+          url: "https://www.defense.gov",
+          description: "U.S. strategic interests and security concerns in the Arctic region",
+          source: "U.S. Department of Defense"
+        },
+        {
+          title: "Wilson Center - Arctic Research",
+          url: "https://www.wilsoncenter.org/program/polar-initiative",
+          description: "Nonpartisan research on Arctic geopolitics and climate",
+          source: "Wilson Center"
+        },
+        {
+          title: "Government of Greenland",
+          url: "https://naalakkersuisut.gl",
+          description: "Official information on Greenland's self-governance and perspectives",
+          source: "Naalakkersuisut (Greenland Self-Government)"
+        }
+      ]
+    },
+    openQuestions: {
+      title: "Questions for Thoughtful Debate",
+      questions: [
+        "How should the U.S. balance strategic interests in the Arctic with respecting allies and self-determination?",
+        "Is territorial expansion an appropriate strategy for 21st-century great power competition?",
+        "What alternative approaches could protect U.S. Arctic interests without threatening to purchase Greenland?",
+        "How should America respond to Chinese and Russian expansion in the Arctic?",
+        "Does Trump's willingness to use economic or military coercion strengthen or weaken America's position?",
+        "What's the right balance between strategic resource security and alliance relationships?",
+        "Should the U.S. increase investment in Arctic military capabilities regardless of Greenland acquisition?"
+      ]
+    }
+  },
+  {
+    id: "venezuela-regime-change",
+    title: "Venezuela Crisis & U.S. Intervention",
+    category: "government",
+    description: "Venezuela's authoritarian collapse, humanitarian crisis, and debates over American intervention and regime change",
+    explainer: {
+      title: "What's the Challenge?",
+      content: "Venezuela has collapsed from South America's wealthiest nation into an authoritarian dictatorship with hyperinflation, widespread poverty, and over 7 million refugees fleeing the country. Nicolás Maduro's socialist regime has maintained power through rigged elections, political repression, and support from Cuba, Russia, and China. In recent weeks, opposition leader Edmundo González claims to have won the 2024 presidential election, with the U.S. and several Latin American countries recognizing him as the legitimate president-elect, while Maduro refuses to relinquish power. Trump has taken a harder line, with his administration recognizing González and considering stronger measures including potential military options. The crisis raises fundamental questions: What responsibility does the U.S. have to support democracy in Latin America? When, if ever, should America intervene to remove dictators? How do we balance humanitarian concerns with the lessons learned from failed regime-change operations in Iraq, Libya, and Afghanistan? And what about the millions of Venezuelan refugees—many now attempting to reach the U.S. southern border?"
+    },
+    commonGround: {
+      title: "Where Most Americans Agree",
+      points: [
+        "The Venezuelan people are suffering under a brutal authoritarian regime",
+        "Maduro is a dictator who has destroyed Venezuela's economy and democracy",
+        "The humanitarian crisis and refugee situation demand attention",
+        "Venezuelan refugees deserve compassion while border security remains important",
+        "China, Russia, and Cuba's support for Maduro threatens regional stability and U.S. interests",
+        "Socialist economic policies destroyed what was once Latin America's wealthiest country",
+        "The international community should support free and fair elections in Venezuela",
+        "American intervention should be carefully considered given past failures in regime change"
+      ],
+      surveySource: "Americas Barometer, Pew Research Latin America Surveys 2024-2025"
+    },
+    perspectives: {
+      left: {
+        title: "Progressive Perspective",
+        points: [
+          "U.S. sanctions have worsened humanitarian suffering for ordinary Venezuelans while failing to remove Maduro",
+          "American regime-change operations have repeatedly failed and cost countless lives—Iraq, Libya, Afghanistan prove military intervention doesn't work",
+          "Support for Venezuelan democracy shouldn't mean another disastrous U.S. military invasion",
+          "The U.S. has historically backed right-wing dictators in Latin America—our intervention track record is terrible",
+          "Diplomacy, humanitarian aid, and regional multilateral approaches are better than unilateral American military action",
+          "We should welcome Venezuelan refugees with compassion rather than treating them as border security threats",
+          "U.S. economic imperialism and oil interests in Venezuela complicate our motives"
+        ]
+      },
+      right: {
+        title: "Conservative Perspective",
+        points: [
+          "Maduro is a brutal socialist dictator backed by America's enemies—China, Russia, and Cuba—and must go",
+          "Venezuela proves socialism destroys prosperity and freedom every time it's tried",
+          "The Monroe Doctrine obligates America to prevent hostile foreign powers from dominating our hemisphere",
+          "Millions of Venezuelan refugees are destabilizing the region and flooding toward our southern border",
+          "Trump's strong stance and willingness to use all options shows leadership Biden lacked",
+          "Supporting free elections and democracy in Latin America serves American security interests",
+          "Maduro's regime threatens regional stability, supports drug trafficking, and harbors terrorists",
+          "The U.S. should support the legitimate president-elect González with all necessary means"
+        ]
+      }
+    },
+    keyFacts: {
+      title: "Evidence-Based Facts",
+      facts: [
+        {
+          statement: "Over 7.7 million Venezuelans have fled the country since 2015—one of the world's largest refugee crises",
+          source: "UNHCR (UN Refugee Agency)",
+          sourceUrl: "https://www.unhcr.org"
+        },
+        {
+          statement: "Venezuela's GDP has contracted by over 75% since 2013, with hyperinflation reaching 1,000,000% at its peak",
+          source: "World Bank, IMF Data",
+          sourceUrl: "https://www.worldbank.org"
+        },
+        {
+          statement: "The U.S., EU, and over 50 countries recognized Juan Guaidó as interim president in 2019, but he failed to dislodge Maduro",
+          source: "U.S. State Department",
+          sourceUrl: "https://www.state.gov"
+        },
+        {
+          statement: "In 2024 presidential election, opposition claims González won by a large margin based on voter tally sheets, but Maduro's regime declared itself the winner without releasing detailed results",
+          source: "Carter Center Election Observation, OAS Reports",
+          sourceUrl: "https://www.cartercenter.org"
+        },
+        {
+          statement: "Venezuela has the world's largest proven oil reserves but production has collapsed under mismanagement and sanctions",
+          source: "U.S. Energy Information Administration",
+          sourceUrl: "https://www.eia.gov"
+        },
+        {
+          statement: "Russia, China, and Iran have provided Venezuela with billions in loans, weapons, and technical support",
+          source: "Congressional Research Service",
+          sourceUrl: "https://crsreports.congress.gov"
+        }
+      ]
+    },
+    resources: {
+      title: "Learn More",
+      links: [
+        {
+          title: "Council on Foreign Relations - Venezuela Crisis",
+          url: "https://www.cfr.org/backgrounder/venezuela-crisis",
+          description: "Comprehensive analysis of Venezuela's political and economic collapse",
+          source: "Council on Foreign Relations"
+        },
+        {
+          title: "Human Rights Watch - Venezuela",
+          url: "https://www.hrw.org/americas/venezuela",
+          description: "Documentation of human rights abuses under Maduro regime",
+          source: "Human Rights Watch"
+        },
+        {
+          title: "Wilson Center - Venezuela Program",
+          url: "https://www.wilsoncenter.org/program/latin-american-program",
+          description: "Policy research on Venezuela crisis and U.S. response options",
+          source: "Wilson Center"
+        },
+        {
+          title: "UNHCR - Venezuelan Refugee Crisis",
+          url: "https://www.unhcr.org/venezuela-emergency.html",
+          description: "Data and humanitarian response to Venezuelan displacement",
+          source: "UN Refugee Agency"
+        }
+      ]
+    },
+    openQuestions: {
+      title: "Questions for Thoughtful Debate",
+      questions: [
+        "What responsibility does the U.S. have to support democracy in Venezuela vs. respecting sovereignty?",
+        "Have U.S. sanctions helped or hurt the Venezuelan people?",
+        "When, if ever, is military intervention justified to remove a dictator?",
+        "How should the U.S. balance supporting Venezuelan democracy with avoiding another failed regime-change operation?",
+        "What's the right approach to Venezuelan refugees at the southern border?",
+        "Should the U.S. work multilaterally through regional partners or act unilaterally?",
+        "How do we counter Chinese and Russian influence in Latin America?",
+        "What lessons from Iraq, Libya, and Afghanistan apply to Venezuela?",
+        "If Maduro refuses to leave despite losing the election, what should the U.S. do?",
+        "Does supporting democracy in Latin America serve American interests or represent imperialism?"
+      ]
+    }
   }
 ];
 

@@ -26,6 +26,10 @@ function dbItemToUser(item: UserDBItem): User {
     verificationToken: item.verificationToken,
     verificationTokenExpiry: item.verificationTokenExpiry,
     sessionVersion: item.sessionVersion,
+    registrationIp: item.registrationIp,
+    registrationCountry: item.registrationCountry,
+    lastLoginAt: item.lastLoginAt,
+    lastLoginIp: item.lastLoginIp,
   };
 }
 
@@ -112,6 +116,8 @@ export async function createUser(user: User): Promise<void> {
     verificationToken: user.verificationToken,
     verificationTokenExpiry: user.verificationTokenExpiry,
     sessionVersion: user.sessionVersion,
+    ...(user.registrationIp && { registrationIp: user.registrationIp }),
+    ...(user.registrationCountry && { registrationCountry: user.registrationCountry }),
   };
 
   await docClient.send(
@@ -222,6 +228,25 @@ export async function incrementSessionVersion(userId: string): Promise<number> {
   );
 
   return (result.Attributes as UserDBItem).sessionVersion;
+}
+
+// Update last login information
+export async function updateLastLogin(userId: string, ip: string | null): Promise<void> {
+  await docClient.send(
+    new UpdateCommand({
+      TableName: USERS_TABLE,
+      Key: {
+        pk: `USER#${userId}`,
+        sk: 'PROFILE',
+      },
+      UpdateExpression: 'SET lastLoginAt = :lastLoginAt, lastLoginIp = :lastLoginIp, updatedAt = :updatedAt',
+      ExpressionAttributeValues: {
+        ':lastLoginAt': new Date().toISOString(),
+        ':lastLoginIp': ip || 'Unknown',
+        ':updatedAt': new Date().toISOString(),
+      },
+    })
+  );
 }
 
 // Delete user

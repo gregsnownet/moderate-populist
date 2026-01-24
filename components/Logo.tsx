@@ -5,16 +5,16 @@ interface LogoProps {
 
 export default function Logo({ size = 'large', showText = true }: LogoProps) {
   const dimensions = {
-    small: { icon: 40, text: 'text-lg', tagline: 'text-xs' },
-    medium: { icon: 56, text: 'text-2xl', tagline: 'text-sm' },
-    large: { icon: 72, text: 'text-3xl', tagline: 'text-base' },
-    xlarge: { icon: 96, text: 'text-4xl', tagline: 'text-lg' }
+    small: { icon: 64, text: 'text-xl', tagline: 'text-sm' },
+    medium: { icon: 96, text: 'text-3xl', tagline: 'text-base' },
+    large: { icon: 128, text: 'text-4xl', tagline: 'text-lg' },
+    xlarge: { icon: 160, text: 'text-5xl', tagline: 'text-xl' }
   };
 
   const dim = dimensions[size];
 
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex items-center gap-6">
       {/* SVG Logo Icon - Donkey vs Elephant */}
       <svg
         width={dim.icon}
@@ -22,8 +22,8 @@ export default function Logo({ size = 'large', showText = true }: LogoProps) {
         viewBox="0 0 120 100"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="flex-shrink-0 drop-shadow-lg"
-        style={{ filter: 'drop-shadow(0 2px 4px rgba(124, 58, 237, 0.2))' }}
+        className="flex-shrink-0 drop-shadow-xl"
+        style={{ filter: 'drop-shadow(0 4px 8px rgba(124, 58, 237, 0.3))' }}
       >
         <defs>
           <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -40,71 +40,71 @@ export default function Logo({ size = 'large', showText = true }: LogoProps) {
         {/* Left Side - Blue Donkey (Democrat) - Facing Right, Angry */}
         <g transform="translate(5, 25)">
           {/* Donkey Body */}
-          <ellipse cx="20" cy="35" rx="14" ry="18" fill="url(#blueGradient)" />
+          <ellipse cx="20" cy="35" rx="14" ry="18" fill="url(#blueGradient)" stroke="#1e3a8a" strokeWidth="2" />
 
           {/* Donkey Head */}
-          <ellipse cx="30" cy="20" rx="11" ry="13" fill="url(#blueGradient)" />
+          <ellipse cx="30" cy="20" rx="11" ry="13" fill="url(#blueGradient)" stroke="#1e3a8a" strokeWidth="2" />
 
           {/* Donkey Snout */}
-          <ellipse cx="38" cy="22" rx="6" ry="5" fill="url(#blueGradient)" />
+          <ellipse cx="38" cy="22" rx="6" ry="5" fill="url(#blueGradient)" stroke="#1e3a8a" strokeWidth="2" />
 
           {/* Donkey Ears (long) */}
-          <ellipse cx="26" cy="8" rx="3" ry="9" fill="url(#blueGradient)" transform="rotate(-20 26 8)" />
-          <ellipse cx="32" cy="6" rx="3" ry="9" fill="url(#blueGradient)" transform="rotate(15 32 6)" />
+          <ellipse cx="26" cy="8" rx="3" ry="9" fill="url(#blueGradient)" stroke="#1e3a8a" strokeWidth="1.5" transform="rotate(-20 26 8)" />
+          <ellipse cx="32" cy="6" rx="3" ry="9" fill="url(#blueGradient)" stroke="#1e3a8a" strokeWidth="1.5" transform="rotate(15 32 6)" />
 
           {/* Angry Eye */}
-          <ellipse cx="33" cy="18" rx="2.5" ry="2" fill="#ffffff" />
+          <ellipse cx="33" cy="18" rx="2.5" ry="2" fill="#ffffff" stroke="#000000" strokeWidth="1" />
           <circle cx="34" cy="18" r="1.5" fill="#000000" />
 
           {/* Angry Eyebrow (angled down) */}
-          <line x1="30" y1="15" x2="36" y2="16" stroke="#1e40af" strokeWidth="2" strokeLinecap="round" />
+          <line x1="30" y1="15" x2="36" y2="16" stroke="#1e3a8a" strokeWidth="2.5" strokeLinecap="round" />
 
           {/* Angry Nostril */}
-          <circle cx="40" cy="21" r="1.2" fill="#1e40af" />
+          <circle cx="40" cy="21" r="1.2" fill="#1e3a8a" stroke="#1e3a8a" strokeWidth="1" />
 
           {/* Angry Mouth */}
-          <path d="M 38 25 Q 40 27 42 25" stroke="#1e40af" strokeWidth="1.5" fill="none" strokeLinecap="round" />
+          <path d="M 38 25 Q 40 27 42 25" stroke="#1e3a8a" strokeWidth="2" fill="none" strokeLinecap="round" />
 
           {/* Front Legs */}
-          <rect x="26" y="45" width="4" height="12" fill="url(#blueGradient)" rx="2" />
-          <rect x="18" y="45" width="4" height="12" fill="url(#blueGradient)" rx="2" />
+          <rect x="26" y="45" width="4" height="12" fill="url(#blueGradient)" stroke="#1e3a8a" strokeWidth="1.5" rx="2" />
+          <rect x="18" y="45" width="4" height="12" fill="url(#blueGradient)" stroke="#1e3a8a" strokeWidth="1.5" rx="2" />
 
           {/* Tail */}
-          <path d="M 10 40 Q 5 38 4 35 Q 3 33 4 31" stroke="url(#blueGradient)" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+          <path d="M 10 40 Q 5 38 4 35 Q 3 33 4 31" stroke="#1e3a8a" strokeWidth="3" fill="none" strokeLinecap="round" />
         </g>
 
         {/* Right Side - Red Elephant (Republican) - Facing Left, Angry */}
         <g transform="translate(70, 25)">
           {/* Elephant Body */}
-          <ellipse cx="25" cy="35" rx="14" ry="18" fill="url(#redGradient)" />
+          <ellipse cx="25" cy="35" rx="14" ry="18" fill="url(#redGradient)" stroke="#7f1d1d" strokeWidth="2" />
 
           {/* Elephant Head */}
-          <ellipse cx="15" cy="20" rx="11" ry="13" fill="url(#redGradient)" />
+          <ellipse cx="15" cy="20" rx="11" ry="13" fill="url(#redGradient)" stroke="#7f1d1d" strokeWidth="2" />
 
           {/* Elephant Trunk (curved, angry position) */}
-          <path d="M 8 25 Q 2 28 1 32 Q 0 35 2 38" stroke="url(#redGradient)" strokeWidth="5" fill="none" strokeLinecap="round" />
+          <path d="M 8 25 Q 2 28 1 32 Q 0 35 2 38" stroke="#7f1d1d" strokeWidth="6" fill="none" strokeLinecap="round" />
 
           {/* Elephant Ears (large, fanned back in anger) */}
-          <ellipse cx="18" cy="14" rx="8" ry="11" fill="url(#redGradient)" transform="rotate(25 18 14)" opacity="0.9" />
-          <ellipse cx="12" cy="12" rx="7" ry="10" fill="url(#redGradient)" transform="rotate(-15 12 12)" opacity="0.9" />
+          <ellipse cx="18" cy="14" rx="8" ry="11" fill="url(#redGradient)" stroke="#7f1d1d" strokeWidth="1.5" transform="rotate(25 18 14)" opacity="0.9" />
+          <ellipse cx="12" cy="12" rx="7" ry="10" fill="url(#redGradient)" stroke="#7f1d1d" strokeWidth="1.5" transform="rotate(-15 12 12)" opacity="0.9" />
 
           {/* Angry Eye */}
-          <ellipse cx="12" cy="18" rx="2.5" ry="2" fill="#ffffff" />
+          <ellipse cx="12" cy="18" rx="2.5" ry="2" fill="#ffffff" stroke="#000000" strokeWidth="1" />
           <circle cx="11" cy="18" r="1.5" fill="#000000" />
 
           {/* Angry Eyebrow (angled down toward center) */}
-          <line x1="9" y1="16" x2="15" y2="15" stroke="#b91c1c" strokeWidth="2" strokeLinecap="round" />
+          <line x1="9" y1="16" x2="15" y2="15" stroke="#7f1d1d" strokeWidth="2.5" strokeLinecap="round" />
 
           {/* Tusks (small, pointing forward aggressively) */}
-          <path d="M 6 26 L 3 28" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" />
-          <path d="M 6 28 L 3 30" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" />
+          <path d="M 6 26 L 3 28" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" />
+          <path d="M 6 28 L 3 30" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" />
 
           {/* Front Legs */}
-          <rect x="13" y="45" width="4" height="12" fill="url(#redGradient)" rx="2" />
-          <rect x="21" y="45" width="4" height="12" fill="url(#redGradient)" rx="2" />
+          <rect x="13" y="45" width="4" height="12" fill="url(#redGradient)" stroke="#7f1d1d" strokeWidth="1.5" rx="2" />
+          <rect x="21" y="45" width="4" height="12" fill="url(#redGradient)" stroke="#7f1d1d" strokeWidth="1.5" rx="2" />
 
           {/* Tail */}
-          <path d="M 35 40 Q 40 38 41 35 Q 42 33 41 31" stroke="url(#redGradient)" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+          <path d="M 35 40 Q 40 38 41 35 Q 42 33 41 31" stroke="#7f1d1d" strokeWidth="3" fill="none" strokeLinecap="round" />
         </g>
 
         {/* Tension/Conflict Lines in the Middle */}

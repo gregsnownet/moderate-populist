@@ -15,6 +15,10 @@ export interface User {
   verificationToken?: string;
   verificationTokenExpiry?: string;
   sessionVersion: number;
+  registrationIp?: string;
+  registrationCountry?: string;
+  lastLoginAt?: string;
+  lastLoginIp?: string;
 }
 
 // User without sensitive fields (for client-side use)
@@ -74,4 +78,8 @@ export interface UserDBItem {
   verificationToken?: string;
   verificationTokenExpiry?: string;
   sessionVersion: number;
+  registrationIp?: string;
+  registrationCountry?: string;
+  lastLoginAt?: string;
+  lastLoginIp?: string;
 }

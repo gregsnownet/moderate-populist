@@ -305,20 +305,126 @@ export default function SolutionsPage() {
         </div>
       </section>
 
-      {/* Mission Statement */}
-      <section className="py-12 bg-white border-b">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-xl p-8 border-2 border-purple-200">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Use This Page</h2>
-            <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              This page presents solutions to America's biggest challenges from both progressive and conservative
-              perspectives. You'll see what each side proposes, the values driving those proposals, and—most
-              importantly—where common ground exists.
+      {/* Common-Sense Solutions */}
+      <section className="py-20 px-4 bg-gradient-to-b from-white to-gray-50 border-b">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 bg-clip-text text-transparent">
+              Common-Sense Solutions Americans Support
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              These aren't partisan talking points—they're practical reforms with broad support across the political spectrum
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              The goal isn't to declare a "winner" but to show that most Americans want similar outcomes, even
-              when they disagree on methods. Real progress comes from finding compromise that works for everyone.
-            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-blue-200 hover:shadow-xl transition-shadow">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
+                  <span className="text-2xl">🗳️</span>
+                </div>
+                <h3 className="text-2xl font-bold text-blue-900">Ranked Choice Voting</h3>
+              </div>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                Let voters rank candidates by preference, eliminating vote-splitting and reducing negative campaigning.
+                Already working in Alaska and Maine—reducing polarization and empowering moderates.
+              </p>
+              <a href="/issues/electoral-reform" className="text-purple-600 font-semibold hover:text-purple-800 transition-colors">
+                Learn more →
+              </a>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-purple-200 hover:shadow-xl transition-shadow">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center">
+                  <span className="text-2xl">💰</span>
+                </div>
+                <h3 className="text-2xl font-bold text-purple-900">Campaign Finance Transparency</h3>
+              </div>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                Require disclosure of all political donors over $200. No more dark money hiding who's funding campaigns.
+                Sunlight is the best disinfectant for corruption.
+              </p>
+              <a href="/issues/electoral-reform" className="text-purple-600 font-semibold hover:text-purple-800 transition-colors">
+                Learn more →
+              </a>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-green-200 hover:shadow-xl transition-shadow">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">
+                  <span className="text-2xl">💊</span>
+                </div>
+                <h3 className="text-2xl font-bold text-green-900">Medicare Drug Price Negotiation</h3>
+              </div>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                Let Medicare negotiate prescription drug prices like the VA already does. Americans pay 3-4x more than other countries
+                for the same medications. Both parties' voters support this.
+              </p>
+              <a href="/issues/healthcare-access" className="text-purple-600 font-semibold hover:text-purple-800 transition-colors">
+                Learn more →
+              </a>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-red-200 hover:shadow-xl transition-shadow">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center">
+                  <span className="text-2xl">🏘️</span>
+                </div>
+                <h3 className="text-2xl font-bold text-red-900">Affordable Housing Reform</h3>
+              </div>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                Streamline zoning to allow more housing construction near jobs and transit. Fix the supply shortage
+                that's pricing families out. Pro-market solution both left and right can support.
+              </p>
+              <a href="/issues/affordability" className="text-purple-600 font-semibold hover:text-purple-800 transition-colors">
+                Learn more →
+              </a>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-yellow-200 hover:shadow-xl transition-shadow">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 rounded-full bg-yellow-100 flex items-center justify-center">
+                  <span className="text-2xl">🛡️</span>
+                </div>
+                <h3 className="text-2xl font-bold text-yellow-900">Universal Background Checks</h3>
+              </div>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                Require background checks for all gun sales, including private sales. Supported by 80-90% of Americans
+                including gun owners. Common-sense safety without banning firearms.
+              </p>
+              <a href="/issues/gun-rights-safety" className="text-purple-600 font-semibold hover:text-purple-800 transition-colors">
+                Learn more →
+              </a>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-indigo-200 hover:shadow-xl transition-shadow">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center">
+                  <span className="text-2xl">🌱</span>
+                </div>
+                <h3 className="text-2xl font-bold text-indigo-900">Clean Energy Tax Credits</h3>
+              </div>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                Expand tax credits for solar, wind, and energy efficiency. Create American jobs, lower energy costs,
+                and reduce dependence on foreign oil. Free market climate solution.
+              </p>
+              <a href="/issues/climate-environment" className="text-purple-600 font-semibold hover:text-purple-800 transition-colors">
+                Learn more →
+              </a>
+            </div>
+          </div>
+
+          <div className="mt-12 bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 rounded-xl p-1">
+            <div className="bg-white rounded-lg p-8 text-center">
+              <p className="text-xl text-gray-800 font-semibold mb-4">
+                Notice a pattern? These solutions address real problems without requiring anyone to "win" the culture war.
+              </p>
+              <p className="text-lg text-gray-700">
+                Most Americans—regardless of party—support practical reforms when they're presented without partisan framing.
+                The divide isn't between citizens. It's between citizens and a political system that profits from division.
+              </p>
+            </div>
           </div>
         </div>
       </section>

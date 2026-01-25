@@ -392,14 +392,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          <div className="mt-8 text-center">
-            <div className="inline-block bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 rounded-xl p-6 text-white">
-              <p className="text-lg font-semibold">
-                🇺🇸 These aren't left or right priorities—they're American priorities for citizens who believe democracy should work for everyone, not just the powerful.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 

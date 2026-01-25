@@ -101,6 +101,50 @@ export default function Home() {
         </div>
       </section>
 
+      {/* What is Moderate Populism */}
+      <section className="py-16 px-4 bg-gradient-to-b from-white to-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-6">
+            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 bg-clip-text text-transparent">
+              What is Moderate Populism?
+            </span>
+          </h2>
+          <p className="text-xl text-gray-600 text-center max-w-4xl mx-auto mb-12">
+            Combining citizen empowerment with practical, evidence-based solutions—
+            rejecting both corporate-controlled politics and partisan extremism
+          </p>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center group">
+              <div className="w-20 h-20 mx-auto mb-4 gradient-bipartisan rounded-full flex items-center justify-center text-4xl transform group-hover:scale-110 transition-transform">
+                💪
+              </div>
+              <h3 className="font-bold text-xl mb-3 text-gray-900">Populist</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Power belongs with the people, not corporations or special interests. Democracy requires active citizen engagement.
+              </p>
+            </div>
+            <div className="text-center group">
+              <div className="w-20 h-20 mx-auto mb-4 gradient-bipartisan rounded-full flex items-center justify-center text-4xl transform group-hover:scale-110 transition-transform">
+                🎯
+              </div>
+              <h3 className="font-bold text-xl mb-3 text-gray-900">Moderate</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Practical solutions based on evidence and results, not ideology. Most Americans reject partisan extremes.
+              </p>
+            </div>
+            <div className="text-center group">
+              <div className="w-20 h-20 mx-auto mb-4 gradient-bipartisan rounded-full flex items-center justify-center text-4xl transform group-hover:scale-110 transition-transform">
+                🔄
+              </div>
+              <h3 className="font-bold text-xl mb-3 text-gray-900">Change-Oriented</h3>
+              <p className="text-gray-600 leading-relaxed">
+                The status quo isn't working. Moderates can and must drive meaningful reform in how democracy functions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Where We Stand - Core Values */}
       <section className="py-16 px-4 bg-gradient-to-br from-slate-50 via-gray-50 to-zinc-50 border-y-4 border-slate-300">
         <div className="max-w-6xl mx-auto">
@@ -353,50 +397,6 @@ export default function Home() {
             <div className="inline-block bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 rounded-xl p-6 text-white">
               <p className="text-lg font-semibold">
                 🇺🇸 These aren't left or right priorities—they're American priorities for citizens who believe democracy should work for everyone, not just the powerful.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* What is Moderate Populism */}
-      <section className="py-16 px-4 bg-gradient-to-b from-white to-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-6">
-            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 bg-clip-text text-transparent">
-              What is Moderate Populism?
-            </span>
-          </h2>
-          <p className="text-xl text-gray-600 text-center max-w-4xl mx-auto mb-12">
-            Combining citizen empowerment with practical, evidence-based solutions—
-            rejecting both corporate-controlled politics and partisan extremism
-          </p>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center group">
-              <div className="w-20 h-20 mx-auto mb-4 gradient-bipartisan rounded-full flex items-center justify-center text-4xl transform group-hover:scale-110 transition-transform">
-                💪
-              </div>
-              <h3 className="font-bold text-xl mb-3 text-gray-900">Populist</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Power belongs with the people, not corporations or special interests. Democracy requires active citizen engagement.
-              </p>
-            </div>
-            <div className="text-center group">
-              <div className="w-20 h-20 mx-auto mb-4 gradient-bipartisan rounded-full flex items-center justify-center text-4xl transform group-hover:scale-110 transition-transform">
-                🎯
-              </div>
-              <h3 className="font-bold text-xl mb-3 text-gray-900">Moderate</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Practical solutions based on evidence and results, not ideology. Most Americans reject partisan extremes.
-              </p>
-            </div>
-            <div className="text-center group">
-              <div className="w-20 h-20 mx-auto mb-4 gradient-bipartisan rounded-full flex items-center justify-center text-4xl transform group-hover:scale-110 transition-transform">
-                🔄
-              </div>
-              <h3 className="font-bold text-xl mb-3 text-gray-900">Change-Oriented</h3>
-              <p className="text-gray-600 leading-relaxed">
-                The status quo isn't working. Moderates can and must drive meaningful reform in how democracy functions.
               </p>
             </div>
           </div>

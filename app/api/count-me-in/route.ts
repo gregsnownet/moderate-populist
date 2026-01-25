@@ -45,8 +45,8 @@ Submitted from the About page
     await sendEmail({
       to: 'themoderate@moderatepopulist.org',
       subject: `Count Me In: ${name}`,
-      html: htmlContent,
-      text: textContent,
+      htmlBody: htmlContent,
+      textBody: textContent,
     });
 
     return NextResponse.json({ success: true });

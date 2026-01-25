@@ -40,6 +40,33 @@ export default function AboutPage() {
         </h1>
 
         <div className="max-w-none">
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Core Principles</h2>
+          <div className="space-y-6">
+            <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+              <h3 className="text-xl font-semibold mb-2 text-blue-900">🛡️ Defend Democratic Institutions</h3>
+              <p className="text-gray-700">
+                Protect checks and balances, free press, independent courts, and peaceful transfer of power.
+                Authoritarianism is a threat from any direction.
+              </p>
+            </div>
+            <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-800">
+              <h3 className="text-xl font-semibold mb-2 text-blue-950">🤝 Respect for All Americans</h3>
+              <p className="text-gray-700">
+                Reject racism, bigotry, and scapegoating in all forms. Our differences in race, religion,
+                background, and beliefs make us stronger. Common humanity comes first.
+              </p>
+            </div>
+            <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
+              <h3 className="text-xl font-semibold mb-2 text-red-900">⚖️ Evidence Over Ideology</h3>
+              <p className="text-gray-700">
+                Champion policies grounded in facts and results. Solutions require listening to different
+                perspectives with respect and intellectual honesty.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section className="mb-12 bg-gradient-to-br from-amber-50 to-orange-50 border-2 border-amber-200 rounded-xl p-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">The Mission</h2>
           <p className="text-xl text-gray-800 mb-4 font-semibold">
@@ -194,33 +221,6 @@ export default function AboutPage() {
               <p className="text-gray-700">
                 Persuade with evidence and shared values. Appeal to what you have in common, not just what divides.
                 Win hearts and minds through compelling arguments, not insults and absolutes.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Core Principles</h2>
-          <div className="space-y-6">
-            <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
-              <h3 className="text-xl font-semibold mb-2 text-blue-900">🛡️ Defend Democratic Institutions</h3>
-              <p className="text-gray-700">
-                Protect checks and balances, free press, independent courts, and peaceful transfer of power.
-                Authoritarianism is a threat from any direction.
-              </p>
-            </div>
-            <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-800">
-              <h3 className="text-xl font-semibold mb-2 text-blue-950">🤝 Respect for All Americans</h3>
-              <p className="text-gray-700">
-                Reject racism, bigotry, and scapegoating in all forms. Our differences in race, religion,
-                background, and beliefs make us stronger. Common humanity comes first.
-              </p>
-            </div>
-            <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
-              <h3 className="text-xl font-semibold mb-2 text-red-900">⚖️ Evidence Over Ideology</h3>
-              <p className="text-gray-700">
-                Champion policies grounded in facts and results. Solutions require listening to different
-                perspectives with respect and intellectual honesty.
               </p>
             </div>
           </div>

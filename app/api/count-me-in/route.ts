@@ -1,7 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { Resend } from 'resend';
-
-const resend = new Resend(process.env.RESEND_API_KEY);
+import { sendEmail } from '@/lib/email/ses';
 
 export async function POST(request: NextRequest) {
   try {
@@ -14,19 +12,41 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return NextResponse.json(
+        { error: 'Invalid email address' },
+        { status: 400 }
+      );
+    }
+
     // Send notification email to site owner
-    await resend.emails.send({
-      from: 'The Moderate Populist <noreply@moderatepopulist.org>',
+    const htmlContent = `
+      <h2>New "Count Me In" Submission</h2>
+      <p><strong>Name:</strong> ${name}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      ${message ? `<p><strong>Message:</strong></p><p>${message.replace(/\n/g, '<br>')}</p>` : '<p><em>No message provided</em></p>'}
+      <hr>
+      <p><small>Submitted from the About page</small></p>
+    `;
+
+    const textContent = `
+New "Count Me In" Submission
+
+Name: ${name}
+Email: ${email}
+${message ? `Message:\n${message}` : 'No message provided'}
+
+---
+Submitted from the About page
+    `;
+
+    await sendEmail({
       to: 'themoderate@moderatepopulist.org',
       subject: `Count Me In: ${name}`,
-      html: `
-        <h2>New "Count Me In" Submission</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        ${message ? `<p><strong>Message:</strong></p><p>${message.replace(/\n/g, '<br>')}</p>` : ''}
-        <hr>
-        <p><small>Submitted from the About page</small></p>
-      `,
+      html: htmlContent,
+      text: textContent,
     });
 
     return NextResponse.json({ success: true });

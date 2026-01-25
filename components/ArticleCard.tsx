@@ -7,7 +7,7 @@ interface ArticleCardProps {
 
 const categoryColors: Record<string, string> = {
   government: 'bg-blue-100 text-blue-700 border-blue-300',
-  politics: 'bg-purple-100 text-purple-700 border-purple-300',
+  politics: 'bg-blue-100 text-blue-900 border-blue-300',
   technology: 'bg-green-100 text-green-700 border-green-300',
   economy: 'bg-orange-100 text-orange-700 border-orange-300',
   society: 'bg-pink-100 text-pink-700 border-pink-300',
@@ -25,7 +25,7 @@ export default function ArticleCard({ article }: ArticleCardProps) {
 
   return (
     <Link href={`/current-affairs/${article.id}`} className="block group">
-      <article className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden h-full border border-gray-200 hover:border-purple-300 hover-lift">
+      <article className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden h-full border border-gray-200 hover:border-blue-300 hover-lift">
         <div className="p-6">
           {/* Header */}
           <div className="flex items-center justify-between mb-4">
@@ -40,7 +40,7 @@ export default function ArticleCard({ article }: ArticleCardProps) {
           </div>
 
           {/* Title */}
-          <h3 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors">
+          <h3 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-blue-900 transition-colors">
             {article.title}
           </h3>
 
@@ -64,7 +64,7 @@ export default function ArticleCard({ article }: ArticleCardProps) {
                 <span>• {article.readTime} min read</span>
               )}
             </div>
-            <div className="text-purple-600 font-semibold group-hover:text-purple-700 flex items-center gap-1">
+            <div className="text-blue-900 font-semibold group-hover:text-blue-900 flex items-center gap-1">
               Read More
               <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

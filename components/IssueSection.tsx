@@ -16,13 +16,13 @@ export default function IssueSection({
       bg: 'bg-white',
       border: 'border-gray-200',
       title: 'text-gray-900',
-      accent: 'border-purple-500'
+      accent: 'border-blue-800'
     },
     highlight: {
-      bg: 'bg-gradient-to-br from-purple-50 to-blue-50',
-      border: 'border-purple-200',
-      title: 'bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 bg-clip-text text-transparent',
-      accent: 'border-purple-600'
+      bg: 'bg-gradient-to-br from-blue-50 to-blue-50',
+      border: 'border-blue-200',
+      title: 'bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent',
+      accent: 'border-blue-900'
     },
     resources: {
       bg: 'bg-gray-50',

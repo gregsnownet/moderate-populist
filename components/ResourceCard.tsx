@@ -13,7 +13,7 @@ const typeIcons = {
 
 const typeColors = {
   article: 'bg-blue-100 text-blue-800',
-  podcast: 'bg-purple-100 text-purple-800',
+  podcast: 'bg-blue-100 text-blue-950',
   video: 'bg-red-100 text-red-800',
   research: 'bg-green-100 text-green-800'
 };

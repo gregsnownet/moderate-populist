@@ -10,9 +10,9 @@ interface IssuePageProps {
 const categoryColors: Record<string, { gradient: string; badge: string; icon: string }> = {
   'healthcare': { gradient: 'from-blue-500 to-cyan-500', badge: 'bg-blue-100 text-blue-700 border-blue-300', icon: '🏥' },
   'economic-opportunity': { gradient: 'from-green-500 to-emerald-500', badge: 'bg-green-100 text-green-700 border-green-300', icon: '📈' },
-  'education': { gradient: 'from-purple-500 to-pink-500', badge: 'bg-purple-100 text-purple-700 border-purple-300', icon: '🎓' },
+  'education': { gradient: 'from-blue-500 to-pink-500', badge: 'bg-blue-100 text-blue-900 border-blue-300', icon: '🎓' },
   'affordability': { gradient: 'from-orange-500 to-red-500', badge: 'bg-orange-100 text-orange-700 border-orange-300', icon: '💰' },
-  'civic-engagement': { gradient: 'from-violet-500 to-purple-500', badge: 'bg-violet-100 text-violet-700 border-violet-300', icon: '🗳️' },
+  'civic-engagement': { gradient: 'from-violet-500 to-blue-500', badge: 'bg-violet-100 text-violet-700 border-violet-300', icon: '🗳️' },
   'community': { gradient: 'from-teal-500 to-cyan-500', badge: 'bg-teal-100 text-teal-700 border-teal-300', icon: '🏘️' },
   'families': { gradient: 'from-rose-500 to-pink-500', badge: 'bg-rose-100 text-rose-700 border-rose-300', icon: '👨‍👩‍👧‍👦' },
   'public-safety': { gradient: 'from-indigo-500 to-blue-500', badge: 'bg-indigo-100 text-indigo-700 border-indigo-300', icon: '🛡️' },
@@ -72,7 +72,7 @@ export default function IssuePage({ issue }: IssuePageProps) {
       <article className="max-w-4xl mx-auto px-4 pb-16">
         {/* Common Ground Callout - Featured at Top */}
         <div className="mb-8 -mt-6 relative z-10">
-          <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 rounded-xl p-1 shadow-2xl">
+          <div className="bg-gradient-to-r from-blue-600 to-red-600 rounded-xl p-1 shadow-2xl">
             <div className="bg-white rounded-lg p-6 md:p-8">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 rounded-full gradient-bipartisan flex items-center justify-center flex-shrink-0">
@@ -80,7 +80,7 @@ export default function IssuePage({ issue }: IssuePageProps) {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 bg-clip-text text-transparent">
+                <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
                   Areas of Common Ground
                 </h3>
               </div>
@@ -90,13 +90,13 @@ export default function IssuePage({ issue }: IssuePageProps) {
               <ul className="space-y-2">
                 {issue.commonGround.points.slice(0, 3).map((point, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <span className="text-purple-600 font-bold mt-1 flex-shrink-0">✓</span>
+                    <span className="text-blue-900 font-bold mt-1 flex-shrink-0">✓</span>
                     <span className="text-gray-800 leading-relaxed">{point}</span>
                   </li>
                 ))}
               </ul>
               {issue.commonGround.points.length > 3 && (
-                <p className="mt-4 text-purple-600 font-semibold">
+                <p className="mt-4 text-blue-900 font-semibold">
                   + {issue.commonGround.points.length - 3} more areas of agreement below
                 </p>
               )}
@@ -124,7 +124,7 @@ export default function IssuePage({ issue }: IssuePageProps) {
                   </div>
                 </div>
                 <div className="ml-4 flex-1">
-                  <p className="text-lg font-medium text-gray-900 group-hover:text-purple-700 transition-colors">
+                  <p className="text-lg font-medium text-gray-900 group-hover:text-blue-900 transition-colors">
                     {point}
                   </p>
                 </div>
@@ -132,7 +132,7 @@ export default function IssuePage({ issue }: IssuePageProps) {
             ))}
           </div>
           {issue.commonGround.surveySource && (
-            <div className="mt-6 pt-6 border-t border-purple-200">
+            <div className="mt-6 pt-6 border-t border-blue-200">
               <p className="text-sm text-gray-600 italic flex items-center gap-2">
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
@@ -204,8 +204,8 @@ export default function IssuePage({ issue }: IssuePageProps) {
         <IssueSection title={issue.keyFacts.title}>
           <div className="space-y-6">
             {issue.keyFacts.facts.map((fact, index) => (
-              <div key={index} className="relative pl-6 border-l-4 border-purple-500 py-2 hover:border-purple-600 transition-colors">
-                <div className="absolute -left-2 top-4 w-4 h-4 rounded-full gradient-purple"></div>
+              <div key={index} className="relative pl-6 border-l-4 border-blue-800 py-2 hover:border-blue-900 transition-colors">
+                <div className="absolute -left-2 top-4 w-4 h-4 rounded-full gradient-navy"></div>
                 <p className="text-lg font-semibold text-gray-900 mb-2">
                   {fact.statement}
                 </p>
@@ -219,7 +219,7 @@ export default function IssuePage({ issue }: IssuePageProps) {
                       href={fact.sourceUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-700 font-medium underline"
+                      className="text-blue-900 hover:text-blue-900 font-medium underline"
                     >
                       {fact.source}
                     </a>
@@ -241,11 +241,11 @@ export default function IssuePage({ issue }: IssuePageProps) {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group bg-white p-6 rounded-lg shadow-sm hover:shadow-md border border-gray-200 hover:border-purple-300 transition-all"
+                className="group bg-white p-6 rounded-lg shadow-sm hover:shadow-md border border-gray-200 hover:border-blue-300 transition-all"
               >
                 <div className="flex items-start justify-between">
                   <div className="flex-1">
-                    <h3 className="text-lg font-bold text-gray-900 group-hover:text-purple-600 mb-2 flex items-center gap-2">
+                    <h3 className="text-lg font-bold text-gray-900 group-hover:text-blue-900 mb-2 flex items-center gap-2">
                       {link.title}
                       <svg className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />

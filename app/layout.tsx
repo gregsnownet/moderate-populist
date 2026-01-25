@@ -51,38 +51,38 @@ export default function RootLayout({
                 <div className="hidden md:flex items-center gap-8">
                   <Link
                     href="/"
-                    className="text-gray-700 hover:text-purple-600 font-medium transition-colors relative group"
+                    className="text-gray-700 hover:text-blue-900 font-medium transition-colors relative group"
                   >
                     Issues
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-600 group-hover:w-full transition-all"></span>
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-900 group-hover:w-full transition-all"></span>
                   </Link>
                   <Link
                     href="/solutions"
-                    className="text-gray-700 hover:text-purple-600 font-medium transition-colors relative group"
+                    className="text-gray-700 hover:text-blue-900 font-medium transition-colors relative group"
                   >
                     Solutions
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-600 group-hover:w-full transition-all"></span>
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-900 group-hover:w-full transition-all"></span>
                   </Link>
                   <Link
                     href="/current-affairs"
-                    className="text-gray-700 hover:text-purple-600 font-medium transition-colors relative group"
+                    className="text-gray-700 hover:text-blue-900 font-medium transition-colors relative group"
                   >
                     Current Affairs
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-600 group-hover:w-full transition-all"></span>
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-900 group-hover:w-full transition-all"></span>
                   </Link>
                   <Link
                     href="/resources"
-                    className="text-gray-700 hover:text-purple-600 font-medium transition-colors relative group"
+                    className="text-gray-700 hover:text-blue-900 font-medium transition-colors relative group"
                   >
                     Resources
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-600 group-hover:w-full transition-all"></span>
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-900 group-hover:w-full transition-all"></span>
                   </Link>
                   <Link
                     href="/about"
-                    className="text-gray-700 hover:text-purple-600 font-medium transition-colors relative group"
+                    className="text-gray-700 hover:text-blue-900 font-medium transition-colors relative group"
                   >
                     About
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-600 group-hover:w-full transition-all"></span>
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-900 group-hover:w-full transition-all"></span>
                   </Link>
                 </div>
 
@@ -92,7 +92,7 @@ export default function RootLayout({
                 </div>
 
                 {/* Mobile Menu Button */}
-                <button className="md:hidden p-2 text-gray-600 hover:text-purple-600">
+                <button className="md:hidden p-2 text-gray-600 hover:text-blue-900">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                   </svg>
@@ -106,7 +106,7 @@ export default function RootLayout({
           </main>
 
           {/* Footer */}
-          <footer className="gradient-purple text-white py-12 px-4 stars-background">
+          <footer className="gradient-navy text-white py-12 px-4 stars-background">
             <div className="max-w-7xl mx-auto">
               <div className="grid md:grid-cols-3 gap-8 mb-8">
                 <div>

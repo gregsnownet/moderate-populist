@@ -48,7 +48,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Header */}
-      <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 py-12 px-4">
+      <div className="bg-gradient-to-r from-blue-600 to-red-600 py-12 px-4">
         <div className="max-w-4xl mx-auto">
           <Link
             href="/current-affairs"
@@ -166,19 +166,19 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             <h4 className="font-bold text-lg mb-3">Try This:</h4>
             <ul className="space-y-2">
               <li className="flex items-start gap-2">
-                <span className="text-purple-600 font-bold">→</span>
+                <span className="text-blue-900 font-bold">→</span>
                 Share this article with a friend or family member who sees things differently
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-purple-600 font-bold">→</span>
+                <span className="text-blue-900 font-bold">→</span>
                 Ask them: "What do you think about this? Where do you agree or disagree?"
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-purple-600 font-bold">→</span>
+                <span className="text-blue-900 font-bold">→</span>
                 Listen to understand their perspective, not just to respond
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-purple-600 font-bold">→</span>
+                <span className="text-blue-900 font-bold">→</span>
                 Have the conversation face-to-face or on the phone—not via text or comments
               </li>
             </ul>
@@ -193,7 +193,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           <h3 className="text-2xl font-bold text-gray-900 mb-6">Continue Reading</h3>
           <Link
             href="/current-affairs"
-            className="inline-flex items-center text-purple-600 hover:text-purple-700 font-semibold"
+            className="inline-flex items-center text-blue-900 hover:text-blue-900 font-semibold"
           >
             ← Back to all Current Affairs articles
           </Link>

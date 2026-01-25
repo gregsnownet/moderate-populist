@@ -71,7 +71,7 @@ export function CommentSection({ issueId }: CommentSectionProps) {
             <p className="text-red-600">{error}</p>
             <button
               onClick={fetchComments}
-              className="mt-2 text-sm text-purple-600 hover:text-purple-700"
+              className="mt-2 text-sm text-blue-900 hover:text-blue-900"
             >
               Try again
             </button>

@@ -40,7 +40,7 @@ export default function ResendVerificationPage() {
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <Link href="/" className="inline-block">
-            <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 bg-clip-text text-transparent">
+            <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
               Moderate Populist
             </h1>
           </Link>
@@ -68,7 +68,7 @@ export default function ResendVerificationPage() {
               </div>
               <Link
                 href="/login"
-                className="inline-block py-3 px-6 bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
+                className="inline-block py-3 px-6 bg-gradient-to-r from-blue-600 to-red-600 text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
               >
                 Go to Login
               </Link>
@@ -108,7 +108,7 @@ export default function ResendVerificationPage() {
                 <button
                   type="submit"
                   disabled={status === 'loading'}
-                  className="w-full py-3 px-4 bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 text-white font-medium rounded-lg hover:opacity-90 focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full py-3 px-4 bg-gradient-to-r from-blue-600 to-red-600 text-white font-medium rounded-lg hover:opacity-90 focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {status === 'loading' ? 'Sending...' : 'Send Verification Email'}
                 </button>

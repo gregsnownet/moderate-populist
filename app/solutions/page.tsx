@@ -290,9 +290,9 @@ export default function SolutionsPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <section className="bg-gradient-to-br from-blue-50 via-purple-50 to-red-50 border-b-4 border-purple-200 py-20 px-4">
+      <section className="bg-gradient-to-br from-blue-50 via-blue-50 to-red-50 border-b-4 border-blue-200 py-20 px-4">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
             Solutions & Recommendations
           </h1>
           <p className="text-2xl md:text-3xl text-gray-700 mb-4 font-light">
@@ -309,7 +309,7 @@ export default function SolutionsPage() {
       <section className="py-20 px-4 bg-gradient-to-b from-white to-gray-50 border-b">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
               Common-Sense Solutions Americans Support
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -329,23 +329,23 @@ export default function SolutionsPage() {
                 Let voters rank candidates by preference, eliminating vote-splitting and reducing negative campaigning.
                 Already working in Alaska and Maine—reducing polarization and empowering moderates.
               </p>
-              <a href="/issues/electoral-reform" className="text-purple-600 font-semibold hover:text-purple-800 transition-colors">
+              <a href="/issues/electoral-reform" className="text-blue-900 font-semibold hover:text-blue-950 transition-colors">
                 Learn more →
               </a>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-purple-200 hover:shadow-xl transition-shadow">
+            <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-blue-200 hover:shadow-xl transition-shadow">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
                   <span className="text-2xl">💰</span>
                 </div>
-                <h3 className="text-2xl font-bold text-purple-900">Campaign Finance Transparency</h3>
+                <h3 className="text-2xl font-bold text-blue-950">Campaign Finance Transparency</h3>
               </div>
               <p className="text-gray-700 mb-4 leading-relaxed">
                 Require disclosure of all political donors over $200. No more dark money hiding who's funding campaigns.
                 Sunlight is the best disinfectant for corruption.
               </p>
-              <a href="/issues/electoral-reform" className="text-purple-600 font-semibold hover:text-purple-800 transition-colors">
+              <a href="/issues/electoral-reform" className="text-blue-900 font-semibold hover:text-blue-950 transition-colors">
                 Learn more →
               </a>
             </div>
@@ -361,7 +361,7 @@ export default function SolutionsPage() {
                 Let Medicare negotiate prescription drug prices like the VA already does. Americans pay 3-4x more than other countries
                 for the same medications. Both parties' voters support this.
               </p>
-              <a href="/issues/healthcare-access" className="text-purple-600 font-semibold hover:text-purple-800 transition-colors">
+              <a href="/issues/healthcare-access" className="text-blue-900 font-semibold hover:text-blue-950 transition-colors">
                 Learn more →
               </a>
             </div>
@@ -377,7 +377,7 @@ export default function SolutionsPage() {
                 Streamline zoning to allow more housing construction near jobs and transit. Fix the supply shortage
                 that's pricing families out. Pro-market solution both left and right can support.
               </p>
-              <a href="/issues/affordability" className="text-purple-600 font-semibold hover:text-purple-800 transition-colors">
+              <a href="/issues/affordability" className="text-blue-900 font-semibold hover:text-blue-950 transition-colors">
                 Learn more →
               </a>
             </div>
@@ -393,7 +393,7 @@ export default function SolutionsPage() {
                 Require background checks for all gun sales, including private sales. Supported by 80-90% of Americans
                 including gun owners. Common-sense safety without banning firearms.
               </p>
-              <a href="/issues/gun-rights-safety" className="text-purple-600 font-semibold hover:text-purple-800 transition-colors">
+              <a href="/issues/gun-rights-safety" className="text-blue-900 font-semibold hover:text-blue-950 transition-colors">
                 Learn more →
               </a>
             </div>
@@ -409,13 +409,13 @@ export default function SolutionsPage() {
                 Expand tax credits for solar, wind, and energy efficiency. Create American jobs, lower energy costs,
                 and reduce dependence on foreign oil. Free market climate solution.
               </p>
-              <a href="/issues/climate-environment" className="text-purple-600 font-semibold hover:text-purple-800 transition-colors">
+              <a href="/issues/climate-environment" className="text-blue-900 font-semibold hover:text-blue-950 transition-colors">
                 Learn more →
               </a>
             </div>
           </div>
 
-          <div className="mt-12 bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 rounded-xl p-1">
+          <div className="mt-12 bg-gradient-to-r from-blue-600 to-red-600 rounded-xl p-1">
             <div className="bg-white rounded-lg p-8 text-center">
               <p className="text-xl text-gray-800 font-semibold mb-4">
                 Notice a pattern? These solutions address real problems without requiring anyone to "win" the culture war.
@@ -439,8 +439,8 @@ export default function SolutionsPage() {
                 onClick={() => setSelectedCategory(category.id)}
                 className={`px-6 py-3 rounded-full font-semibold transition-all transform hover:scale-105 ${
                   selectedCategory === category.id
-                    ? 'gradient-purple text-white shadow-lg'
-                    : 'bg-white text-gray-700 hover:bg-purple-50 border-2 border-gray-200'
+                    ? 'gradient-navy text-white shadow-lg'
+                    : 'bg-white text-gray-700 hover:bg-blue-50 border-2 border-gray-200'
                 }`}
               >
                 <span className="mr-2">{category.icon}</span>
@@ -462,7 +462,7 @@ export default function SolutionsPage() {
                   className="bg-white rounded-2xl shadow-xl border-2 border-gray-200 overflow-hidden hover:shadow-2xl transition-shadow"
                 >
                   {/* Solution Header */}
-                  <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 p-6">
+                  <div className="bg-gradient-to-r from-blue-600 to-red-600 p-6">
                     <div className="flex items-center gap-4">
                       <div className="text-5xl">{solution.icon}</div>
                       <div>
@@ -545,7 +545,7 @@ export default function SolutionsPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 px-4 bg-gradient-to-br from-purple-50 to-blue-50 border-t-2 border-purple-200">
+      <section className="py-16 px-4 bg-gradient-to-br from-blue-50 to-blue-50 border-t-2 border-blue-200">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             From Ideas to Action
@@ -557,13 +557,13 @@ export default function SolutionsPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/"
-              className="px-8 py-4 gradient-purple text-white font-bold rounded-lg hover:shadow-lg transition-all text-lg"
+              className="px-8 py-4 gradient-navy text-white font-bold rounded-lg hover:shadow-lg transition-all text-lg"
             >
               Explore the Issues
             </a>
             <a
               href="/about"
-              className="px-8 py-4 bg-white text-purple-600 font-bold rounded-lg border-2 border-purple-600 hover:bg-purple-50 transition-all text-lg"
+              className="px-8 py-4 bg-white text-blue-900 font-bold rounded-lg border-2 border-blue-900 hover:bg-blue-50 transition-all text-lg"
             >
               Learn More About Our Mission
             </a>
@@ -601,7 +601,7 @@ export default function SolutionsPage() {
                 Supporting local businesses empowers your neighbors, creates better jobs,
                 and reduces corporate influence in politics—all without waiting for policy changes.
               </p>
-              <p className="text-xl font-semibold text-purple-700">
+              <p className="text-xl font-semibold text-blue-900">
                 Shop local. Eat local. Bank local. Hire local.
               </p>
             </div>

@@ -42,7 +42,7 @@ export default function Home() {
           <div className="text-center max-w-4xl mx-auto">
             {/* Main Heading */}
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
                 Beyond the Divide
               </span>
             </h1>
@@ -59,13 +59,13 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="#issues"
-                className="px-8 py-4 gradient-purple text-white font-semibold rounded-lg hover:shadow-xl transform hover:scale-105 transition-all"
+                className="px-8 py-4 gradient-navy text-white font-semibold rounded-lg hover:shadow-xl transform hover:scale-105 transition-all"
               >
                 Explore Issues
               </a>
               <a
                 href="/about"
-                className="px-8 py-4 bg-white text-purple-600 font-semibold rounded-lg border-2 border-purple-600 hover:bg-purple-50 transition-all"
+                className="px-8 py-4 bg-white text-blue-900 font-semibold rounded-lg border-2 border-blue-900 hover:bg-blue-50 transition-all"
               >
                 Learn Our Mission
               </a>
@@ -82,7 +82,7 @@ export default function Home() {
                 <span className="text-sm font-medium text-gray-600">Progressive</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-3 h-3 rounded-full bg-purple-600"></div>
+                <div className="w-3 h-3 rounded-full bg-blue-900"></div>
                 <span className="text-sm font-medium text-gray-600">Moderate Center</span>
               </div>
               <div className="flex items-center gap-2">
@@ -92,7 +92,7 @@ export default function Home() {
             </div>
             <div className="relative h-2 rounded-full overflow-hidden">
               <div className="absolute inset-0 gradient-bipartisan"></div>
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-white border-4 border-purple-600 rounded-full shadow-lg"></div>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-white border-4 border-blue-900 rounded-full shadow-lg"></div>
             </div>
             <p className="text-center text-sm text-gray-500 mt-3">
               Most Americans occupy the moderate center—rejecting extremes and demanding practical change
@@ -105,7 +105,7 @@ export default function Home() {
       <section className="py-16 px-4 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-6">
-            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
               What is Moderate Populism?
             </span>
           </h2>
@@ -150,7 +150,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-4xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
                 Where We Stand
               </span>
             </h2>
@@ -168,7 +168,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow-md border-l-4 border-purple-500 hover:shadow-lg transition-shadow">
+            <div className="bg-white p-6 rounded-xl shadow-md border-l-4 border-blue-800 hover:shadow-lg transition-shadow">
               <div className="text-3xl mb-3">🏙️</div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Safe & Clean Cities</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -225,7 +225,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 rounded-xl p-1">
+          <div className="bg-gradient-to-r from-blue-600 to-red-600 rounded-xl p-1">
             <div className="bg-white rounded-lg p-6 text-center">
               <p className="text-lg text-gray-800 font-semibold">
                 These aren't radical positions—they're the common-sense values most Americans share.
@@ -262,7 +262,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 rounded-xl p-1">
+            <div className="bg-gradient-to-r from-blue-600 to-red-600 rounded-xl p-1">
               <div className="bg-white rounded-lg p-6">
                 <p className="text-xl text-gray-800 leading-relaxed text-center font-semibold">
                   Most Americans want the same things: safe communities, good schools, affordable healthcare, economic opportunity, and a government that works.
@@ -279,15 +279,15 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
                 Explore the Issues
               </span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-4">
-              Each issue clearly identifies <span className="font-bold text-purple-600">areas of common ground</span> where most Americans agree,
+              Each issue clearly identifies <span className="font-bold text-blue-900">areas of common ground</span> where most Americans agree,
               provides evidence-based facts, and presents questions for thoughtful debate
             </p>
-            <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold">
+            <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-950 px-4 py-2 rounded-full text-sm font-semibold">
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
               </svg>
@@ -303,8 +303,8 @@ export default function Home() {
                 onClick={() => setSelectedCategory(category.id)}
                 className={`px-6 py-3 rounded-full font-semibold transition-all transform hover:scale-105 ${
                   selectedCategory === category.id
-                    ? 'gradient-purple text-white shadow-lg'
-                    : 'bg-white text-gray-700 hover:bg-purple-50 border-2 border-gray-200'
+                    ? 'gradient-navy text-white shadow-lg'
+                    : 'bg-white text-gray-700 hover:bg-blue-50 border-2 border-gray-200'
                 }`}
               >
                 <span className="mr-2">{category.icon}</span>
@@ -330,11 +330,11 @@ export default function Home() {
       </section>
 
       {/* Key Priorities Section */}
-      <section className="py-16 bg-white border-y-2 border-purple-200">
+      <section className="py-16 bg-white border-y-2 border-blue-200">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
                 Our Priorities
               </span>
             </h2>
@@ -356,11 +356,11 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl border-2 border-purple-200">
+            <div className="bg-gradient-to-br from-blue-50 to-purple-100 p-6 rounded-xl border-2 border-blue-200">
               <div className="flex items-start gap-4">
                 <div className="text-4xl">🤝</div>
                 <div>
-                  <h3 className="text-xl font-bold text-purple-900 mb-2">Respect for All Americans</h3>
+                  <h3 className="text-xl font-bold text-blue-950 mb-2">Respect for All Americans</h3>
                   <p className="text-gray-700 leading-relaxed">
                     Reject racism, bigotry, and scapegoating in all forms. Our differences in race, religion, background, and beliefs make America stronger—not weaker. Common humanity comes first.
                   </p>
@@ -396,11 +396,11 @@ export default function Home() {
       </section>
 
       {/* The 4 Cs Section */}
-      <section className="py-16 px-4 bg-white border-y-4 border-purple-500">
+      <section className="py-16 px-4 bg-white border-y-4 border-blue-800">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
                 The 4 Cs of Democratic Engagement
               </span>
             </h2>
@@ -418,9 +418,9 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl border-2 border-purple-200 hover-lift">
+            <div className="bg-gradient-to-br from-blue-50 to-purple-100 p-6 rounded-xl border-2 border-blue-200 hover-lift">
               <div className="text-4xl mb-4 text-center">🤝</div>
-              <h3 className="text-xl font-bold text-purple-900 mb-3 text-center">Collaboration</h3>
+              <h3 className="text-xl font-bold text-blue-950 mb-3 text-center">Collaboration</h3>
               <p className="text-gray-700 leading-relaxed text-center">
                 Build coalitions across divides. Find allies where you can. Democracy requires teamwork.
               </p>
@@ -443,7 +443,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 rounded-xl p-8 text-white text-center stars-background">
+          <div className="bg-gradient-to-r from-blue-600 to-red-600 rounded-xl p-8 text-white text-center stars-background">
             <h3 className="text-2xl font-bold mb-4">All Americans Welcome</h3>
             <p className="text-lg leading-relaxed max-w-4xl mx-auto mb-6">
               Whether you voted for Trump or Biden, whether you identify as conservative, progressive, libertarian, or independent—
@@ -459,10 +459,10 @@ export default function Home() {
       </section>
 
       {/* Individual Power Section */}
-      <section className="py-20 px-4 bg-white border-y-2 border-purple-200">
+      <section className="py-20 px-4 bg-white border-y-2 border-blue-200">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
               The Power of Moderate Populism
             </h2>
             <p className="text-2xl md:text-3xl font-light mb-8 text-gray-700">
@@ -496,8 +496,8 @@ export default function Home() {
               </ul>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-50 to-purple-100 rounded-xl p-8 border-2 border-purple-200">
-              <h3 className="text-2xl font-bold mb-4 flex items-center gap-3 text-purple-900">
+            <div className="bg-gradient-to-br from-blue-50 to-purple-100 rounded-xl p-8 border-2 border-blue-200">
+              <h3 className="text-2xl font-bold mb-4 flex items-center gap-3 text-blue-950">
                 <span className="text-4xl">💪</span>
                 The Power You Have
               </h3>
@@ -522,9 +522,9 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 rounded-xl p-1">
+          <div className="bg-gradient-to-r from-blue-600 to-red-600 rounded-xl p-1">
             <div className="bg-white rounded-lg p-8 md:p-12 text-center">
-              <h3 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 bg-clip-text text-transparent">
+              <h3 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
                 Democracy Isn't a Spectator Sport
               </h3>
               <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto font-medium text-gray-800">
@@ -534,13 +534,13 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="/issues/citizen-participation"
-                  className="px-8 py-4 gradient-purple text-white font-bold rounded-lg hover:shadow-lg transition-all text-lg"
+                  className="px-8 py-4 gradient-navy text-white font-bold rounded-lg hover:shadow-lg transition-all text-lg"
                 >
                   Learn How to Make a Difference
                 </a>
                 <a
                   href="/issues/civic-dialogue"
-                  className="px-8 py-4 bg-white text-purple-600 font-bold rounded-lg border-2 border-purple-600 hover:bg-purple-50 transition-all text-lg"
+                  className="px-8 py-4 bg-white text-blue-900 font-bold rounded-lg border-2 border-blue-900 hover:bg-blue-50 transition-all text-lg"
                 >
                   Start the Conversation
                 </a>
@@ -554,12 +554,12 @@ export default function Home() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-10">
-            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
               Coming Soon
             </span>
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="group hover-lift bg-gradient-to-br from-purple-50 to-blue-50 p-8 rounded-xl border-2 border-purple-200">
+            <div className="group hover-lift bg-gradient-to-br from-blue-50 to-blue-50 p-8 rounded-xl border-2 border-blue-200">
               <div className="text-5xl mb-4">💬</div>
               <h3 className="font-bold text-xl mb-3">Community Discussions</h3>
               <p className="text-gray-600 leading-relaxed">
@@ -567,7 +567,7 @@ export default function Home() {
                 to keep conversations productive and solution-focused
               </p>
             </div>
-            <div className="group hover-lift bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-xl border-2 border-blue-200">
+            <div className="group hover-lift bg-gradient-to-br from-blue-50 to-blue-50 p-8 rounded-xl border-2 border-blue-200">
               <div className="text-5xl mb-4">📊</div>
               <h3 className="font-bold text-xl mb-3">Interactive Surveys</h3>
               <p className="text-gray-600 leading-relaxed">

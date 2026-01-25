@@ -4,11 +4,11 @@
   --background: #ffffff;
   --foreground: #171717;
 
-  /* Bipartisan color palette */
-  --purple-primary: #7c3aed;      /* Main purple - blend of red/blue */
-  --purple-dark: #5b21b6;
-  --purple-light: #a78bfa;
-  --purple-lighter: #e9d5ff;
+  /* Bipartisan color palette - American theme */
+  --navy-primary: #1e3a8a;        /* Navy blue - American theme */
+  --navy-dark: #1e40af;
+  --navy-light: #3b82f6;
+  --navy-lighter: #dbeafe;
 
   --red-conservative: #dc2626;     /* Conservative red accent */
   --red-light: #fca5a5;
@@ -28,10 +28,10 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
-  /* Custom bipartisan colors for Tailwind */
-  --color-purple-primary: var(--purple-primary);
-  --color-purple-dark: var(--purple-dark);
-  --color-purple-light: var(--purple-light);
+  /* Custom bipartisan colors for Tailwind - American theme */
+  --color-navy-primary: var(--navy-primary);
+  --color-navy-dark: var(--navy-dark);
+  --color-navy-light: var(--navy-light);
   --color-red-conservative: var(--red-conservative);
   --color-blue-progressive: var(--blue-progressive);
 }
@@ -47,18 +47,22 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Custom gradient backgrounds */
+/* Custom gradient backgrounds - American theme */
 .gradient-bipartisan {
-  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 50%, #dc2626 100%);
+  background: linear-gradient(135deg, #2563eb 0%, #ffffff 50%, #dc2626 100%);
 }
 
 .gradient-purple {
-  background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
 }
 
-/* Political spectrum bar */
+.gradient-navy {
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+}
+
+/* Political spectrum bar - American theme */
 .political-spectrum {
-  background: linear-gradient(90deg, #2563eb 0%, #7c3aed 50%, #dc2626 100%);
+  background: linear-gradient(90deg, #2563eb 0%, #ffffff 50%, #dc2626 100%);
   height: 4px;
   width: 100%;
 }
@@ -76,7 +80,7 @@ html {
 /* Focus styles for accessibility */
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid var(--purple-primary);
+  outline: 2px solid var(--navy-primary);
   outline-offset: 2px;
 }
 

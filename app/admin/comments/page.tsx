@@ -116,7 +116,7 @@ export default function CommentsModeration() {
               {/* Header */}
               <div className="flex items-start justify-between mb-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-red-500 flex items-center justify-center text-white font-medium">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 via-blue-500 to-red-500 flex items-center justify-center text-white font-medium">
                     {comment.username.charAt(0).toUpperCase()}
                   </div>
                   <div>

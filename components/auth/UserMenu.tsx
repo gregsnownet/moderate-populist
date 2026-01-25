@@ -37,7 +37,7 @@ export function UserMenu() {
         </Link>
         <Link
           href="/register"
-          className="text-sm font-medium px-4 py-2 bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 text-white rounded-lg hover:opacity-90 transition-opacity"
+          className="text-sm font-medium px-4 py-2 bg-gradient-to-r from-blue-600 to-red-600 text-white rounded-lg hover:opacity-90 transition-opacity"
         >
           Register
         </Link>
@@ -51,14 +51,14 @@ export function UserMenu() {
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center gap-2 px-3 py-1.5 rounded-lg hover:bg-zinc-100 transition-colors"
       >
-        <div className="w-8 h-8 bg-gradient-to-br from-blue-500 via-purple-500 to-red-500 rounded-full flex items-center justify-center text-white font-medium text-sm">
+        <div className="w-8 h-8 bg-gradient-to-br from-blue-500 via-blue-500 to-red-500 rounded-full flex items-center justify-center text-white font-medium text-sm">
           {user.username.charAt(0).toUpperCase()}
         </div>
         <span className="text-sm font-medium text-zinc-700 hidden sm:block">
           {user.username}
         </span>
         {user.role === 'admin' && (
-          <span className="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full font-medium hidden sm:block">
+          <span className="text-xs bg-blue-100 text-blue-900 px-2 py-0.5 rounded-full font-medium hidden sm:block">
             Admin
           </span>
         )}

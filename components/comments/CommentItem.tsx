@@ -44,7 +44,7 @@ export function CommentItem({ comment, issueId, onReplySubmit }: CommentItemProp
       <div className="py-4">
         <div className="flex items-start gap-3">
           {/* Avatar */}
-          <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-red-500 flex-shrink-0 flex items-center justify-center text-white text-sm font-medium">
+          <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 via-blue-500 to-red-500 flex-shrink-0 flex items-center justify-center text-white text-sm font-medium">
             {comment.username.charAt(0).toUpperCase()}
           </div>
 
@@ -64,7 +64,7 @@ export function CommentItem({ comment, issueId, onReplySubmit }: CommentItemProp
               <div className="mt-2">
                 <button
                   onClick={() => setShowReplyForm(!showReplyForm)}
-                  className="text-sm text-zinc-500 hover:text-purple-600 transition-colors"
+                  className="text-sm text-zinc-500 hover:text-blue-900 transition-colors"
                 >
                   {showReplyForm ? 'Cancel' : 'Reply'}
                 </button>

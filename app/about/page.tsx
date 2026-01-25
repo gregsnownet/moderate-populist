@@ -46,8 +46,8 @@ export default function AboutPage() {
           </p>
         </section>
 
-        <section className="mb-12 bg-gradient-to-br from-blue-50 via-purple-50 to-red-50 border-2 border-purple-200 rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 bg-clip-text text-transparent">A Space for All Americans</h2>
+        <section className="mb-12 bg-gradient-to-br from-blue-50 via-blue-50 to-red-50 border-2 border-blue-200 rounded-xl p-8">
+          <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">A Space for All Americans</h2>
           <p className="text-lg mb-4 leading-relaxed text-gray-800">
             Whether you're a Republican or Democrat, whether you supported Trump or Biden, whether you identify
             as conservative, progressive, libertarian, or somewhere in between—<strong>you belong here</strong>.
@@ -77,8 +77,8 @@ export default function AboutPage() {
                 Good faith dialogue starts with genuine curiosity about why others think differently.
               </p>
             </div>
-            <div className="border-l-4 border-purple-500 pl-4">
-              <h3 className="text-xl font-semibold mb-2 text-purple-900">🤝 Collaboration</h3>
+            <div className="border-l-4 border-blue-800 pl-4">
+              <h3 className="text-xl font-semibold mb-2 text-blue-950">🤝 Collaboration</h3>
               <p className="text-gray-700">
                 Build coalitions across divides. Find allies where you can. Democracy requires teamwork,
                 not solo heroics. Small wins through cooperation beat grand plans through confrontation.
@@ -157,8 +157,8 @@ export default function AboutPage() {
                 Authoritarianism is a threat from any direction.
               </p>
             </div>
-            <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
-              <h3 className="text-xl font-semibold mb-2 text-purple-900">🤝 Respect for All Americans</h3>
+            <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-800">
+              <h3 className="text-xl font-semibold mb-2 text-blue-950">🤝 Respect for All Americans</h3>
               <p className="text-gray-700">
                 Reject racism, bigotry, and scapegoating in all forms. Our differences in race, religion,
                 background, and beliefs make us stronger. Common humanity comes first.

@@ -192,7 +192,7 @@ export default function UsersManagement() {
                   <tr key={user.userId} className="hover:bg-zinc-50">
                     <td className="px-6 py-4">
                       <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-red-500 flex items-center justify-center text-white font-medium flex-shrink-0">
+                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 via-blue-500 to-red-500 flex items-center justify-center text-white font-medium flex-shrink-0">
                           {user.username.charAt(0).toUpperCase()}
                         </div>
                         <div>
@@ -236,7 +236,7 @@ export default function UsersManagement() {
                     <td className="px-6 py-4">
                       <span className={`text-xs px-2 py-1 rounded font-medium ${
                         user.role === 'admin'
-                          ? 'bg-purple-100 text-purple-700'
+                          ? 'bg-blue-100 text-blue-900'
                           : 'bg-zinc-100 text-zinc-600'
                       }`}>
                         {user.role}
@@ -263,7 +263,7 @@ export default function UsersManagement() {
                           <button
                             onClick={() => handleRoleChange(user.userId, 'admin')}
                             disabled={actionInProgress === user.userId}
-                            className="text-xs px-2 py-1 text-purple-600 hover:bg-purple-50 rounded transition-colors disabled:opacity-50"
+                            className="text-xs px-2 py-1 text-blue-900 hover:bg-blue-50 rounded transition-colors disabled:opacity-50"
                             title="Make Admin"
                           >
                             Make Admin

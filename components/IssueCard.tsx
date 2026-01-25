@@ -17,8 +17,8 @@ const categoryColors: Record<string, { gradient: string; badge: string; icon: st
     icon: '📈'
   },
   'education': {
-    gradient: 'from-purple-500 to-pink-500',
-    badge: 'bg-purple-100 text-purple-700 border-purple-200',
+    gradient: 'from-blue-500 to-pink-500',
+    badge: 'bg-blue-100 text-blue-900 border-blue-200',
     icon: '🎓'
   },
   'affordability': {
@@ -27,7 +27,7 @@ const categoryColors: Record<string, { gradient: string; badge: string; icon: st
     icon: '💰'
   },
   'civic-engagement': {
-    gradient: 'from-violet-500 to-purple-500',
+    gradient: 'from-violet-500 to-blue-500',
     badge: 'bg-violet-100 text-violet-700 border-violet-200',
     icon: '🗳️'
   },
@@ -58,7 +58,7 @@ export default function IssueCard({ issue }: IssueCardProps) {
 
   return (
     <Link href={`/issues/${issue.id}`} className="block group">
-      <div className="bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden h-full border border-gray-200 hover:border-purple-300 hover-lift">
+      <div className="bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden h-full border border-gray-200 hover:border-blue-300 hover-lift">
         {/* Gradient Header */}
         <div className={`h-2 bg-gradient-to-r ${colors.gradient}`}></div>
 
@@ -74,7 +74,7 @@ export default function IssueCard({ issue }: IssueCardProps) {
           </div>
 
           {/* Title */}
-          <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-purple-600 transition-colors">
+          <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-900 transition-colors">
             {issue.title}
           </h3>
 
@@ -84,8 +84,8 @@ export default function IssueCard({ issue }: IssueCardProps) {
           </p>
 
           {/* Common Ground Preview */}
-          <div className="mb-4 p-3 bg-purple-50 rounded-lg border border-purple-100">
-            <div className="text-xs font-semibold text-purple-700 mb-1 flex items-center gap-1">
+          <div className="mb-4 p-3 bg-blue-50 rounded-lg border border-purple-100">
+            <div className="text-xs font-semibold text-blue-900 mb-1 flex items-center gap-1">
               <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
@@ -98,7 +98,7 @@ export default function IssueCard({ issue }: IssueCardProps) {
 
           {/* CTA */}
           <div className="flex items-center justify-between">
-            <span className="text-purple-600 font-semibold text-sm group-hover:text-purple-700 flex items-center gap-1">
+            <span className="text-blue-900 font-semibold text-sm group-hover:text-blue-900 flex items-center gap-1">
               Explore Issue
               <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -108,7 +108,7 @@ export default function IssueCard({ issue }: IssueCardProps) {
             {/* Political Spectrum Indicator */}
             <div className="flex items-center gap-1">
               <div className="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
-              <div className="w-1.5 h-1.5 rounded-full bg-purple-500"></div>
+              <div className="w-1.5 h-1.5 rounded-full bg-blue-800"></div>
               <div className="w-1.5 h-1.5 rounded-full bg-red-500"></div>
             </div>
           </div>

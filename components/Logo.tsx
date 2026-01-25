@@ -148,7 +148,7 @@ export default function Logo({ size = 'large', showText = true }: LogoProps) {
       {/* Logo Text */}
       {showText && (
         <div>
-          <div className={`${dim.text} font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 bg-clip-text text-transparent leading-tight`}>
+          <div className={`${dim.text} font-bold bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent leading-tight`}>
             The Moderate Populist
           </div>
           <div className={`${dim.tagline} text-gray-500 font-medium`}>Where Moderates Drive Change</div>

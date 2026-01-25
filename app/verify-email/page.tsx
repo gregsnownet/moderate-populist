@@ -43,7 +43,7 @@ function VerifyEmailContent() {
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <Link href="/" className="inline-block">
-            <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 bg-clip-text text-transparent">
+            <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
               Moderate Populist
             </h1>
           </Link>
@@ -52,7 +52,7 @@ function VerifyEmailContent() {
         <div className="bg-white rounded-2xl shadow-xl p-8 text-center">
           {status === 'loading' && (
             <>
-              <div className="w-16 h-16 border-4 border-purple-200 border-t-purple-600 rounded-full animate-spin mx-auto mb-4" />
+              <div className="w-16 h-16 border-4 border-blue-200 border-t-purple-600 rounded-full animate-spin mx-auto mb-4" />
               <h2 className="text-xl font-semibold text-zinc-800">Verifying your email...</h2>
             </>
           )}
@@ -68,7 +68,7 @@ function VerifyEmailContent() {
               <p className="text-zinc-600 mb-6">{message}</p>
               <Link
                 href="/login"
-                className="inline-block py-3 px-6 bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
+                className="inline-block py-3 px-6 bg-gradient-to-r from-blue-600 to-red-600 text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
               >
                 Sign In
               </Link>
@@ -88,7 +88,7 @@ function VerifyEmailContent() {
                 {message.includes('expired') && (
                   <Link
                     href="/resend-verification"
-                    className="inline-block py-3 px-6 bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
+                    className="inline-block py-3 px-6 bg-gradient-to-r from-blue-600 to-red-600 text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
                   >
                     Request New Verification Email
                   </Link>
@@ -112,7 +112,7 @@ export default function VerifyEmailPage() {
   return (
     <Suspense fallback={
       <main className="min-h-screen bg-gradient-to-br from-zinc-50 to-zinc-100 flex items-center justify-center p-4">
-        <div className="w-16 h-16 border-4 border-purple-200 border-t-purple-600 rounded-full animate-spin" />
+        <div className="w-16 h-16 border-4 border-blue-200 border-t-purple-600 rounded-full animate-spin" />
       </main>
     }>
       <VerifyEmailContent />

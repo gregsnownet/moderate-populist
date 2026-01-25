@@ -34,9 +34,9 @@ export default function ResourcesPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <section className="bg-gradient-to-br from-blue-50 via-purple-50 to-red-50 border-b-4 border-purple-200 py-16 px-4">
+      <section className="bg-gradient-to-br from-blue-50 via-blue-50 to-red-50 border-b-4 border-blue-200 py-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
             Resources
           </h1>
           <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto">
@@ -136,11 +136,11 @@ export default function ResourcesPage() {
                 </span>
               )}
               {searchQuery && (
-                <span className="inline-flex items-center bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">
+                <span className="inline-flex items-center bg-blue-100 text-blue-950 text-sm px-3 py-1 rounded-full">
                   "{searchQuery}"
                   <button
                     onClick={() => setSearchQuery('')}
-                    className="ml-2 hover:text-purple-900"
+                    className="ml-2 hover:text-blue-950"
                   >
                     ×
                   </button>
@@ -200,7 +200,7 @@ export default function ResourcesPage() {
       </section>
 
       {/* How to Add Resources */}
-      <section className="bg-gradient-to-br from-purple-50 to-blue-50 border-t-2 border-purple-200 py-12 px-4">
+      <section className="bg-gradient-to-br from-blue-50 to-blue-50 border-t-2 border-blue-200 py-12 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
             Add Your Own Resources

@@ -27,9 +27,9 @@ export default function CurrentAffairsPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-purple-50 to-red-50 border-b-4 border-purple-200 py-20 px-4">
+      <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-blue-50 to-red-50 border-b-4 border-blue-200 py-20 px-4">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
             Current Affairs
           </h1>
           <p className="text-2xl md:text-3xl text-gray-700 mb-4 font-light">
@@ -52,8 +52,8 @@ export default function CurrentAffairsPage() {
                 onClick={() => setSelectedCategory(category.id)}
                 className={`px-6 py-3 rounded-full font-semibold transition-all transform hover:scale-105 ${
                   selectedCategory === category.id
-                    ? 'gradient-purple text-white shadow-lg'
-                    : 'bg-white text-gray-700 hover:bg-purple-50 border-2 border-gray-200'
+                    ? 'gradient-navy text-white shadow-lg'
+                    : 'bg-white text-gray-700 hover:bg-blue-50 border-2 border-gray-200'
                 }`}
               >
                 {category.name}
@@ -90,7 +90,7 @@ export default function CurrentAffairsPage() {
       </section>
 
       {/* Contributing Notice */}
-      <section className="py-16 px-4 bg-gradient-to-br from-purple-50 to-blue-50 border-t-2 border-purple-200">
+      <section className="py-16 px-4 bg-gradient-to-br from-blue-50 to-blue-50 border-t-2 border-blue-200">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Join the Conversation

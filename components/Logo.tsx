@@ -171,7 +171,7 @@ export default function Logo({ size = 'large', showText = true }: LogoProps) {
           <div className={`${dim.text} font-bold bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent leading-tight`}>
             The Moderate Populist
           </div>
-          <div className={`${dim.tagline} text-gray-500 font-medium`}>Where Moderates Drive Change</div>
+          <div className={`${dim.tagline} text-gray-500 font-medium`}>Where Americans Find Common Ground Over Party Lines</div>
         </div>
       )}
     </div>

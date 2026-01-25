@@ -200,52 +200,6 @@ export default function AboutPage() {
         </section>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Approach</h2>
-          <div className="space-y-6">
-            <div className="bg-blue-50 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-2">Evidence-Based</h3>
-              <p className="text-gray-700">
-                We cite data from reputable, non-partisan sources including government agencies,
-                academic research, and established polling organizations. Facts, not feelings.
-              </p>
-            </div>
-            <div className="bg-blue-50 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-2">Balanced Presentation</h3>
-              <p className="text-gray-700">
-                Each issue page presents the challenge neutrally, identifies common ground, and
-                raises thoughtful questions without advocating for specific policy solutions.
-              </p>
-            </div>
-            <div className="bg-blue-50 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-2">Solution-Oriented</h3>
-              <p className="text-gray-700">
-                We encourage constructive debate focused on solving problems rather than scoring
-                political points. The goal is progress, not winning arguments.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">What You'll Find Here</h2>
-          <p className="text-gray-700 mb-4">
-            This site provides balanced, fact-based information on major political issues.
-            Each issue page includes:
-          </p>
-          <ul className="list-disc list-inside text-gray-700 space-y-2 mb-4">
-            <li>Clear explanations of complex issues in plain language</li>
-            <li>Areas of common ground where most Americans actually agree</li>
-            <li>Current talking points from both the left and the right</li>
-            <li>Key facts from reputable, non-partisan sources</li>
-            <li>Thoughtful questions for respectful debate</li>
-          </ul>
-          <p className="text-gray-700 mb-4">
-            This is a work in progress. As a one-person operation, I'm constantly updating and improving
-            the content based on current events and research. If you have feedback or suggestions, I'm listening.
-          </p>
-        </section>
-
-        <section className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Core Principles</h2>
           <div className="space-y-6">
             <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">

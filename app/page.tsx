@@ -550,44 +550,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Vote with Your Dollar */}
-      <section className="py-16 px-4 bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-8">
-            <h2 className="text-4xl font-bold mb-4 text-gray-900">
-              💵 Vote with Your Dollar
-            </h2>
-            <p className="text-xl text-gray-700">
-              Every purchase is a choice between corporate power and community strength
-            </p>
-          </div>
-
-          <div className="bg-white rounded-2xl shadow-xl p-8">
-            <div className="bg-gradient-to-r from-green-600 to-emerald-600 rounded-xl p-6 text-white text-center mb-6">
-              <p className="text-2xl font-bold mb-2">
-                $68 of every $100 spent locally stays in your community
-              </p>
-              <p className="text-lg opacity-90">
-                At chain stores, only $43 stays local
-              </p>
-              <p className="text-sm mt-2 italic opacity-80">
-                Source: American Independent Business Alliance
-              </p>
-            </div>
-
-            <div className="text-center">
-              <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                Supporting local businesses empowers your neighbors, creates better jobs,
-                and reduces corporate influence in politics—all without waiting for policy changes.
-              </p>
-              <p className="text-xl font-semibold text-purple-700">
-                Shop local. Eat local. Bank local. Hire local.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Coming Soon */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">

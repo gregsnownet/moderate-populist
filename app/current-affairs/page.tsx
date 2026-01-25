@@ -42,25 +42,6 @@ export default function CurrentAffairsPage() {
         </div>
       </section>
 
-      {/* Mission Statement */}
-      <section className="py-12 bg-white border-b">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-xl p-8 border-2 border-purple-200">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Approach to Current Events</h2>
-            <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              These articles explore the headlines dominating our national conversation—from government
-              shutdowns to AI regulation, from political figures to defense spending. But we approach
-              them differently.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Instead of the usual partisan spin, we ask: Where do Americans actually agree? What legitimate
-              concerns exist on all sides? How can we move beyond talking points to real solutions? Every article
-              welcomes Republicans, Democrats, and independents to engage thoughtfully with today's challenges.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Category Filter */}
       <section className="py-8 px-4 bg-gray-50 sticky top-16 z-40 border-b">
         <div className="max-w-7xl mx-auto">

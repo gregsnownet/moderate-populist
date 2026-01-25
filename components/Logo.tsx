@@ -15,7 +15,7 @@ export default function Logo({ size = 'large', showText = true }: LogoProps) {
 
   return (
     <div className="flex items-center gap-6">
-      {/* SVG Logo Icon - Donkey vs Elephant Boxing Match */}
+      {/* SVG Logo Icon - Classic Donkey & Elephant */}
       <svg
         width={dim.icon}
         height={dim.icon}
@@ -25,141 +25,68 @@ export default function Logo({ size = 'large', showText = true }: LogoProps) {
         className="flex-shrink-0 drop-shadow-xl"
         style={{ filter: 'drop-shadow(0 4px 8px rgba(30, 58, 138, 0.3))' }}
       >
-        <defs>
-          <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style={{ stopColor: '#1e40af', stopOpacity: 1 }} />
-            <stop offset="100%" style={{ stopColor: '#2563eb', stopOpacity: 1 }} />
-          </linearGradient>
+        {/* Left Side - Democratic Donkey */}
+        <g transform="translate(0, 15)">
+          {/* Donkey silhouette - blue top with stars, red bottom */}
 
-          <linearGradient id="redGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style={{ stopColor: '#dc2626', stopOpacity: 1 }} />
-            <stop offset="100%" style={{ stopColor: '#b91c1c', stopOpacity: 1 }} />
-          </linearGradient>
-        </defs>
+          {/* Blue top section */}
+          <path
+            d="M 8 25 L 12 18 L 14 12 L 12 8 L 10 10 L 8 6 L 6 10 L 4 12 L 6 18 L 2 25 Z"
+            fill="#1e40af"
+          />
+          <ellipse cx="10" cy="28" rx="11" ry="8" fill="#1e40af" />
 
-        {/* Left Side - Blue Donkey (Democrat) - Boxing Stance */}
-        <g transform="translate(5, 20)">
-          {/* Donkey Body - leaning forward */}
-          <ellipse cx="18" cy="40" rx="12" ry="16" fill="url(#blueGradient)" stroke="#1e3a8a" strokeWidth="2" />
+          {/* Red bottom section */}
+          <ellipse cx="10" cy="36" rx="11" ry="10" fill="#dc2626" />
+          <rect x="6" y="45" width="3" height="12" fill="#dc2626" rx="1.5" />
+          <rect x="13" y="45" width="3" height="12" fill="#dc2626" rx="1.5" />
+          <path d="M 2 38 Q 0 42 1 46" stroke="#dc2626" strokeWidth="2.5" fill="none" />
 
-          {/* Donkey Head - aggressive forward tilt */}
-          <ellipse cx="28" cy="25" rx="10" ry="11" fill="url(#blueGradient)" stroke="#1e3a8a" strokeWidth="2" />
-
-          {/* Donkey Snout - snarling */}
-          <ellipse cx="35" cy="27" rx="5" ry="4" fill="url(#blueGradient)" stroke="#1e3a8a" strokeWidth="2" />
-
-          {/* Donkey Ears (flattened back in anger) */}
-          <ellipse cx="24" cy="16" rx="2.5" ry="7" fill="url(#blueGradient)" stroke="#1e3a8a" strokeWidth="1.5" transform="rotate(-30 24 16)" />
-          <ellipse cx="30" cy="15" rx="2.5" ry="7" fill="url(#blueGradient)" stroke="#1e3a8a" strokeWidth="1.5" transform="rotate(-10 30 15)" />
-
-          {/* Intense Eye */}
-          <ellipse cx="31" cy="23" rx="2.5" ry="2" fill="#ffffff" stroke="#000000" strokeWidth="1" />
-          <circle cx="32" cy="23" r="1.5" fill="#000000" />
-
-          {/* Angry Eyebrow (heavily angled) */}
-          <line x1="28" y1="20" x2="34" y2="21" stroke="#1e3a8a" strokeWidth="2.5" strokeLinecap="round" />
-
-          {/* Flared Nostril */}
-          <circle cx="37" cy="26" r="1.2" fill="#1e3a8a" />
-
-          {/* Gritted teeth/snarl */}
-          <path d="M 35 30 L 38 30" stroke="#1e3a8a" strokeWidth="2" strokeLinecap="round" />
-
-          {/* FRONT LEFT LEG - RAISED IN PUNCH! */}
-          <rect x="24" y="32" width="4" height="10" fill="url(#blueGradient)" stroke="#1e3a8a" strokeWidth="1.5" rx="2" transform="rotate(-45 26 32)" />
-
-          {/* Front Right Leg - planted */}
-          <rect x="16" y="48" width="4" height="10" fill="url(#blueGradient)" stroke="#1e3a8a" strokeWidth="1.5" rx="2" />
-
-          {/* Back Legs */}
-          <rect x="10" y="50" width="4" height="8" fill="url(#blueGradient)" stroke="#1e3a8a" strokeWidth="1.5" rx="2" />
-
-          {/* Tail - swishing in anger */}
-          <path d="M 8 42 Q 3 40 2 37 Q 1 34 3 32" stroke="#1e3a8a" strokeWidth="3" fill="none" strokeLinecap="round" />
+          {/* White stars on blue section */}
+          <circle cx="5" cy="22" r="1.5" fill="white" />
+          <circle cx="10" cy="20" r="1.5" fill="white" />
+          <circle cx="15" cy="22" r="1.5" fill="white" />
+          <circle cx="10" cy="28" r="1.5" fill="white" />
         </g>
 
-        {/* Right Side - Red Elephant (Republican) - Boxing Stance */}
-        <g transform="translate(72, 20)">
-          {/* Elephant Body - leaning forward */}
-          <ellipse cx="25" cy="40" rx="12" ry="16" fill="url(#redGradient)" stroke="#7f1d1d" strokeWidth="2" />
+        {/* Right Side - Republican Elephant */}
+        <g transform="translate(70, 15)">
+          {/* Elephant silhouette - blue top with stars, red bottom */}
 
-          {/* Elephant Head - aggressive forward */}
-          <ellipse cx="15" cy="25" rx="10" ry="11" fill="url(#redGradient)" stroke="#7f1d1d" strokeWidth="2" />
+          {/* Blue top section with head */}
+          <ellipse cx="20" cy="20" rx="12" ry="10" fill="#1e40af" />
+          <ellipse cx="14" cy="18" rx="6" ry="9" fill="#1e40af" transform="rotate(-20 14 18)" />
 
-          {/* Elephant Trunk - raised and curved aggressively */}
-          <path d="M 8 28 Q 2 26 1 22 Q 0 18 2 15" stroke="#7f1d1d" strokeWidth="6" fill="none" strokeLinecap="round" />
+          {/* Red bottom section */}
+          <ellipse cx="20" cy="35" rx="13" ry="12" fill="#dc2626" />
+          <rect x="14" y="45" width="3.5" height="12" fill="#dc2626" rx="1.5" />
+          <rect x="22" y="45" width="3.5" height="12" fill="#dc2626" rx="1.5" />
 
-          {/* Elephant Ears (fanned out aggressively) */}
-          <ellipse cx="18" cy="18" rx="7" ry="10" fill="url(#redGradient)" stroke="#7f1d1d" strokeWidth="1.5" transform="rotate(35 18 18)" opacity="0.9" />
-          <ellipse cx="11" cy="17" rx="6" ry="9" fill="url(#redGradient)" stroke="#7f1d1d" strokeWidth="1.5" transform="rotate(-25 11 17)" opacity="0.9" />
+          {/* Trunk - red */}
+          <path d="M 10 22 Q 6 24 5 28 Q 4 32 6 35" stroke="#dc2626" strokeWidth="4" fill="none" strokeLinecap="round" />
 
-          {/* Intense Eye */}
-          <ellipse cx="12" cy="23" rx="2.5" ry="2" fill="#ffffff" stroke="#000000" strokeWidth="1" />
-          <circle cx="11" cy="23" r="1.5" fill="#000000" />
+          {/* Tail - red */}
+          <path d="M 32 38 Q 36 40 38 44" stroke="#dc2626" strokeWidth="2.5" fill="none" strokeLinecap="round" />
 
-          {/* Angry Eyebrow (heavily angled toward donkey) */}
-          <line x1="9" y1="21" x2="15" y2="20" stroke="#7f1d1d" strokeWidth="2.5" strokeLinecap="round" />
-
-          {/* Tusks (pointing forward menacingly) */}
-          <path d="M 5 28 L 2 26" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" />
-          <path d="M 5 30 L 2 32" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" />
-
-          {/* FRONT RIGHT LEG - RAISED IN PUNCH! */}
-          <rect x="15" y="32" width="4" height="10" fill="url(#redGradient)" stroke="#7f1d1d" strokeWidth="1.5" rx="2" transform="rotate(45 17 32)" />
-
-          {/* Front Left Leg - planted */}
-          <rect x="23" y="48" width="4" height="10" fill="url(#redGradient)" stroke="#7f1d1d" strokeWidth="1.5" rx="2" />
-
-          {/* Back Legs */}
-          <rect x="29" y="50" width="4" height="8" fill="url(#redGradient)" stroke="#7f1d1d" strokeWidth="1.5" rx="2" />
-
-          {/* Tail - swishing in anger */}
-          <path d="M 35 42 Q 40 40 41 37 Q 42 34 40 32" stroke="#7f1d1d" strokeWidth="3" fill="none" strokeLinecap="round" />
+          {/* White stars on blue section */}
+          <circle cx="16" cy="16" r="1.8" fill="white" />
+          <circle cx="22" cy="14" r="1.8" fill="white" />
+          <circle cx="28" cy="16" r="1.8" fill="white" />
         </g>
 
-        {/* Impact/Action Lines showing the fight */}
-        <g opacity="0.6">
-          {/* Punch impact lines from donkey */}
-          <line x1="42" y1="42" x2="50" y2="40" stroke="#fbbf24" strokeWidth="3" strokeLinecap="round" />
-          <line x1="40" y1="46" x2="48" y2="44" stroke="#fbbf24" strokeWidth="2.5" strokeLinecap="round" />
-
-          {/* Punch impact lines from elephant */}
-          <line x1="78" y1="42" x2="70" y2="40" stroke="#fbbf24" strokeWidth="3" strokeLinecap="round" />
-          <line x1="80" y1="46" x2="72" y2="44" stroke="#fbbf24" strokeWidth="2.5" strokeLinecap="round" />
-
-          {/* Clash effects in middle */}
-          <circle cx="60" cy="42" r="3" fill="none" stroke="#fbbf24" strokeWidth="2" opacity="0.7" />
-          <circle cx="60" cy="42" r="6" fill="none" stroke="#fbbf24" strokeWidth="1.5" opacity="0.5" />
-
-          {/* Motion blur lines */}
-          <line x1="45" y1="38" x2="55" y2="38" stroke="#1e3a8a" strokeWidth="2" strokeLinecap="round" opacity="0.4" />
-          <line x1="65" y1="38" x2="75" y2="38" stroke="#7f1d1d" strokeWidth="2" strokeLinecap="round" opacity="0.4" />
-        </g>
-
-        {/* "VS" text */}
-        <text
-          x="60"
-          y="72"
-          fontFamily="system-ui, -apple-system, sans-serif"
-          fontSize="14"
-          fontWeight="900"
-          fill="#1e3a8a"
-          textAnchor="middle"
-          opacity="0.8"
-        >
-          VS
-        </text>
+        {/* Center divider line */}
+        <line x1="60" y1="20" x2="60" y2="75" stroke="#94a3b8" strokeWidth="2" strokeDasharray="4 4" opacity="0.4" />
 
         {/* MP Initials at bottom */}
         <text
           x="60"
           y="92"
           fontFamily="system-ui, -apple-system, sans-serif"
-          fontSize="18"
+          fontSize="20"
           fontWeight="900"
           fill="#1e3a8a"
           textAnchor="middle"
-          letterSpacing="1"
+          letterSpacing="2"
         >
           MP
         </text>

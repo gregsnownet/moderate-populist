@@ -64,10 +64,10 @@ export default function RootLayout({
                     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-900 group-hover:w-full transition-all"></span>
                   </Link>
                   <Link
-                    href="/current-affairs"
+                    href="/talking-points"
                     className="text-gray-700 hover:text-blue-900 font-medium transition-colors relative group"
                   >
-                    Current Affairs
+                    Talking Points
                     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-900 group-hover:w-full transition-all"></span>
                   </Link>
                   <Link

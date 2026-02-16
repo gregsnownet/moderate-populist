@@ -181,6 +181,118 @@ const talkingPoints: TalkingPoint[] = [
       'How do we make voting convenient while maintaining security measures?'
     ],
     productiveFraming: 'Instead of: "Voter suppression vs. fraud deniers" → Try: "How do we maximize both access and security so all Americans trust election results?"'
+  },
+  {
+    id: 'israel-palestine',
+    topic: 'Israel-Palestine Conflict',
+    category: 'International',
+    commonGround: 'Both Israelis and Palestinians deserve security, dignity, and self-determination. Civilian casualties are tragic regardless of nationality.',
+    leftPerspective: 'Israel\'s occupation and settlement expansion violate international law. Palestinian human rights must be protected. Military response is disproportionate.',
+    rightPerspective: 'Israel has the right to defend itself against terrorism. Hamas uses civilians as shields. Only democracy in the region deserves unwavering US support.',
+    bridgingQuestions: [
+      'Can we agree that both terrorism against Israelis and collective punishment of Palestinians are wrong?',
+      'What conditions would need to exist for both peoples to live in security and prosperity?',
+      'How do we balance Israel\'s security needs with Palestinian rights and dignity?'
+    ],
+    productiveFraming: 'Instead of: "Pro-Israel vs. Pro-Palestine" → Try: "How can we support both Israeli security and Palestinian rights while working toward a sustainable peace?"'
+  },
+  {
+    id: 'ukraine-russia',
+    topic: 'Ukraine-Russia War',
+    category: 'International',
+    commonGround: 'Russian aggression violated international law. Ukraine has the right to defend itself. Americans want to avoid direct US military involvement.',
+    leftPerspective: 'We must support Ukraine\'s sovereignty and democracy. Aid protects international norms and European security. Isolationism emboldens dictators.',
+    rightPerspective: 'America First means prioritizing our own borders and economy. Endless foreign wars drain resources. Risk of escalation with nuclear power is real.',
+    bridgingQuestions: [
+      'Can we agree on supporting Ukraine while also establishing clear limits and endgame strategy?',
+      'What would a negotiated settlement require from both sides?',
+      'How do we balance supporting allies with avoiding endless commitments?'
+    ],
+    productiveFraming: 'Instead of: "Warmongers vs. Putin appeasers" → Try: "How do we support Ukraine effectively while protecting US interests and avoiding direct conflict with Russia?"'
+  },
+  {
+    id: 'middle-east-policy',
+    topic: 'Middle East Policy & Iran',
+    category: 'International',
+    commonGround: 'Iran\'s regime sponsors terrorism and threatens regional stability. Nuclear weapons in their hands are unacceptable. Military intervention is costly.',
+    leftPerspective: 'Diplomacy and multilateral agreements work. The Iran nuclear deal prevented weapons development. Military action creates chaos, as Iraq and Libya proved.',
+    rightPerspective: 'Iran violated the nuclear deal and can\'t be trusted. Maximum pressure works. Appeasement emboldens the regime and endangers Israel and Gulf allies.',
+    bridgingQuestions: [
+      'What specific verification measures would make you trust an Iran agreement?',
+      'Can we agree that both military strikes and nuclear weapons are bad outcomes?',
+      'How do we support Iranian people\'s freedom while containing the regime?'
+    ],
+    productiveFraming: 'Instead of: "Warmongers vs. Appeasers" → Try: "What combination of pressure, incentives, and verification will prevent Iranian nuclear weapons without regional war?"'
+  },
+  {
+    id: 'foreign-aid',
+    topic: 'Foreign Aid & Development',
+    category: 'International',
+    commonGround: 'US tax dollars should be spent wisely. Helping others can serve American interests. Corruption and waste must be eliminated.',
+    leftPerspective: 'Foreign aid prevents conflicts, fights disease, and creates markets for American goods. It\'s less than 1% of budget but saves lives and builds goodwill.',
+    rightPerspective: 'America has huge problems at home. Foreign aid often goes to corrupt governments. Charity begins at home. Many recipients oppose American values.',
+    bridgingQuestions: [
+      'What if aid was tied to measurable results and anti-corruption measures?',
+      'Can we agree that preventing refugee crises and extremism serves US interests?',
+      'How do we balance humanitarian values with accountability for results?'
+    ],
+    productiveFraming: 'Instead of: "Waste abroad vs. abandoning leadership" → Try: "How can we use foreign assistance strategically to advance American interests while ensuring accountability?"'
+  },
+  {
+    id: 'nato-alliances',
+    topic: 'NATO & Military Alliances',
+    category: 'International',
+    commonGround: 'Allies should share defense burdens fairly. US military power deters adversaries. Americans are tired of being taken for granted.',
+    leftPerspective: 'NATO has kept peace in Europe for 75 years. Alliances multiply American power. Abandoning commitments destroys credibility and invites aggression.',
+    rightPerspective: 'European allies don\'t pay their fair share while enjoying US protection. We should focus on Asia and our own defense. NATO is obsolete Cold War relic.',
+    bridgingQuestions: [
+      'What if allies increased defense spending in exchange for continued US commitment?',
+      'Can we agree that burden-sharing should be fair but alliances provide value?',
+      'How do we update NATO for 21st century threats while maintaining deterrence?'
+    ],
+    productiveFraming: 'Instead of: "Isolationism vs. Forever wars" → Try: "How do we maintain valuable alliances while ensuring fair burden-sharing and focusing on key threats?"'
+  },
+  {
+    id: 'trade-deals',
+    topic: 'International Trade Agreements',
+    category: 'International',
+    commonGround: 'Trade creates winners and losers. American workers deserve fair competition. Cheap imports help consumers but can destroy industries.',
+    leftPerspective: 'Fair trade requires labor and environmental standards. Trade agreements should protect workers, not just corporate profits. TPP gave too much away.',
+    rightPerspective: 'Free trade creates prosperity for consumers. Protectionism raises prices and invites retaliation. America wins when we compete on level playing field.',
+    bridgingQuestions: [
+      'What if trade deals included strong labor protections AND lowered barriers?',
+      'Can we agree that both protectionism and unfair trade hurt workers?',
+      'How do we help communities affected by trade while capturing benefits?'
+    ],
+    productiveFraming: 'Instead of: "Protectionism vs. Globalism" → Try: "How do we negotiate trade deals that create American jobs while giving consumers access to affordable goods?"'
+  },
+  {
+    id: 'afghanistan',
+    topic: 'Afghanistan Withdrawal & Lessons',
+    category: 'International',
+    commonGround: 'Twenty years was too long. The withdrawal was chaotic. Nation-building failed. We should learn from mistakes.',
+    leftPerspective: 'Bush\'s invasion was wrong. Trump negotiated with Taliban. Forever wars drain resources. We should focus on diplomacy and development, not military force.',
+    rightPerspective: 'Biden\'s withdrawal was disaster. We abandoned allies. Surrendering to terrorists emboldened enemies. Should have maintained small presence like in Korea.',
+    bridgingQuestions: [
+      'Can we agree the execution was flawed regardless of who negotiated what?',
+      'What should the criteria be for future interventions?',
+      'How do we balance helping allies with avoiding endless commitments?'
+    ],
+    productiveFraming: 'Instead of: "Blame game" → Try: "What lessons from Afghanistan should guide future decisions about military intervention and withdrawal?"'
+  },
+  {
+    id: 'immigration-refugees',
+    topic: 'Refugees & Asylum Policy',
+    category: 'International',
+    commonGround: 'The asylum system is broken and exploited. Genuine refugees deserve help. National security matters. Long backlogs hurt everyone.',
+    leftPerspective: 'America is a nation of immigrants and refuge. We have moral and legal obligations. Many flee violence we helped create. Family separation is cruel.',
+    rightPerspective: 'Economic migrants aren\'t refugees. System is abused. We can\'t help everyone. Must prioritize American citizens. Refugees can resettle in safe countries nearby.',
+    bridgingQuestions: [
+      'What if we expedited legitimate claims while quickly rejecting fraudulent ones?',
+      'Can we agree on helping genuine refugees while deterring economic migrants?',
+      'How do we balance humanitarian values with border security and fiscal limits?'
+    ],
+    productiveFraming: 'Instead of: "Open hearts vs. closed borders" → Try: "How do we create a fair, efficient refugee system that helps genuine cases while maintaining security and public support?"'
   }
 ];
 
@@ -192,6 +304,7 @@ export default function TalkingPointsPage() {
     { id: 'all', name: 'All Topics' },
     { id: 'Policy', name: 'Policy' },
     { id: 'Social', name: 'Social Issues' },
+    { id: 'International', name: 'International' },
     { id: 'Governance', name: 'Governance' },
   ];
 

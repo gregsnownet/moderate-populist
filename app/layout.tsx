@@ -43,7 +43,7 @@ export default function RootLayout({
                 {/* Logo/Brand */}
                 <Link href="/" className="group">
                   <div className="transform group-hover:scale-105 transition-transform duration-200">
-                    <Logo size="large" showText={true} />
+                    <Logo size="medium" showTagline={false} />
                   </div>
                 </Link>
 

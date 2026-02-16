@@ -17,8 +17,68 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "The Moderate Populist - Seeking knowledge, furthering understanding",
-  description: "Beyond the political Divide - Seeking knowledge, furthering understanding. Explore evidence-based perspectives that put people over partisanship.",
+  title: {
+    default: "The Moderate Populist - Where Americans Find Common Ground Over Party Lines",
+    template: "%s | The Moderate Populist"
+  },
+  description: "Beyond the political divide. Find common ground on divisive issues through evidence-based dialogue. Explore bipartisan solutions, talking points, and resources for productive political conversations.",
+  keywords: [
+    "moderate politics",
+    "bipartisan solutions",
+    "political common ground",
+    "civil discourse",
+    "talking points",
+    "political dialogue",
+    "centrist views",
+    "non-partisan",
+    "political issues",
+    "American politics",
+    "bridge divides",
+    "moderate populist"
+  ],
+  authors: [{ name: "The Moderate Populist" }],
+  creator: "The Moderate Populist",
+  publisher: "The Moderate Populist",
+  metadataBase: new URL('https://www.moderatepopulist.org'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://www.moderatepopulist.org',
+    siteName: 'The Moderate Populist',
+    title: 'The Moderate Populist - Where Americans Find Common Ground',
+    description: 'Beyond the political divide. Find common ground through evidence-based dialogue and bipartisan solutions.',
+    images: [
+      {
+        url: '/logo.svg',
+        width: 600,
+        height: 270,
+        alt: 'The Moderate Populist Logo',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'The Moderate Populist - Where Americans Find Common Ground',
+    description: 'Beyond the political divide. Find common ground through evidence-based dialogue.',
+    images: ['/logo.svg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: '', // Add your Google Search Console verification code here
+  },
 };
 
 export default function RootLayout({

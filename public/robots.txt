@@ -1,0 +1,17 @@
+# Allow all search engines to crawl the entire site
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.moderatepopulist.org/sitemap.xml
+
+# Disallow admin and API routes from indexing
+Disallow: /admin
+Disallow: /api/
+
+# Allow crawling of main content
+Allow: /issues/
+Allow: /solutions
+Allow: /talking-points
+Allow: /resources
+Allow: /about

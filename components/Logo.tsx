@@ -7,10 +7,10 @@ interface LogoProps {
 
 export default function Logo({ size = 'large', showTagline = true }: LogoProps) {
   const dimensions = {
-    small: { width: 180, height: 81, tagline: 'text-xs' },
-    medium: { width: 240, height: 108, tagline: 'text-sm' },
-    large: { width: 300, height: 135, tagline: 'text-base' },
-    xlarge: { width: 360, height: 162, tagline: 'text-lg' }
+    small: { width: 200, height: 90, tagline: 'text-xs' },
+    medium: { width: 280, height: 126, tagline: 'text-sm' },
+    large: { width: 360, height: 162, tagline: 'text-base' },
+    xlarge: { width: 440, height: 198, tagline: 'text-lg' }
   };
 
   const dim = dimensions[size];

@@ -100,8 +100,8 @@ export default function AboutPage() {
         <section className="mb-12 bg-gradient-to-br from-blue-50 via-blue-50 to-red-50 border-2 border-blue-200 rounded-xl p-8">
           <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">A Space for All Americans</h2>
           <p className="text-lg mb-4 leading-relaxed text-gray-800">
-            Whether you're a Republican or Democrat, whether you supported Trump or Biden, whether you identify
-            as conservative, progressive, libertarian, or somewhere in between—<strong>you belong here</strong>.
+            Whether you're a Republican or Democrat, whether you voted for the current administration or against it,
+            whether you identify as conservative, progressive, libertarian, or somewhere in between—<strong>you belong here</strong>.
           </p>
           <p className="text-lg mb-4 leading-relaxed text-gray-800">
             We don't filter for "moderates" or people in the middle. We welcome passionate conservatives and committed

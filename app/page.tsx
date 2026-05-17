@@ -102,7 +102,7 @@ export default function Home() {
       </section>
 
       {/* What is Moderate Populism */}
-      <section className="py-16 px-4 bg-gradient-to-b from-white to-gray-50">
+      <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-6">
             <span className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
@@ -146,7 +146,7 @@ export default function Home() {
       </section>
 
       {/* Where We Stand - Core Values */}
-      <section className="py-16 px-4 bg-gradient-to-br from-slate-50 via-gray-50 to-zinc-50 border-y-4 border-slate-300">
+      <section className="py-16 px-4 bg-slate-50 border-y border-slate-200">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-4xl font-bold mb-4">
@@ -237,9 +237,9 @@ export default function Home() {
       </section>
 
       {/* Core Message */}
-      <section className="py-16 px-4 bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 border-y-4 border-amber-300">
+      <section className="py-16 px-4 bg-stone-50 border-y border-stone-200">
         <div className="max-w-5xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-10">
+          <div className="bg-white rounded-2xl border border-stone-200 p-8 md:p-10">
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div className="space-y-4">
                 <h4 className="text-xl font-bold text-blue-700 flex items-center gap-2">
@@ -446,7 +446,7 @@ export default function Home() {
           <div className="bg-gradient-to-r from-blue-600 to-red-600 rounded-xl p-8 text-white text-center stars-background">
             <h3 className="text-2xl font-bold mb-4">All Americans Welcome</h3>
             <p className="text-lg leading-relaxed max-w-4xl mx-auto mb-6">
-              Whether you voted for Trump or Biden, whether you identify as conservative, progressive, libertarian, or independent—
+              Whether you voted for the current administration or against it, whether you identify as conservative, progressive, libertarian, or independent—
               if you believe citizens should have more power than corporations, you belong here. We respect Republicans and Democrats equally.
               We value MAGA supporters and progressives equally. This is a movement for <span className="font-bold">all Americans</span> who
               want practical change and reject the extremes on both sides.

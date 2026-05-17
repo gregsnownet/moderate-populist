@@ -20,7 +20,7 @@ export const issues: Issue[] = [
         "Rural areas face unique challenges accessing quality care",
         "Mental healthcare should be more accessible and less stigmatized"
       ],
-      surveySource: "Multiple polls from KFF, Pew Research, and Gallup (2023-2024)"
+      surveySource: "Multiple polls from KFF, Pew Research, and Gallup (2024-2025)"
     },
     perspectives: {
       left: {
@@ -50,24 +50,24 @@ export const issues: Issue[] = [
       title: "Evidence-Based Facts",
       facts: [
         {
-          statement: "U.S. healthcare spending reached $4.5 trillion in 2022, or $13,493 per person",
+          statement: "U.S. healthcare spending reached $4.9 trillion in 2024 (roughly $14,570 per person)—about 17.6% of GDP, more than any other developed nation",
           source: "CMS National Health Expenditure Data",
           sourceUrl: "https://www.cms.gov/data-research/statistics-trends-and-reports/national-health-expenditure-data"
         },
         {
-          statement: "41% of adults have medical debt, with 23% owing more than $1,000",
-          source: "KFF Health Care Debt Survey 2022",
-          sourceUrl: "https://www.kff.org"
+          statement: "Roughly 4 in 10 U.S. adults report having some form of medical debt, with millions owing more than $1,000",
+          source: "KFF Health Care Debt Survey",
+          sourceUrl: "https://www.kff.org/health-costs/issue-brief/the-burden-of-medical-debt-in-the-united-states/"
         },
         {
-          statement: "Average annual family premium for employer-sponsored insurance is over $23,000",
-          source: "KFF Employer Health Benefits Survey 2023",
-          sourceUrl: "https://www.kff.org"
+          statement: "Average annual family premium for employer-sponsored insurance reached approximately $25,572 in 2024, with workers contributing about $6,300 of that cost",
+          source: "KFF Employer Health Benefits Survey 2024",
+          sourceUrl: "https://www.kff.org/report-section/ehbs-2024-summary-of-findings/"
         },
         {
-          statement: "8.6% of U.S. population (28 million) were uninsured in 2023",
-          source: "U.S. Census Bureau",
-          sourceUrl: "https://www.census.gov"
+          statement: "Approximately 8% of the U.S. population (about 26 million people) were uninsured in 2024, the lowest rate on record",
+          source: "U.S. Census Bureau, Health Insurance Coverage in the U.S.",
+          sourceUrl: "https://www.census.gov/topics/health/health-insurance.html"
         }
       ]
     },
@@ -124,7 +124,7 @@ export const issues: Issue[] = [
         "Workers need portable benefits in an evolving economy",
         "Economic growth should benefit workers, not just executives and shareholders"
       ],
-      surveySource: "Pew Research Center Economic Surveys (2023)"
+      surveySource: "Pew Research Center Economic Surveys (2024-2025)"
     },
     perspectives: {
       left: {
@@ -164,14 +164,14 @@ export const issues: Issue[] = [
           sourceUrl: "https://www.bls.gov"
         },
         {
-          statement: "60% of Americans live paycheck to paycheck, including 40% of those earning over $100k",
-          source: "LendingClub Report 2023",
-          sourceUrl: "https://www.lendingclub.com"
+          statement: "More than half of U.S. adults consistently report living paycheck to paycheck, including a significant share of households earning over $100,000",
+          source: "Bank surveys (LendingClub, Bank of America Institute), Federal Reserve Survey of Household Economics and Decisionmaking (SHED)",
+          sourceUrl: "https://www.federalreserve.gov/consumerscommunities/shed.htm"
         },
         {
-          statement: "Manufacturing employment has declined from 17.5 million (1998) to 13 million (2023)",
+          statement: "Manufacturing employment has declined from 17.5 million (1998) to approximately 12.9 million in 2024-2025, though some sectors have stabilized in recent years",
           source: "Bureau of Labor Statistics",
-          sourceUrl: "https://www.bls.gov"
+          sourceUrl: "https://www.bls.gov/iag/tgs/iag31-33.htm"
         }
       ]
     },
@@ -229,7 +229,7 @@ export const issues: Issue[] = [
         "College costs have become unsustainable for most families",
         "Career and technical education should be valued alongside college prep"
       ],
-      surveySource: "PDK Poll of the Public's Attitudes Toward Public Schools (2023)"
+      surveySource: "PDK Poll of the Public's Attitudes Toward Public Schools (2024-2025), EdChoice and Pew education polling"
     },
     perspectives: {
       left: {
@@ -264,14 +264,14 @@ export const issues: Issue[] = [
           sourceUrl: "https://www.census.gov"
         },
         {
-          statement: "Average student loan debt is $37,000; total U.S. student debt exceeds $1.7 trillion",
-          source: "Federal Reserve",
-          sourceUrl: "https://www.federalreserve.gov"
+          statement: "Average federal student loan debt per borrower is approximately $38,000; total U.S. student loan debt remains around $1.7 trillion across roughly 43 million borrowers",
+          source: "Federal Reserve, Federal Student Aid",
+          sourceUrl: "https://studentaid.gov/data-center/student/portfolio"
         },
         {
-          statement: "National teacher shortage has grown, with 36,000+ vacant positions at start of 2023 school year",
-          source: "Department of Education",
-          sourceUrl: "https://www.ed.gov"
+          statement: "Teacher vacancies and shortages have persisted nationwide, with tens of thousands of unfilled positions and high turnover concentrated in math, science, special education, and high-poverty schools",
+          source: "U.S. Department of Education, NCES",
+          sourceUrl: "https://nces.ed.gov"
         },
         {
           statement: "Achievement gaps between high and low-income students persist, though narrowing in some areas",
@@ -335,7 +335,7 @@ export const issues: Issue[] = [
         "Childcare costs are a major burden preventing workforce participation",
         "More affordable housing near jobs and public transit is needed"
       ],
-      surveySource: "Pew Research Center, Harvard Joint Center for Housing Studies (2023-2024)"
+      surveySource: "Pew Research Center, Harvard Joint Center for Housing Studies (2024-2025)"
     },
     perspectives: {
       left: {
@@ -365,34 +365,34 @@ export const issues: Issue[] = [
       title: "Evidence-Based Facts",
       facts: [
         {
-          statement: "The median U.S. home price is $417,700 (Q3 2024), up 37% from 2019",
-          source: "Federal Reserve Economic Data (FRED)",
-          sourceUrl: "https://fred.stlouisfed.org"
+          statement: "The median U.S. existing-home sale price reached approximately $420,000 in 2025, more than 40% above pre-pandemic 2019 levels, with 30-year mortgage rates hovering near 6.5-7%",
+          source: "Federal Reserve Economic Data (FRED), National Association of Realtors",
+          sourceUrl: "https://fred.stlouisfed.org/series/MSPUS"
         },
         {
-          statement: "46% of renters are cost-burdened, paying more than 30% of income on housing",
-          source: "Joint Center for Housing Studies, Harvard University",
-          sourceUrl: "https://www.jchs.harvard.edu"
+          statement: "About half of all U.S. renters (a record share) are cost-burdened, paying more than 30% of income on housing",
+          source: "Joint Center for Housing Studies, Harvard University (State of the Nation's Housing)",
+          sourceUrl: "https://www.jchs.harvard.edu/state-nations-housing-2024"
         },
         {
-          statement: "Average rent increased 30% nationally from 2019 to 2023",
-          source: "U.S. Census Bureau",
+          statement: "Median asking rent grew more than 30% between 2019 and 2024, before flattening or modestly declining in some metros in 2025",
+          source: "U.S. Census Bureau, Zillow Observed Rent Index",
           sourceUrl: "https://www.census.gov"
         },
         {
-          statement: "Only 35% of renters can afford the median-priced home in their area",
+          statement: "By most estimates, fewer than 4 in 10 renters can afford the median-priced home in their area at current rates",
           source: "National Association of Realtors",
           sourceUrl: "https://www.nar.realtor"
         },
         {
-          statement: "Childcare costs average $10,000-$20,000 per year per child, often exceeding rent",
+          statement: "Childcare costs average $10,000-$20,000 per year per child in most states, often exceeding rent or in-state college tuition",
           source: "U.S. Department of Health and Human Services",
           sourceUrl: "https://www.hhs.gov"
         },
         {
-          statement: "Grocery prices increased 25% from 2019 to 2023, outpacing wage growth",
-          source: "Bureau of Labor Statistics",
-          sourceUrl: "https://www.bls.gov"
+          statement: "Grocery prices rose roughly 25-28% from 2019 through 2024, outpacing wage growth in most income groups before stabilizing in 2025",
+          source: "Bureau of Labor Statistics CPI",
+          sourceUrl: "https://www.bls.gov/cpi/"
         }
       ]
     },
@@ -460,7 +460,7 @@ export const issues: Issue[] = [
         "Teaching civic engagement skills should start in schools",
         "We can disagree strongly while still respecting each other's dignity"
       ],
-      surveySource: "Pew Research Center, More in Common, Public Agenda (2023-2024)"
+      surveySource: "Pew Research Center, More in Common, Public Agenda (2024-2025)"
     },
     perspectives: {
       left: {
@@ -579,7 +579,7 @@ export const issues: Issue[] = [
         "Voting should be easier and more accessible to all eligible citizens",
         "Election integrity and voter confidence are essential to democracy"
       ],
-      surveySource: "Pew Research Center, FairVote surveys (2023-2024)"
+      surveySource: "Pew Research Center, FairVote surveys (2024-2025)"
     },
     perspectives: {
       left: {
@@ -615,7 +615,7 @@ export const issues: Issue[] = [
         },
         {
           statement: "67% of voters support allowing ranked choice voting in their state",
-          source: "Pew Research Center 2024",
+          source: "Pew Research Center 2024-2025",
           sourceUrl: "https://www.pewresearch.org"
         },
         {
@@ -700,7 +700,7 @@ export const issues: Issue[] = [
         "We need more voices, choices, and coalition-building in our politics",
         "Treating political opponents as enemies rather than fellow citizens is destructive"
       ],
-      surveySource: "Pew Research Center, Gallup, Hidden Tribes Study (2023-2024)"
+      surveySource: "Pew Research Center, Gallup, Hidden Tribes Study (2024-2025)"
     },
     perspectives: {
       left: {
@@ -829,7 +829,7 @@ export const issues: Issue[] = [
         "Grassroots organizing and citizen movements have changed America repeatedly",
         "Teaching civic participation should be a priority in schools and communities"
       ],
-      surveySource: "Pew Research Center, Knight Foundation, Civic Engagement Studies (2023-2024)"
+      surveySource: "Pew Research Center, Knight Foundation, Civic Engagement Studies (2024-2025)"
     },
     perspectives: {
       left: {
@@ -942,7 +942,7 @@ export const issues: Issue[] = [
     description: "Border security, legal immigration pathways, and addressing the status of undocumented immigrants",
     explainer: {
       title: "What's the Challenge?",
-      content: "Immigration remains one of America's most contentious political issues, with 73% of Republicans and significant numbers of Democrats citing it as a top concern. The debate often polarizes into 'open borders' vs. 'close borders' extremes, obscuring substantial common ground. The U.S. immigration system hasn't seen comprehensive reform since 1986, leaving millions in legal limbo while border enforcement remains inconsistent. Both humanitarian concerns and rule-of-law principles deserve serious consideration."
+      content: "Immigration remains one of America's most contentious political issues. The Trump administration that took office in January 2025 launched the largest interior enforcement operation in modern U.S. history—greatly expanding ICE detention, ending many parole programs, invoking the Alien Enemies Act, and issuing an executive order to limit birthright citizenship now under court challenge. Encounters at the southern border have dropped sharply from their 2023-2024 highs. Debates about due process, the role of local police, the economic impact of mass deportation, and the future of legal immigration have intensified. The U.S. immigration system hasn't seen comprehensive legislative reform since 1986, leaving millions in legal limbo. Both humanitarian concerns and rule-of-law principles deserve serious consideration."
     },
     commonGround: {
       title: "Where Most Americans Agree",
@@ -958,29 +958,29 @@ export const issues: Issue[] = [
         "Human trafficking and smuggling operations should be stopped",
         "Local law enforcement shouldn't be forced to do federal immigration enforcement"
       ],
-      surveySource: "Pew Research Center 2024, AP-NORC 2025"
+      surveySource: "Pew Research Center 2024-2025, AP-NORC 2025"
     },
     perspectives: {
       left: {
         title: "Progressive Perspective",
         points: [
-          "Immigration is a human rights issue, not just a law enforcement problem",
-          "Pathways to citizenship for undocumented immigrants recognize their contributions and humanity",
-          "Border wall and mass deportation policies are cruel, expensive, and ineffective",
-          "Asylum seekers fleeing violence and persecution deserve compassion and protection",
-          "Anti-immigrant rhetoric fuels racism and scapegoating of vulnerable communities",
-          "Immigration detention centers have inhumane conditions that violate human rights"
+          "Mass deportation operations separate families, harm U.S. citizens with mixed-status relatives, and damage communities and the economy",
+          "Use of the Alien Enemies Act and removal of long-settled residents without full due process raises serious constitutional concerns",
+          "Ending birthright citizenship would overturn 150 years of constitutional interpretation",
+          "Pathways to citizenship for Dreamers and long-settled undocumented residents recognize their contributions",
+          "Asylum seekers fleeing violence and persecution deserve compassion and fair hearings",
+          "Detention conditions and rapid expansion of contract detention facilities raise human-rights concerns"
         ]
       },
       right: {
         title: "Conservative Perspective",
         points: [
-          "Border security is national security, illegal immigration undermines rule of law",
-          "Amnesty for illegal immigrants rewards lawbreaking and encourages more illegal immigration",
-          "Sanctuary cities endanger public safety by protecting criminal illegal immigrants",
-          "Chain migration and visa lottery should end in favor of merit-based immigration",
-          "American workers' jobs and wages are threatened by illegal immigration and cheap labor",
-          "Complete the border wall and enforce existing immigration laws before any reform"
+          "Border security is national security, and the sharp drop in encounters since 2025 shows enforcement works",
+          "Deporting people who entered illegally upholds rule of law and protects American workers from labor undercutting",
+          "Sanctuary policies that block cooperation with federal immigration enforcement endanger public safety",
+          "The visa lottery and chain migration should be replaced with a merit-based legal immigration system",
+          "Birthright citizenship for children of unauthorized migrants creates incentives the framers did not anticipate",
+          "Comprehensive reform should follow—not precede—proven enforcement of existing law"
         ]
       }
     },
@@ -988,27 +988,32 @@ export const issues: Issue[] = [
       title: "Evidence-Based Facts",
       facts: [
         {
-          statement: "Immigration court backlog exceeds 3 million cases with average wait times of 4+ years",
+          statement: "The immigration court backlog has grown to more than 3.7 million pending cases with average wait times of multiple years",
           source: "TRAC Immigration (Syracuse University)",
-          sourceUrl: "https://trac.syr.edu"
+          sourceUrl: "https://trac.syr.edu/immigration/"
         },
         {
-          statement: "Undocumented immigrants paid $96.7 billion in federal, state, and local taxes in 2022",
+          statement: "Undocumented immigrants paid an estimated $96.7 billion in federal, state, and local taxes in 2022, including Social Security and Medicare taxes for benefits they cannot collect",
           source: "Institute on Taxation and Economic Policy",
-          sourceUrl: "https://itep.org"
+          sourceUrl: "https://itep.org/undocumented-immigrants-taxes-2024/"
         },
         {
-          statement: "Border apprehensions fluctuate significantly: 1.7 million in 2021, varied by administration policies",
+          statement: "Southwest border encounters fell sharply from a monthly peak of about 250,000 in late 2023 to much lower levels in 2025, following both late-Biden-administration actions and the Trump administration's expanded enforcement",
           source: "U.S. Customs and Border Protection",
-          sourceUrl: "https://www.cbp.gov"
+          sourceUrl: "https://www.cbp.gov/newsroom/stats/nationwide-encounters"
         },
         {
-          statement: "Legal immigration processing times have increased significantly, with some green cards taking 10+ years",
+          statement: "ICE detention capacity expanded substantially in 2025 to support large-scale interior enforcement; the Trump administration's executive order limiting birthright citizenship is the subject of ongoing federal court litigation",
+          source: "DHS / ICE statements; Congressional Research Service",
+          sourceUrl: "https://crsreports.congress.gov"
+        },
+        {
+          statement: "Legal immigration processing times remain long, with some employment-based green cards from certain countries taking a decade or more",
           source: "U.S. Citizenship and Immigration Services",
           sourceUrl: "https://www.uscis.gov"
         },
         {
-          statement: "Immigrant-founded companies employ millions of Americans and include 55% of U.S. billion-dollar startups",
+          statement: "Immigrant-founded companies employ millions of Americans and account for roughly 55% of U.S. billion-dollar startups",
           source: "National Foundation for American Policy",
           sourceUrl: "https://nfap.com"
         }
@@ -1073,7 +1078,7 @@ export const issues: Issue[] = [
         "Conservation and responsible stewardship of resources benefit everyone",
         "Jobs and economic security matter when making energy policy"
       ],
-      surveySource: "Yale Climate Opinion Maps 2024, Pew Research 2025"
+      surveySource: "Yale Climate Opinion Maps 2024-2025, Pew Research 2025"
     },
     perspectives: {
       left: {
@@ -1103,24 +1108,24 @@ export const issues: Issue[] = [
       title: "Evidence-Based Facts",
       facts: [
         {
-          statement: "Global temperatures have risen approximately 1.1°C since pre-industrial times",
-          source: "NASA Global Climate Change",
+          statement: "Global average temperatures have risen approximately 1.3°C above pre-industrial levels, with 2024 the warmest year on record and 2025 among the warmest",
+          source: "NASA Global Climate Change; NOAA; Copernicus Climate Change Service",
           sourceUrl: "https://climate.nasa.gov"
         },
         {
-          statement: "The U.S. has reduced CO2 emissions by 12% since 2005 while GDP grew",
-          source: "U.S. Environmental Protection Agency",
-          sourceUrl: "https://www.epa.gov"
+          statement: "U.S. energy-related CO2 emissions are roughly 15-20% below 2005 levels even as GDP has grown, primarily driven by coal-to-gas switching and renewables",
+          source: "U.S. Environmental Protection Agency; EIA",
+          sourceUrl: "https://www.epa.gov/ghgemissions"
         },
         {
-          statement: "Renewable energy jobs in the U.S. grew to over 3.2 million in 2023",
-          source: "U.S. Department of Energy",
-          sourceUrl: "https://www.energy.gov"
+          statement: "Renewable energy employed roughly 3.4 million Americans in 2024, with solar and battery storage the fastest-growing segments",
+          source: "U.S. Department of Energy U.S. Energy and Employment Report",
+          sourceUrl: "https://www.energy.gov/policy/us-energy-employment-jobs-report-useer"
         },
         {
-          statement: "Climate-related disasters cost the U.S. over $165 billion in 2022",
+          statement: "Climate- and weather-related disasters have cost the U.S. more than $180 billion in each of several recent years; 2024 alone produced 27 billion-dollar disaster events",
           source: "NOAA National Centers for Environmental Information",
-          sourceUrl: "https://www.ncei.noaa.gov"
+          sourceUrl: "https://www.ncei.noaa.gov/access/billions/"
         },
         {
           statement: "China produces more CO2 emissions than the U.S., EU, and Japan combined",
@@ -1188,7 +1193,7 @@ export const issues: Issue[] = [
         "Enforcing existing laws should be a priority",
         "Mental health services need better funding and accessibility"
       ],
-      surveySource: "Pew Research Center 2024, Johns Hopkins Gun Policy Survey"
+      surveySource: "Pew Research Center 2024-2025, Johns Hopkins Gun Policy Survey"
     },
     perspectives: {
       left: {
@@ -1218,7 +1223,7 @@ export const issues: Issue[] = [
       title: "Evidence-Based Facts",
       facts: [
         {
-          statement: "Approximately 49,000 Americans died from gun-related injuries in 2023, with suicide accounting for over half",
+          statement: "More than 46,000 Americans died from gun-related injuries in 2023 (the most recent year with finalized CDC data), with suicide accounting for over half; provisional 2024 data suggests a modest decline",
           source: "CDC WONDER Database",
           sourceUrl: "https://wonder.cdc.gov"
         },
@@ -1303,7 +1308,7 @@ export const issues: Issue[] = [
         "Cases of rape and incest deserve special consideration",
         "Foster care and child welfare systems need improvement"
       ],
-      surveySource: "Pew Research Center 2024, Gallup Abortion Polling"
+      surveySource: "Pew Research Center 2024-2025, Gallup Abortion Polling"
     },
     perspectives: {
       left: {
@@ -1333,9 +1338,9 @@ export const issues: Issue[] = [
       title: "Evidence-Based Facts",
       facts: [
         {
-          statement: "About 60% of Americans believe abortion should be legal in all or most cases",
-          source: "Pew Research Center 2024",
-          sourceUrl: "https://www.pewresearch.org"
+          statement: "About 6 in 10 Americans consistently believe abortion should be legal in all or most cases—a share that has been stable in polling since the Dobbs decision",
+          source: "Pew Research Center 2024-2025; Gallup",
+          sourceUrl: "https://www.pewresearch.org/religion/fact-sheet/public-opinion-on-abortion/"
         },
         {
           statement: "91% of abortions occur in the first 13 weeks of pregnancy",
@@ -1348,9 +1353,9 @@ export const issues: Issue[] = [
           sourceUrl: "https://www.guttmacher.org"
         },
         {
-          statement: "Since Dobbs, 14 states have near-total abortion bans while others expanded access",
-          source: "Guttmacher Institute State Tracking",
-          sourceUrl: "https://www.guttmacher.org"
+          statement: "Since the 2022 Dobbs decision, more than a dozen states have enacted near-total abortion bans while several others have passed ballot measures or laws expanding access; the precise count shifts as litigation and ballot measures continue",
+          source: "Guttmacher Institute State Tracking; KFF abortion policy tracker",
+          sourceUrl: "https://www.guttmacher.org/state-policy/explore/overview-abortion-laws"
         },
         {
           statement: "Maternal mortality rates in the U.S. are higher than other developed nations",
@@ -1402,7 +1407,7 @@ export const issues: Issue[] = [
     description: "Managing government spending, the federal deficit, and long-term fiscal sustainability",
     explainer: {
       title: "What's the Challenge?",
-      content: "The federal government spends more than it collects in revenue, adding to a national debt that now exceeds $34 trillion. Interest payments on this debt consume an ever-larger share of the federal budget. While 57% of Americans express concern about the deficit, politicians from both parties have contributed to the problem—Republicans through tax cuts and defense spending, Democrats through social programs and healthcare expansion. The challenge is addressing unsustainable debt without harming vulnerable Americans or economic growth."
+      content: "The federal government spends more than it collects in revenue, adding to a national debt that crossed $39 trillion in March 2026 and continues to grow by roughly $2.7 trillion per year. Interest payments on this debt now consume more than $1 trillion annually—more than defense spending. While most Americans express concern about the deficit, politicians from both parties have contributed to the problem—Republicans through tax cuts and defense spending, Democrats through social programs and healthcare expansion. The challenge is addressing unsustainable debt without harming vulnerable Americans or economic growth."
     },
     commonGround: {
       title: "Where Most Americans Agree",
@@ -1418,7 +1423,7 @@ export const issues: Issue[] = [
         "Future generations shouldn't bear unfair burdens from today's decisions",
         "Economic growth helps but won't solve the problem alone"
       ],
-      surveySource: "Pew Research Center 2025, Committee for a Responsible Federal Budget"
+      surveySource: "Pew Research Center 2025-2026, Committee for a Responsible Federal Budget"
     },
     perspectives: {
       left: {
@@ -1448,13 +1453,13 @@ export const issues: Issue[] = [
       title: "Evidence-Based Facts",
       facts: [
         {
-          statement: "U.S. national debt exceeded $34 trillion in 2024, over 120% of GDP",
-          source: "U.S. Treasury Department",
-          sourceUrl: "https://www.treasurydirect.gov"
+          statement: "U.S. national debt crossed $39 trillion in March 2026 and reached approximately $38.9 trillion as of May 2026, well over 120% of GDP",
+          source: "U.S. Treasury Fiscal Data; Joint Economic Committee monthly debt updates",
+          sourceUrl: "https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/"
         },
         {
-          statement: "Net interest on the debt cost $659 billion in 2023, exceeding defense spending",
-          source: "Congressional Budget Office",
+          statement: "Net interest on the debt now exceeds $1 trillion per year—approximately $3 billion per day—surpassing defense spending",
+          source: "Congressional Budget Office; CBO Budget Outlook",
           sourceUrl: "https://www.cbo.gov"
         },
         {
@@ -1533,7 +1538,7 @@ export const issues: Issue[] = [
         "Police departments need proper training, standards, and accountability",
         "Community investment and crime prevention matter as much as enforcement"
       ],
-      surveySource: "Pew Research Center 2024, Police Reform Polling"
+      surveySource: "Pew Research Center 2024-2025, Police Reform Polling"
     },
     perspectives: {
       left: {
@@ -1563,9 +1568,9 @@ export const issues: Issue[] = [
       title: "Evidence-Based Facts",
       facts: [
         {
-          statement: "Violent crime rates are down 49% from 1993 peaks, though up slightly from 2019",
-          source: "FBI Uniform Crime Report",
-          sourceUrl: "https://ucr.fbi.gov"
+          statement: "Violent crime rates remain near multi-decade lows: roughly half their 1993 peak. After a pandemic-era spike, 2023 and 2024 saw notable nationwide declines in murder and overall violent crime",
+          source: "FBI Uniform Crime Report; Council on Criminal Justice analysis",
+          sourceUrl: "https://www.fbi.gov/services/cjis/ucr"
         },
         {
           statement: "Over 60% of crimes go unreported to police according to victim surveys",
@@ -1632,7 +1637,7 @@ export const issues: Issue[] = [
     description: "America's role in the world, defense spending, and relationships with allies and adversaries",
     explainer: {
       title: "What's the Challenge?",
-      content: "Americans debate how engaged the U.S. should be globally. Some advocate 'America First' policies focused on domestic priorities, while others argue international engagement protects American interests and values. Challenges include managing relationships with China and Russia, supporting allies in Europe and Asia, addressing terrorism and nuclear proliferation, and determining when and how to use military force. With conflicts in Ukraine, the Middle East, and tensions over Taiwan, these questions have real consequences."
+      content: "Americans debate how engaged the U.S. should be globally. Some advocate 'America First' policies focused on domestic priorities, while others argue international engagement protects American interests and values. Challenges include managing relationships with China and Russia, supporting allies in Europe and Asia, addressing terrorism and nuclear proliferation, and determining when and how to use military force. In the Trump second term these debates have sharpened: the administration has used economic pressure on allies (including tariff threats over Greenland), reshaped U.S. policy on Ukraine and the Middle East, and conducted direct military action in Venezuela. With ongoing conflicts and great-power competition, these questions have real consequences."
     },
     commonGround: {
       title: "Where Most Americans Agree",
@@ -1648,29 +1653,29 @@ export const issues: Issue[] = [
         "Veterans deserve full support and quality healthcare",
         "Foreign aid should serve American interests and be spent effectively"
       ],
-      surveySource: "Pew Research Center Global Attitudes 2024, Chicago Council Survey"
+      surveySource: "Pew Research Center Global Attitudes 2025, Chicago Council on Global Affairs Survey 2025"
     },
     perspectives: {
       left: {
         title: "Progressive Perspective",
         points: [
-          "Military-industrial complex drives endless wars that cost trillions and countless lives",
-          "America must support Ukraine's democracy against Russian aggression and authoritarianism",
-          "Climate change is the greatest national security threat facing the world",
-          "Human rights and democracy should guide foreign policy, not just narrow interests",
+          "Threatening allies like Denmark and pressuring NATO weakens America's standing and emboldens authoritarians",
+          "Cutting support to Ukraine rewards Russian aggression and erodes the post-war order America helped build",
+          "Direct military action like the Venezuela operation sets dangerous precedents and risks escalation",
+          "Climate change is a long-term national security threat that current policy ignores",
           "Defense budget is bloated while diplomacy and development are underfunded",
-          "America's role is to lead international cooperation, not act as world police"
+          "Human rights and democracy should guide foreign policy, not just narrow interests"
         ]
       },
       right: {
         title: "Conservative Perspective",
         points: [
-          "Peace through strength—robust military prevents war more than diplomacy alone",
-          "America First means prioritizing our interests over endless foreign commitments",
-          "China is the primary threat requiring focus, not conflicts in Europe or Middle East",
+          "Peace through strength—a robust military and willingness to act prevent war more than diplomacy alone",
+          "America First means prioritizing our interests over endless foreign commitments and unfair trade arrangements",
+          "China is the primary long-term threat and deserves the most focus",
           "NATO allies must pay their fair share instead of relying on American protection",
-          "Biden's weakness invited Russian aggression in Ukraine and chaos in Afghanistan",
-          "International organizations undermine American sovereignty and should be resisted"
+          "Decisive action—like removing a narcoterrorist regime in Venezuela—shows resolve adversaries respect",
+          "International organizations often undermine American sovereignty and should be resisted"
         ]
       }
     },
@@ -1678,9 +1683,9 @@ export const issues: Issue[] = [
       title: "Evidence-Based Facts",
       facts: [
         {
-          statement: "U.S. defense spending exceeds $800 billion annually, more than the next 10 countries combined",
-          source: "Department of Defense Budget",
-          sourceUrl: "https://comptroller.defense.gov"
+          statement: "U.S. defense spending exceeds $900 billion annually, more than the next 10 countries combined",
+          source: "Department of Defense Budget; SIPRI Military Expenditure Database",
+          sourceUrl: "https://www.sipri.org/databases/milex"
         },
         {
           statement: "The U.S. has mutual defense treaties with over 50 countries including NATO members",
@@ -1763,7 +1768,7 @@ export const issues: Issue[] = [
         "We need better tools to verify what's authentic",
         "This problem will only get worse without action"
       ],
-      surveySource: "Pew Research Center 2024, AI Trust Survey"
+      surveySource: "Pew Research Center 2024-2025, AI Trust Survey"
     },
     perspectives: {
       left: {
@@ -1793,29 +1798,29 @@ export const issues: Issue[] = [
       title: "Evidence-Based Facts",
       facts: [
         {
-          statement: "95% of Americans have encountered misinformation online, with 63% saying they see it regularly",
-          source: "Pew Research Center 2024",
-          sourceUrl: "https://www.pewresearch.org"
+          statement: "The large majority of Americans report encountering misinformation online; more than 6 in 10 say they see it regularly",
+          source: "Pew Research Center 2024-2025",
+          sourceUrl: "https://www.pewresearch.org/topic/internet-technology/"
         },
         {
-          statement: "Deepfake videos increased by 900% from 2022 to 2024",
-          source: "Deeptrace/Sensity AI Report",
+          statement: "The volume of identified deepfake content online has grown by orders of magnitude since 2022, with rapid growth continuing into 2025-2026",
+          source: "Sensity AI; Reality Defender industry reports",
           sourceUrl: "https://sensity.ai"
         },
         {
-          statement: "80% of Americans can't reliably distinguish AI-generated images from real photos",
-          source: "MIT Media Lab Study 2024",
+          statement: "Multiple peer-reviewed studies have found that most Americans cannot reliably distinguish AI-generated images from real photos without help",
+          source: "MIT Media Lab and academic studies",
           sourceUrl: "https://www.media.mit.edu"
         },
         {
-          statement: "Foreign influence operations using AI targeted the 2024 election from Russia, China, and Iran",
-          source: "U.S. Intelligence Community Assessment",
+          statement: "Foreign influence operations using AI targeted the 2024 U.S. election from Russia, China, and Iran; U.S. intelligence officials have warned of similar activity ahead of the 2026 midterms",
+          source: "Office of the Director of National Intelligence",
           sourceUrl: "https://www.dni.gov"
         },
         {
-          statement: "AI-generated scam calls and messages cost Americans over $10 billion in 2024",
-          source: "Federal Trade Commission",
-          sourceUrl: "https://www.ftc.gov"
+          statement: "AI-generated scam calls, texts, and impersonation losses cost Americans well over $10 billion in 2024, with FTC data showing continued growth in 2025",
+          source: "Federal Trade Commission Consumer Sentinel data",
+          sourceUrl: "https://www.ftc.gov/news-events/topics/consumer-protection/consumer-sentinel-network"
         }
       ]
     },
@@ -1876,7 +1881,7 @@ export const issues: Issue[] = [
         "Faith-based charities and organizations provide invaluable community services",
         "Both religious liberty and protection from discrimination are important values"
       ],
-      surveySource: "Pew Research Center - Americans' Views on Religion and Politics (2024)"
+      surveySource: "Pew Research Center - Americans' Views on Religion and Politics (2024-2025)"
     },
     perspectives: {
       left: {
@@ -1908,7 +1913,7 @@ export const issues: Issue[] = [
       facts: [
         {
           statement: "76% of Americans say religion is losing influence in American life, while 56% say this is a bad thing",
-          source: "Pew Research Center 2024",
+          source: "Pew Research Center 2024-2025",
           sourceUrl: "https://www.pewresearch.org"
         },
         {
@@ -1918,12 +1923,12 @@ export const issues: Issue[] = [
         },
         {
           statement: "63% of Americans say churches and religious organizations do more good than harm in American society",
-          source: "Pew Research Center 2023",
+          source: "Pew Research Center 2023-2024",
           sourceUrl: "https://www.pewresearch.org"
         },
         {
           statement: "Religious 'nones' (atheist, agnostic, or 'nothing in particular') now make up 28% of U.S. adults, up from 16% in 2007",
-          source: "Pew Research Center 2024",
+          source: "Pew Research Center 2024-2025",
           sourceUrl: "https://www.pewresearch.org"
         },
         {
@@ -1974,10 +1979,10 @@ export const issues: Issue[] = [
     id: "greenland-territorial-expansion",
     title: "Greenland & U.S. Territorial Expansion",
     category: "government",
-    description: "Trump's interest in acquiring Greenland reignites debates about American territorial expansion and strategic interests",
+    description: "The Trump administration's push to acquire Greenland has driven an ongoing diplomatic crisis with Denmark and a debate about American territorial ambitions",
     explainer: {
       title: "What's the Challenge?",
-      content: "President-elect Donald Trump has repeatedly expressed interest in the United States purchasing or acquiring Greenland, the world's largest island, which is an autonomous territory of Denmark. Trump first raised this idea in 2019 (calling it 'essentially a large real estate deal'), and has renewed the discussion in 2025, refusing to rule out military or economic coercion to achieve this goal. Greenland is strategically important for Arctic military positioning, mineral resources including rare earth elements critical for technology and defense, and melting ice opening new shipping routes. Denmark and Greenland have firmly rejected any sale, but Trump's statements have sparked debate about American territorial ambitions, sovereignty, alliance relationships, and whether 19th-century-style territorial expansion has any place in 21st-century geopolitics."
+      content: "Since returning to office in January 2025, President Trump has pursued American acquisition of Greenland—the world's largest island and an autonomous territory of Denmark—triggering an ongoing diplomatic crisis. Trump first floated the idea in 2019, but in 2025 and early 2026 he refused to rule out military force or economic coercion, threatened 25% tariffs on European goods unless Denmark relinquished the island, and dispatched senior officials to advance the effort. At the World Economic Forum in Davos in January 2026, Trump publicly pulled back from threats of force or tariffs and described a 'framework' for a future arrangement after meeting with NATO Secretary General Mark Rutte, though no agreement was announced. Denmark and Greenland have repeatedly stated the island is not for sale; Greenland's prime minister Jens-Frederik Nielsen has reaffirmed Greenlandic self-determination. Greenland is strategically important for Arctic military positioning, rare earth and mineral resources critical for technology and defense, and new shipping routes opened by melting ice. The episode has sparked debate about American territorial ambitions, NATO cohesion, alliance relationships, and whether 19th-century-style territorial expansion has any place in 21st-century geopolitics."
     },
     commonGround: {
       title: "Where Most Americans Agree",
@@ -1991,7 +1996,7 @@ export const issues: Issue[] = [
         "Any territorial changes should respect the self-determination of people involved",
         "The U.S. should protect its strategic interests in the Arctic region"
       ],
-      surveySource: "Arctic Policy Polling, Foreign Policy Surveys 2024-2025"
+      surveySource: "Arctic Policy Polling, Pew Research and Chicago Council Foreign Policy Surveys 2025-2026"
     },
     perspectives: {
       left: {
@@ -2045,6 +2050,16 @@ export const issues: Issue[] = [
           statement: "China has attempted investments in Greenland's mining and infrastructure, raising U.S. security concerns",
           source: "Department of Defense Arctic Strategy",
           sourceUrl: "https://www.defense.gov"
+        },
+        {
+          statement: "In early 2026 the Trump administration threatened 25% tariffs on European goods over Greenland; at Davos in January 2026 Trump publicly stepped back from threats of force and described a 'framework' for a future deal, without announcing terms",
+          source: "Council on Foreign Relations, Al Jazeera reporting",
+          sourceUrl: "https://www.cfr.org/articles/greenlands-independence-what-would-mean-us-interests"
+        },
+        {
+          statement: "Greenland's prime minister Jens-Frederik Nielsen and Denmark's government have publicly and repeatedly stated the island is not for sale",
+          source: "Government of Greenland statements; House of Commons Library briefing",
+          sourceUrl: "https://commonslibrary.parliament.uk/research-briefings/cbp-10472/"
         }
       ]
     },
@@ -2052,15 +2067,15 @@ export const issues: Issue[] = [
       title: "Learn More",
       links: [
         {
-          title: "Department of Defense Arctic Strategy",
-          url: "https://www.defense.gov",
-          description: "U.S. strategic interests and security concerns in the Arctic region",
-          source: "U.S. Department of Defense"
+          title: "Council on Foreign Relations - Greenland and U.S. Interests",
+          url: "https://www.cfr.org/articles/greenlands-independence-what-would-mean-us-interests",
+          description: "Non-partisan analysis of U.S. strategic interests and Greenland's independence movement",
+          source: "Council on Foreign Relations"
         },
         {
-          title: "Wilson Center - Arctic Research",
+          title: "Wilson Center - Polar Initiative",
           url: "https://www.wilsoncenter.org/program/polar-initiative",
-          description: "Nonpartisan research on Arctic geopolitics and climate",
+          description: "Nonpartisan research on Arctic geopolitics, security, and climate",
           source: "Wilson Center"
         },
         {
@@ -2068,6 +2083,12 @@ export const issues: Issue[] = [
           url: "https://naalakkersuisut.gl",
           description: "Official information on Greenland's self-governance and perspectives",
           source: "Naalakkersuisut (Greenland Self-Government)"
+        },
+        {
+          title: "House of Commons Library - Trump and Greenland",
+          url: "https://commonslibrary.parliament.uk/research-briefings/cbp-10472/",
+          description: "UK Parliament's non-partisan briefing on the diplomatic dispute",
+          source: "UK House of Commons Library"
         }
       ]
     },
@@ -2086,51 +2107,50 @@ export const issues: Issue[] = [
   },
   {
     id: "venezuela-regime-change",
-    title: "Venezuela Crisis & U.S. Intervention",
+    title: "Venezuela After Maduro: U.S. Intervention & Transition",
     category: "government",
-    description: "Venezuela's authoritarian collapse, humanitarian crisis, and debates over American intervention and regime change",
+    description: "The U.S. military capture of Nicolás Maduro in January 2026 and Venezuela's contested transition reopen long-standing debates about American intervention abroad",
     explainer: {
       title: "What's the Challenge?",
-      content: "Venezuela has collapsed from South America's wealthiest nation into an authoritarian dictatorship with hyperinflation, widespread poverty, and over 7 million refugees fleeing the country. Nicolás Maduro's socialist regime has maintained power through rigged elections, political repression, and support from Cuba, Russia, and China. In recent weeks, opposition leader Edmundo González claims to have won the 2024 presidential election, with the U.S. and several Latin American countries recognizing him as the legitimate president-elect, while Maduro refuses to relinquish power. Trump has taken a harder line, with his administration recognizing González and considering stronger measures including potential military options. The crisis raises fundamental questions: What responsibility does the U.S. have to support democracy in Latin America? When, if ever, should America intervene to remove dictators? How do we balance humanitarian concerns with the lessons learned from failed regime-change operations in Iraq, Libya, and Afghanistan? And what about the millions of Venezuelan refugees—many now attempting to reach the U.S. southern border?"
+      content: "On January 3, 2026, U.S. military forces conducted a strike in Venezuela that captured Nicolás Maduro, who had clung to power despite widespread evidence that opposition candidate Edmundo González won the July 2024 presidential election. Maduro was transferred to New York and indicted on narcoterrorism charges; he pleaded not guilty in Manhattan federal court on January 5. Venezuela's former vice president Delcy Rodríguez—a member of Maduro's inner circle—was sworn in as acting president, and the Trump administration has formally recognized her interim government rather than González (who fled to Spain) or Nobel laureate opposition leader María Corina Machado. President Trump has stated the United States will play a role in stabilizing the country. Venezuela had already collapsed from South America's wealthiest nation into an authoritarian state with hyperinflation, mass poverty, and over 7 million refugees. The new chapter raises fundamental questions: Was a U.S. military operation to remove a foreign head of state lawful, wise, and effective? What obligations follow capture—rebuilding institutions, holding elections, or stepping back? Why was the opposition leader most associated with the democratic movement (Machado) sidelined? And what happens to the millions of Venezuelan refugees, many of whom hoped to return home?"
     },
     commonGround: {
       title: "Where Most Americans Agree",
       points: [
-        "The Venezuelan people are suffering under a brutal authoritarian regime",
-        "Maduro is a dictator who has destroyed Venezuela's economy and democracy",
-        "The humanitarian crisis and refugee situation demand attention",
-        "Venezuelan refugees deserve compassion while border security remains important",
-        "China, Russia, and Cuba's support for Maduro threatens regional stability and U.S. interests",
-        "Socialist economic policies destroyed what was once Latin America's wealthiest country",
-        "The international community should support free and fair elections in Venezuela",
-        "American intervention should be carefully considered given past failures in regime change"
+        "The Venezuelan people have suffered under years of authoritarian rule and economic collapse",
+        "Maduro repressed political opponents, rigged elections, and destroyed Venezuela's economy",
+        "The humanitarian and refugee situation demands sustained attention",
+        "Venezuelan refugees deserve compassion alongside reasonable border security",
+        "Foreign backing of Maduro by Russia, Cuba, and China threatened regional stability",
+        "A legitimate, accountable transition is preferable to either continued authoritarianism or chaos",
+        "Lessons from Iraq, Libya, and Afghanistan should inform how the U.S. handles the aftermath",
+        "Any new Venezuelan government should ultimately be chosen by Venezuelans in free elections"
       ],
-      surveySource: "Americas Barometer, Pew Research Latin America Surveys 2024-2025"
+      surveySource: "Americas Barometer, Pew Research and Chicago Council Latin America Surveys 2025-2026"
     },
     perspectives: {
       left: {
         title: "Progressive Perspective",
         points: [
-          "U.S. sanctions have worsened humanitarian suffering for ordinary Venezuelans while failing to remove Maduro",
-          "American regime-change operations have repeatedly failed and cost countless lives—Iraq, Libya, Afghanistan prove military intervention doesn't work",
-          "Support for Venezuelan democracy shouldn't mean another disastrous U.S. military invasion",
-          "The U.S. has historically backed right-wing dictators in Latin America—our intervention track record is terrible",
-          "Diplomacy, humanitarian aid, and regional multilateral approaches are better than unilateral American military action",
-          "We should welcome Venezuelan refugees with compassion rather than treating them as border security threats",
-          "U.S. economic imperialism and oil interests in Venezuela complicate our motives"
+          "Using U.S. military force to capture a foreign head of state sets a dangerous precedent and may violate international law",
+          "Recognizing Delcy Rodríguez—a Maduro insider—while sidelining Nobel laureate María Corina Machado betrays the democracy movement",
+          "Iraq, Libya, and Afghanistan show that toppling regimes is the easy part; rebuilding is where America has repeatedly failed",
+          "Years of broad U.S. sanctions deepened humanitarian suffering for ordinary Venezuelans long before the military operation",
+          "Venezuelans, not Washington, must lead any legitimate transition; permanent U.S. stewardship would be neocolonial",
+          "Venezuelan refugees in the U.S. deserve protected status and a clear path to safety, not enforcement-first policy",
+          "Oil interests and great-power competition with China and Russia complicate America's stated humanitarian motives"
         ]
       },
       right: {
         title: "Conservative Perspective",
         points: [
-          "Maduro is a brutal socialist dictator backed by America's enemies—China, Russia, and Cuba—and must go",
-          "Venezuela proves socialism destroys prosperity and freedom every time it's tried",
-          "The Monroe Doctrine obligates America to prevent hostile foreign powers from dominating our hemisphere",
-          "Millions of Venezuelan refugees are destabilizing the region and flooding toward our southern border",
-          "Trump's strong stance and willingness to use all options shows leadership Biden lacked",
-          "Supporting free elections and democracy in Latin America serves American security interests",
-          "Maduro's regime threatens regional stability, supports drug trafficking, and harbors terrorists",
-          "The U.S. should support the legitimate president-elect González with all necessary means"
+          "Removing Maduro—indicted on narcoterrorism charges and propped up by Russia, Cuba, and China—was a long-overdue act of strength",
+          "Venezuela stands as a cautionary example of how socialist policy can destroy a once-prosperous nation",
+          "The Monroe Doctrine remains relevant: hostile foreign powers should not be allowed to entrench themselves in the Western Hemisphere",
+          "A stable post-Maduro Venezuela can reduce the regional refugee flows that have strained the U.S. southern border",
+          "Working with a transitional government, even an imperfect one like Rodríguez's, may be more practical than insisting on perfect outcomes",
+          "American leadership in supporting transitions can deter other authoritarians backed by U.S. adversaries",
+          "Targeted action against an indicted narcoterrorist regime is different from open-ended nation-building"
         ]
       }
     },
@@ -2138,12 +2158,12 @@ export const issues: Issue[] = [
       title: "Evidence-Based Facts",
       facts: [
         {
-          statement: "Over 7.7 million Venezuelans have fled the country since 2015—one of the world's largest refugee crises",
+          statement: "Over 7.7 million Venezuelans have fled the country since 2015—one of the world's largest displacement crises",
           source: "UNHCR (UN Refugee Agency)",
           sourceUrl: "https://www.unhcr.org"
         },
         {
-          statement: "Venezuela's GDP has contracted by over 75% since 2013, with hyperinflation reaching 1,000,000% at its peak",
+          statement: "Venezuela's GDP contracted by over 75% from 2013, with hyperinflation reaching extreme highs before partial dollarization stabilized prices",
           source: "World Bank, IMF Data",
           sourceUrl: "https://www.worldbank.org"
         },
@@ -2153,9 +2173,19 @@ export const issues: Issue[] = [
           sourceUrl: "https://www.state.gov"
         },
         {
-          statement: "In 2024 presidential election, opposition claims González won by a large margin based on voter tally sheets, but Maduro's regime declared itself the winner without releasing detailed results",
+          statement: "Independent vote-tally records published by opposition observers indicated Edmundo González won the July 2024 presidential election; Maduro's electoral authority declared him winner without releasing detailed results",
           source: "Carter Center Election Observation, OAS Reports",
           sourceUrl: "https://www.cartercenter.org"
+        },
+        {
+          statement: "On January 3, 2026, U.S. forces captured Nicolás Maduro in Venezuela; he was transferred to New York and indicted on narcoterrorism charges, pleading not guilty on January 5",
+          source: "U.S. Department of Justice indictment; CNN reporting",
+          sourceUrl: "https://www.cnn.com/world/live-news/venezuela-explosions-caracas-intl-hnk-01-03-26"
+        },
+        {
+          statement: "Delcy Rodríguez was sworn in as acting president of Venezuela on January 5, 2026; the U.S. has formally recognized her interim government while opposition leader María Corina Machado, who won the Nobel Peace Prize for promoting Venezuelan democracy, has been excluded from the transition plan",
+          source: "Atlantic Council, France 24, CFR analysis",
+          sourceUrl: "https://www.cfr.org/expert-brief/assessing-venezuelas-future-after-nicolas-maduros-bold-capture"
         },
         {
           statement: "Venezuela has the world's largest proven oil reserves but production has collapsed under mismanagement and sanctions",
@@ -2173,15 +2203,21 @@ export const issues: Issue[] = [
       title: "Learn More",
       links: [
         {
-          title: "Council on Foreign Relations - Venezuela Crisis",
-          url: "https://www.cfr.org/backgrounder/venezuela-crisis",
-          description: "Comprehensive analysis of Venezuela's political and economic collapse",
+          title: "Council on Foreign Relations - Venezuela After Maduro",
+          url: "https://www.cfr.org/expert-brief/assessing-venezuelas-future-after-nicolas-maduros-bold-capture",
+          description: "Comprehensive analysis of Venezuela's transition after Maduro's capture",
           source: "Council on Foreign Relations"
+        },
+        {
+          title: "International Crisis Group - Venezuela After Maduro",
+          url: "https://www.crisisgroup.org/latin-america-caribbean/venezuela-united-states/venezuela-after-maduro-transaction-or-transition",
+          description: "Non-partisan analysis of whether the transition leads to genuine democratic change",
+          source: "International Crisis Group"
         },
         {
           title: "Human Rights Watch - Venezuela",
           url: "https://www.hrw.org/americas/venezuela",
-          description: "Documentation of human rights abuses under Maduro regime",
+          description: "Documentation of human rights abuses and transition concerns",
           source: "Human Rights Watch"
         },
         {
@@ -2201,16 +2237,823 @@ export const issues: Issue[] = [
     openQuestions: {
       title: "Questions for Thoughtful Debate",
       questions: [
-        "What responsibility does the U.S. have to support democracy in Venezuela vs. respecting sovereignty?",
-        "Have U.S. sanctions helped or hurt the Venezuelan people?",
-        "When, if ever, is military intervention justified to remove a dictator?",
-        "How should the U.S. balance supporting Venezuelan democracy with avoiding another failed regime-change operation?",
-        "What's the right approach to Venezuelan refugees at the southern border?",
-        "Should the U.S. work multilaterally through regional partners or act unilaterally?",
-        "How do we counter Chinese and Russian influence in Latin America?",
-        "What lessons from Iraq, Libya, and Afghanistan apply to Venezuela?",
-        "If Maduro refuses to leave despite losing the election, what should the U.S. do?",
-        "Does supporting democracy in Latin America serve American interests or represent imperialism?"
+        "Was the U.S. military operation to capture Maduro legal under international law and the U.S. Constitution?",
+        "Was recognizing Delcy Rodríguez—a Maduro insider—the right call, or should the U.S. have backed Machado or González?",
+        "What obligations does the U.S. have for Venezuela's reconstruction after a military intervention?",
+        "How can the transition lead to genuinely free elections rather than another authoritarian government?",
+        "What lessons from Iraq, Libya, and Afghanistan should shape the post-Maduro period?",
+        "Have years of U.S. sanctions hurt the Venezuelan people more than they hurt the regime?",
+        "What's the right approach to Venezuelan refugees in the U.S. now that the regime that drove them out has fallen?",
+        "Does the precedent of capturing a foreign head of state make America safer or invite future retaliation?",
+        "How do we counter Russian, Cuban, and Chinese influence in Latin America going forward?",
+        "Does supporting transitions in Latin America serve American interests or represent imperialism?"
+      ]
+    }
+  },
+  {
+    id: "tariffs-trade-policy",
+    title: "Tariffs & Trade Policy",
+    category: "economic-opportunity",
+    description: "The Trump administration's tariff agenda has reshaped U.S. trade policy and prompted debate over its impact on prices, manufacturing, and alliances",
+    explainer: {
+      title: "What's the Challenge?",
+      content: "Since January 2025 the Trump administration has used tariffs more aggressively than any U.S. government in nearly a century: broad-based tariffs on most imports, sharply higher tariffs on China, targeted tariffs on steel, aluminum, autos, and other sectors, and the threat of new tariffs as a negotiating tool with allies like Canada, Mexico, and the EU. Supporters argue tariffs are needed to revive American manufacturing, reduce dependence on China, and force trading partners to negotiate fairer terms. Critics argue tariffs are taxes paid largely by U.S. importers and consumers, raise costs across the supply chain, invite retaliation, and have not historically restored lost manufacturing jobs. Court challenges to the administration's use of emergency powers to impose tariffs are ongoing. Americans broadly agree trade should be fair and that manufacturing matters—but disagree sharply on whether tariffs are the right tool."
+    },
+    commonGround: {
+      title: "Where Most Americans Agree",
+      points: [
+        "Fair trade matters—agreements should be honored and enforced",
+        "China's industrial policy, IP theft, and market access barriers warrant a serious response",
+        "American manufacturing capability matters for national security and good jobs",
+        "Workers and communities hurt by past trade liberalization deserve real support",
+        "Supply chains for critical goods (medicines, semiconductors, defense) shouldn't be dangerously concentrated",
+        "Trade policy should consider impact on consumers, workers, and farmers—not just one constituency",
+        "Long-running trade deficits with strategic rivals deserve scrutiny",
+        "Sudden, unpredictable policy changes are hard on businesses and farmers"
+      ],
+      surveySource: "Chicago Council on Global Affairs Surveys 2024-2025, Pew Research Center"
+    },
+    perspectives: {
+      left: {
+        title: "Progressive Perspective",
+        points: [
+          "Tariffs are largely paid by U.S. importers and passed on to consumers, acting as a regressive tax on working families",
+          "Targeting allies with tariffs damages relationships America needs to counter China",
+          "Decades of evidence shows tariffs alone don't revive manufacturing—investment, training, and industrial policy do",
+          "Farmers and exporters bear the cost of retaliation while bailouts paper over the harm",
+          "Using emergency powers to set tariff policy bypasses Congress's constitutional authority over trade",
+          "Workers deserve adjustment assistance, training, and worker-power policies—not just tariff walls"
+        ]
+      },
+      right: {
+        title: "Conservative Perspective",
+        points: [
+          "Decades of free trade hollowed out American manufacturing and devastated working-class communities",
+          "China's mercantilist practices require leverage, not lectures—tariffs are leverage",
+          "Tariff threats have already produced new trade concessions and onshoring announcements",
+          "National security depends on producing essential goods domestically",
+          "The cost of cheap imports has been paid by American workers for forty years; rebalancing has trade-offs but is overdue",
+          "America has the largest consumer market in the world and should use that leverage in negotiations"
+        ]
+      }
+    },
+    keyFacts: {
+      title: "Evidence-Based Facts",
+      facts: [
+        {
+          statement: "Economic studies of the 2018-2019 tariffs found the cost was paid largely by U.S. importers and consumers, with limited evidence of foreign exporters absorbing the increase",
+          source: "Peer-reviewed research summarized by the National Bureau of Economic Research",
+          sourceUrl: "https://www.nber.org"
+        },
+        {
+          statement: "The Tax Foundation estimates that the 2025 tariff measures, if sustained, would reduce U.S. GDP by roughly 0.8% and household after-tax income by about $1,200 on average",
+          source: "Tax Foundation tariff tracker",
+          sourceUrl: "https://taxfoundation.org/research/all/federal/trump-tariffs-trade-war/"
+        },
+        {
+          statement: "The U.S. goods trade deficit with China narrowed from its peak but remains large; manufacturing employment has been roughly flat-to-slightly-down since 2019",
+          source: "U.S. Bureau of Economic Analysis; Bureau of Labor Statistics",
+          sourceUrl: "https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services"
+        },
+        {
+          statement: "Federal court challenges to the administration's use of the International Emergency Economic Powers Act (IEEPA) for broad tariffs are pending; lower court rulings have been mixed",
+          source: "Congressional Research Service",
+          sourceUrl: "https://crsreports.congress.gov"
+        },
+        {
+          statement: "The federal government provided multi-billion-dollar payments to farmers harmed by retaliatory tariffs during the 2018-2019 trade war",
+          source: "USDA, GAO reports",
+          sourceUrl: "https://www.gao.gov"
+        }
+      ]
+    },
+    resources: {
+      title: "Learn More",
+      links: [
+        {
+          title: "Peterson Institute for International Economics — Trade",
+          url: "https://www.piie.com/research/trade-investment",
+          description: "Non-partisan economic research on trade, tariffs, and globalization",
+          source: "Peterson Institute"
+        },
+        {
+          title: "Tax Foundation Tariff Tracker",
+          url: "https://taxfoundation.org/research/all/federal/trump-tariffs-trade-war/",
+          description: "Ongoing estimates of the economic impact of U.S. tariff policy",
+          source: "Tax Foundation"
+        },
+        {
+          title: "U.S. International Trade Commission",
+          url: "https://www.usitc.gov",
+          description: "Official data on U.S. trade flows, tariff schedules, and industry impact",
+          source: "USITC"
+        },
+        {
+          title: "Cato Institute — Trade Policy",
+          url: "https://www.cato.org/trade-policy",
+          description: "Free-market perspective on trade and tariffs",
+          source: "Cato Institute"
+        }
+      ]
+    },
+    openQuestions: {
+      title: "Questions for Thoughtful Debate",
+      questions: [
+        "Can tariffs actually rebuild U.S. manufacturing, or do they mainly raise prices for consumers?",
+        "Should Congress reclaim its constitutional authority over trade, or are emergency tariff powers appropriate?",
+        "How should the U.S. respond to China's industrial policy without harming American workers and farmers?",
+        "What's the right balance between protecting strategic industries and avoiding broad consumer price increases?",
+        "Are bilateral tariff deals more effective than multilateral trade agreements?",
+        "How should the government help workers and communities hit by either trade or trade restrictions?"
+      ]
+    }
+  },
+  {
+    id: "federal-workforce-restructuring",
+    title: "Federal Workforce & Government Restructuring",
+    category: "government",
+    description: "The 2025 Department of Government Efficiency push to shrink and restructure the federal workforce has reignited debate about the size, expertise, and accountability of the federal government",
+    explainer: {
+      title: "What's the Challenge?",
+      content: "In 2025 the Trump administration launched the most aggressive restructuring of the federal civilian workforce in decades. The Department of Government Efficiency (DOGE) drove rapid headcount reductions through deferred-resignation offers, probationary terminations, and reductions in force across many agencies; Schedule F-style executive orders sought to reclassify thousands of career employees as at-will; and entire offices and programs were cut, consolidated, or paused. Supporters argued the federal workforce had grown too large, too expensive, and too unaccountable to voters, and that aggressive action was the only way to deliver promised efficiency. Critics argued the changes were chaotic, often illegal, bypassed Congress's spending power, hollowed out essential expertise, and degraded services Americans rely on. Many actions are under court review."
+    },
+    commonGround: {
+      title: "Where Most Americans Agree",
+      points: [
+        "Government should deliver services efficiently and respect taxpayer dollars",
+        "Genuine waste, fraud, and abuse should be eliminated wherever found",
+        "Agencies should be accountable to elected leaders and to the public",
+        "Career civil servants with deep expertise are an asset worth preserving",
+        "Reorganizations should be deliberate enough to avoid breaking essential services",
+        "Veterans, retirees, and others who depend on federal programs shouldn't lose services through executive chaos",
+        "Congress, not unilateral executive action, has the constitutional power of the purse"
+      ],
+      surveySource: "Pew Research Center, Partnership for Public Service 2024-2025"
+    },
+    perspectives: {
+      left: {
+        title: "Progressive Perspective",
+        points: [
+          "Mass firings of career civil servants are illegal, capricious, and have already disrupted critical services from Social Security to air traffic control",
+          "DOGE operated outside normal oversight, with limited transparency about who decided what to cut and why",
+          "Eliminating offices that protect consumers, workers, and the environment doesn't 'cut waste'—it removes guardrails",
+          "Schedule F-style reclassification politicizes the civil service and invites cronyism",
+          "Cutting expertise hollows out the government's ability to do anything well, including the policies conservatives say they want",
+          "Congress, not the executive branch, decides what programs are funded—unilateral cuts violate the Impoundment Control Act"
+        ]
+      },
+      right: {
+        title: "Conservative Perspective",
+        points: [
+          "The federal workforce had grown bloated and unresponsive; voters elected a president to fix that",
+          "Career civil servants too often resist policy direction from elected leadership, undermining democratic accountability",
+          "Decades of bipartisan promises to streamline government produced little; aggressive action was the only path to results",
+          "Initial DOGE estimates point to real savings that benefit taxpayers and reduce long-term debt pressure",
+          "Many agency functions are duplicative, outdated, or could be delivered better by states or the private sector",
+          "Making it easier to fire poor performers brings federal employment closer to how the rest of the country works"
+        ]
+      }
+    },
+    keyFacts: {
+      title: "Evidence-Based Facts",
+      facts: [
+        {
+          statement: "The federal civilian workforce numbered roughly 2.4 million before the 2025 restructuring; DOGE-driven actions and deferred-resignation offers reduced headcount by an estimated several hundred thousand over 2025",
+          source: "Office of Personnel Management; Partnership for Public Service tracker",
+          sourceUrl: "https://ourpublicservice.org"
+        },
+        {
+          statement: "The civilian workforce is about the same size today as it was in the early 1970s, even though federal spending and population have grown substantially",
+          source: "Office of Personnel Management historical data",
+          sourceUrl: "https://www.opm.gov/data/"
+        },
+        {
+          statement: "Multiple federal courts have issued injunctions or rulings against portions of the 2025 reductions, including mass terminations of probationary employees and the dismantling of certain congressionally established agencies",
+          source: "Congressional Research Service; ongoing federal court rulings",
+          sourceUrl: "https://crsreports.congress.gov"
+        },
+        {
+          statement: "DOGE's own public savings claims have been substantially revised downward by independent analysts and the Government Accountability Office",
+          source: "Government Accountability Office; New York Times and AP analyses",
+          sourceUrl: "https://www.gao.gov"
+        },
+        {
+          statement: "Federal employee compensation accounts for less than 5% of total federal spending; entitlements and interest dominate the budget",
+          source: "Congressional Budget Office",
+          sourceUrl: "https://www.cbo.gov"
+        }
+      ]
+    },
+    resources: {
+      title: "Learn More",
+      links: [
+        {
+          title: "Partnership for Public Service",
+          url: "https://ourpublicservice.org",
+          description: "Non-partisan research on the federal workforce and good government",
+          source: "Partnership for Public Service"
+        },
+        {
+          title: "Government Accountability Office",
+          url: "https://www.gao.gov",
+          description: "Non-partisan congressional watchdog assessing federal programs and spending",
+          source: "GAO"
+        },
+        {
+          title: "Congressional Research Service Reports",
+          url: "https://crsreports.congress.gov",
+          description: "Non-partisan analysis of federal workforce law and executive authority",
+          source: "CRS"
+        }
+      ]
+    },
+    openQuestions: {
+      title: "Questions for Thoughtful Debate",
+      questions: [
+        "How should the federal workforce be sized and structured for the 21st century?",
+        "What's the right balance between political accountability and an independent, expert civil service?",
+        "When can the executive branch reduce or eliminate programs without Congress?",
+        "How do we distinguish genuine waste from services someone depends on?",
+        "Should reorganizations be paced to avoid breaking essential services, even if slower?",
+        "How should pay, hiring, and firing rules differ between government and the private sector?"
+      ]
+    }
+  },
+  {
+    id: "birthright-citizenship",
+    title: "Birthright Citizenship & the 14th Amendment",
+    category: "government",
+    description: "The Trump administration's executive order to limit birthright citizenship has triggered one of the most consequential constitutional cases of the decade",
+    explainer: {
+      title: "What's the Challenge?",
+      content: "On his first day back in office in January 2025, President Trump signed an executive order directing federal agencies to refuse U.S. citizenship documents to children born in the United States if neither parent is a citizen or lawful permanent resident. The order challenges more than a century of settled constitutional interpretation: the 14th Amendment's Citizenship Clause—'All persons born or naturalized in the United States, and subject to the jurisdiction thereof, are citizens of the United States'—has been understood since United States v. Wong Kim Ark (1898) to extend citizenship to nearly all children born on U.S. soil. The executive order has been blocked in part or in whole by multiple federal courts. The Supreme Court has been asked to weigh in. At stake: whether birthright citizenship can be narrowed by executive action, whether 'subject to the jurisdiction thereof' excludes children of unauthorized immigrants, and what the policy consequences would be either way."
+    },
+    commonGround: {
+      title: "Where Most Americans Agree",
+      points: [
+        "The Constitution, including the 14th Amendment, should be respected",
+        "Major changes to constitutional interpretation deserve serious legal and democratic deliberation",
+        "Citizenship is a profound legal status that shouldn't be left in administrative limbo for children",
+        "The U.S. immigration system needs comprehensive reform",
+        "Federal courts have a legitimate role in deciding constitutional questions",
+        "Whatever the rule, it should be applied predictably and fairly"
+      ],
+      surveySource: "Pew Research Center, Gallup 2024-2025"
+    },
+    perspectives: {
+      left: {
+        title: "Progressive Perspective",
+        points: [
+          "The text of the 14th Amendment is clear: nearly all children born on U.S. soil are citizens at birth, full stop",
+          "Wong Kim Ark settled this question in 1898 and has been relied on by generations of Americans, courts, and federal agencies",
+          "Ending birthright citizenship would create a permanent underclass of U.S.-born children with no country—a recipe for civil rights crisis",
+          "Constitutional amendments require the amendment process; an executive order cannot override the 14th Amendment",
+          "The change would force every American to prove their parents' immigration status at birth, fundamentally altering how citizenship works",
+          "Most peer comparison countries do extend citizenship at birth, especially in the Americas; the U.S. is in good company, not an outlier"
+        ]
+      },
+      right: {
+        title: "Conservative Perspective",
+        points: [
+          "The 14th Amendment was written to confer citizenship on freed slaves; extending it to children of unauthorized immigrants distorts the framers' intent",
+          "The phrase 'subject to the jurisdiction thereof' was meant to exclude people who owe primary allegiance elsewhere—originally Native Americans and foreign diplomats, but arguably others",
+          "Most developed countries in Europe and Asia do not grant automatic citizenship by birth on their soil",
+          "Birthright citizenship creates a powerful incentive for unauthorized immigration and 'birth tourism'",
+          "The Supreme Court hasn't squarely ruled on the children of unauthorized immigrants since the 14th Amendment was ratified—this is a legitimate question to revisit",
+          "Settling the question through litigation is appropriate even if the courts ultimately reject the executive order"
+        ]
+      }
+    },
+    keyFacts: {
+      title: "Evidence-Based Facts",
+      facts: [
+        {
+          statement: "The 14th Amendment's Citizenship Clause reads: 'All persons born or naturalized in the United States, and subject to the jurisdiction thereof, are citizens of the United States and of the State wherein they reside.'",
+          source: "U.S. Constitution, Amendment XIV",
+          sourceUrl: "https://constitution.congress.gov/constitution/amendment-14/"
+        },
+        {
+          statement: "In United States v. Wong Kim Ark (1898), the Supreme Court held that a child born in the U.S. to non-citizen parents was a U.S. citizen at birth",
+          source: "Supreme Court of the United States; Congressional Research Service",
+          sourceUrl: "https://crsreports.congress.gov"
+        },
+        {
+          statement: "President Trump's January 2025 executive order directing agencies not to recognize birthright citizenship for certain children has been blocked in whole or in part by multiple federal district and appellate courts; cases are proceeding to the Supreme Court",
+          source: "Federal court rulings; CRS legal analysis",
+          sourceUrl: "https://crsreports.congress.gov"
+        },
+        {
+          statement: "Of major developed countries, the United States and Canada grant unconditional birthright citizenship; most European and Asian nations do not",
+          source: "Library of Congress comparative law research",
+          sourceUrl: "https://www.loc.gov/law/help/citizenship-pathways/"
+        },
+        {
+          statement: "Estimates of the number of children born annually in the U.S. to at least one unauthorized parent are around 250,000-300,000—about 6-7% of all U.S. births in recent years",
+          source: "Pew Research Center analysis of Census data",
+          sourceUrl: "https://www.pewresearch.org"
+        }
+      ]
+    },
+    resources: {
+      title: "Learn More",
+      links: [
+        {
+          title: "Constitution Annotated — Citizenship Clause",
+          url: "https://constitution.congress.gov/browse/essay/amdt14-S1-2/ALDE_00013744/",
+          description: "Library of Congress's official annotated guide to the 14th Amendment",
+          source: "Congress.gov"
+        },
+        {
+          title: "Congressional Research Service — Birthright Citizenship",
+          url: "https://crsreports.congress.gov",
+          description: "Non-partisan legal analysis of the citizenship clause and the executive order",
+          source: "CRS"
+        },
+        {
+          title: "Migration Policy Institute",
+          url: "https://www.migrationpolicy.org",
+          description: "Non-partisan research on immigration law and policy",
+          source: "Migration Policy Institute"
+        }
+      ]
+    },
+    openQuestions: {
+      title: "Questions for Thoughtful Debate",
+      questions: [
+        "Can the president change the meaning of the 14th Amendment by executive order?",
+        "Does 'subject to the jurisdiction thereof' exclude children of unauthorized immigrants?",
+        "What policy effects—on incentives, on a potential stateless underclass—would follow either outcome?",
+        "If the U.S. wanted to change the rule, would that require a constitutional amendment?",
+        "How should U.S. practice compare to peer democracies on this question?",
+        "How should the courts balance long-standing precedent against new constitutional arguments?"
+      ]
+    }
+  },
+  {
+    id: "entitlement-solvency",
+    title: "Social Security & Medicare Solvency",
+    category: "economic-opportunity",
+    description: "Social Security and Medicare trust funds face insolvency in the next decade unless Congress acts—forcing hard choices about taxes, benefits, and the social contract",
+    explainer: {
+      title: "What's the Challenge?",
+      content: "Social Security and Medicare together support more than 70 million Americans and are the largest items in the federal budget. Both programs face approaching insolvency in their trust funds: Social Security's combined trust funds are projected to run short around 2034-2035, after which incoming payroll taxes would cover only about 80% of scheduled benefits. Medicare's Hospital Insurance trust fund faces a similar deadline. Without congressional action, beneficiaries would face automatic across-the-board cuts. Every year Congress waits, the eventual fix gets harder. The debate cuts across party lines: how much through new revenue, how much through structural changes (retirement age, benefit formulas, means-testing), and how to protect lower-income seniors. Most politicians have promised never to touch benefits for current retirees, narrowing the realistic options."
+    },
+    commonGround: {
+      title: "Where Most Americans Agree",
+      points: [
+        "Social Security and Medicare are essential programs millions depend on",
+        "Current retirees and those near retirement should not face benefit cuts they couldn't prepare for",
+        "Doing nothing is worse than acting—automatic 20%+ cuts would devastate vulnerable seniors",
+        "The longer Congress waits, the harder and more painful the fix becomes",
+        "Healthcare costs are a major driver of Medicare's fiscal challenge",
+        "Both programs should remain reliable for future generations, not just current beneficiaries",
+        "Tax loopholes and gimmicks shouldn't be how we paper over a structural problem"
+      ],
+      surveySource: "Pew Research Center, AARP, Committee for a Responsible Federal Budget 2024-2025"
+    },
+    perspectives: {
+      left: {
+        title: "Progressive Perspective",
+        points: [
+          "Raising or eliminating the payroll-tax cap so high earners pay on all wages would extend Social Security solvency for decades",
+          "Tax wealth, capital gains, and corporate profits—not benefits earned by working people",
+          "Raising the retirement age is effectively a benefit cut that hits manual laborers and shorter-lived populations hardest",
+          "Means-testing risks undermining political support for universal programs",
+          "Allowing Medicare to negotiate drug prices and expanding negotiation authority would slow Medicare cost growth",
+          "Cutting these earned benefits while passing tax cuts for the wealthy is morally indefensible"
+        ]
+      },
+      right: {
+        title: "Conservative Perspective",
+        points: [
+          "Demographic reality—fewer workers per retiree, longer lifespans—requires structural reform, not just more taxes",
+          "Gradually raising the retirement age tracks rising life expectancy and is already long overdue",
+          "Means-testing benefits or slowing cost-of-living growth at the top can preserve the program for those who depend on it most",
+          "Allowing personal accounts for younger workers could improve long-term returns and ownership",
+          "Tax increases on the most productive earners slow growth and ultimately shrink the base supporting the programs",
+          "Medicare reform should empower seniors with choice, not concentrate decisions in Washington"
+        ]
+      }
+    },
+    keyFacts: {
+      title: "Evidence-Based Facts",
+      facts: [
+        {
+          statement: "Social Security's combined trust funds are projected to be depleted around 2034-2035; after depletion, incoming payroll taxes would cover roughly 80% of scheduled benefits",
+          source: "Social Security Trustees Report",
+          sourceUrl: "https://www.ssa.gov/oact/TR/"
+        },
+        {
+          statement: "Medicare's Hospital Insurance trust fund is projected to be depleted in the early 2030s under current law",
+          source: "Medicare Trustees Report",
+          sourceUrl: "https://www.cms.gov/oact/tr"
+        },
+        {
+          statement: "Social Security paid benefits to about 69 million people in 2024; Medicare covers more than 67 million beneficiaries",
+          source: "Social Security Administration; CMS",
+          sourceUrl: "https://www.ssa.gov/news/press/factsheets/basicfact-alt.pdf"
+        },
+        {
+          statement: "Removing the Social Security taxable-wage cap entirely would close roughly two-thirds of the program's long-term shortfall, depending on benefit-credit assumptions",
+          source: "Social Security Administration Office of the Chief Actuary; CRFB",
+          sourceUrl: "https://www.ssa.gov/oact/solvency/provisions/"
+        },
+        {
+          statement: "Allowing Medicare to negotiate prices for selected drugs (under the 2022 Inflation Reduction Act) is projected to reduce Medicare drug spending by tens of billions of dollars over a decade",
+          source: "Congressional Budget Office",
+          sourceUrl: "https://www.cbo.gov"
+        }
+      ]
+    },
+    resources: {
+      title: "Learn More",
+      links: [
+        {
+          title: "Social Security Trustees Report",
+          url: "https://www.ssa.gov/oact/TR/",
+          description: "Official annual assessment of Social Security's long-term financial outlook",
+          source: "Social Security Administration"
+        },
+        {
+          title: "Medicare Trustees Report",
+          url: "https://www.cms.gov/oact/tr",
+          description: "Official annual assessment of Medicare's long-term financial outlook",
+          source: "CMS"
+        },
+        {
+          title: "Committee for a Responsible Federal Budget",
+          url: "https://www.crfb.org/topics/social-security",
+          description: "Non-partisan analysis of Social Security and Medicare reform options",
+          source: "CRFB"
+        },
+        {
+          title: "AARP Public Policy Institute",
+          url: "https://www.aarp.org/ppi/",
+          description: "Research on retirement security and the impact of reform options on older Americans",
+          source: "AARP"
+        }
+      ]
+    },
+    openQuestions: {
+      title: "Questions for Thoughtful Debate",
+      questions: [
+        "How should the burden of fixing Social Security and Medicare be split between revenue increases and benefit changes?",
+        "Is the payroll-tax cap on Social Security still defensible as wages have concentrated at the top?",
+        "Should the retirement age rise with life expectancy, even if that hits manual workers harder?",
+        "Should benefits be means-tested—and would that undermine support for universal programs?",
+        "How can Medicare slow cost growth without reducing access to needed care?",
+        "Why has Congress repeatedly postponed reform, and what would force action?"
+      ]
+    }
+  },
+  {
+    id: "fentanyl-cartels",
+    title: "Fentanyl, the Overdose Crisis & Cartels",
+    category: "public-safety",
+    description: "Fentanyl has driven the deadliest overdose crisis in American history and reshaped debates over drug policy, border enforcement, and U.S. action against Mexican cartels",
+    explainer: {
+      title: "What's the Challenge?",
+      content: "Synthetic opioids—principally fentanyl—are the leading cause of death for American adults under 50 and have killed more than 100,000 Americans per year in recent years, though provisional 2024 and 2025 data show meaningful declines from the peak. Most fentanyl is produced by Mexican cartels using precursor chemicals largely sourced from China, then smuggled into the United States primarily by U.S. citizens at official border crossings. The Trump administration in 2025 designated several major cartels as Foreign Terrorist Organizations and pursued aggressive border enforcement; debate has intensified over whether and how the U.S. military could be used against cartels operating in Mexico without that country's consent. Public health advocates argue overdose deaths cannot be solved with enforcement alone—treatment access, harm reduction, and stable mental healthcare matter at least as much. Critics argue decades of demand-side policy have failed and that supply-side disruption deserves a much bigger role."
+    },
+    commonGround: {
+      title: "Where Most Americans Agree",
+      points: [
+        "The overdose crisis is a public health emergency that demands a serious national response",
+        "Mexican cartels are dangerous, well-armed criminal organizations that harm Americans and Mexicans alike",
+        "China-sourced precursor chemicals are part of the problem and need diplomatic and enforcement pressure",
+        "Addiction is both a public health and a criminal justice issue, not one or the other",
+        "Treatment, recovery support, and mental healthcare access need expansion",
+        "First responders, families, and communities on the front lines need more support",
+        "Stopping the flow of fentanyl at the border is a legitimate priority"
+      ],
+      surveySource: "Pew Research Center, KFF, RAND Drug Policy Research Center 2024-2025"
+    },
+    perspectives: {
+      left: {
+        title: "Progressive Perspective",
+        points: [
+          "Decades of supply-side enforcement haven't stopped drug crises; expanding treatment, naloxone access, and harm reduction saves lives now",
+          "Most fentanyl is smuggled through legal ports of entry by U.S. citizens—a border wall does not address that vector",
+          "Designating cartels as terrorists and contemplating U.S. military strikes inside Mexico risks war and undermines the cooperation needed to actually disrupt them",
+          "Recent declines in overdose deaths track expanded access to naloxone, methadone, and buprenorphine—evidence that the public-health approach works",
+          "Mental illness, untreated pain, and economic despair are root causes that punishment cannot fix",
+          "Criminalizing users without offering treatment fills prisons without reducing supply or demand"
+        ]
+      },
+      right: {
+        title: "Conservative Perspective",
+        points: [
+          "Cartels are paramilitary organizations behaving like terrorists; treating them that way unlocks tools to disrupt them",
+          "Securing the border—including disrupting the smuggling networks—is essential to reducing supply",
+          "China's failure to crack down on precursor exports is a deliberate hostile act and should bear costs",
+          "Aggressive prosecution of traffickers, especially those dealing fatal doses, is justice for victims and their families",
+          "Permissive policies that tolerate open drug use entrench addiction and harm communities",
+          "While treatment matters, treating supply-side enforcement as a failure ignores how much worse the crisis would be without it"
+        ]
+      }
+    },
+    keyFacts: {
+      title: "Evidence-Based Facts",
+      facts: [
+        {
+          statement: "U.S. drug-overdose deaths peaked at roughly 111,000-112,000 in 2023, with synthetic opioids (mainly fentanyl) involved in about 70% of those deaths; provisional CDC data show meaningful declines in 2024 and 2025",
+          source: "CDC National Center for Health Statistics; CDC Provisional Drug Overdose Death Counts",
+          sourceUrl: "https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm"
+        },
+        {
+          statement: "DEA and CBP data indicate the great majority of fentanyl seized at the border is intercepted at official ports of entry; about 80-90% of fentanyl-trafficking convictions involve U.S. citizens",
+          source: "Drug Enforcement Administration; U.S. Sentencing Commission",
+          sourceUrl: "https://www.dea.gov"
+        },
+        {
+          statement: "In February 2025 the U.S. government designated six Mexican cartels and several other transnational criminal groups as Foreign Terrorist Organizations",
+          source: "U.S. Department of State",
+          sourceUrl: "https://www.state.gov"
+        },
+        {
+          statement: "Medications for opioid use disorder (methadone, buprenorphine, naltrexone) reduce overdose mortality by roughly half in randomized and observational studies",
+          source: "National Institute on Drug Abuse; New England Journal of Medicine reviews",
+          sourceUrl: "https://nida.nih.gov"
+        },
+        {
+          statement: "China announced in 2019 broader scheduling of fentanyl analogues but enforcement of precursor chemical exports has been a continuing point of contention between U.S. and Chinese officials",
+          source: "Congressional Research Service",
+          sourceUrl: "https://crsreports.congress.gov"
+        }
+      ]
+    },
+    resources: {
+      title: "Learn More",
+      links: [
+        {
+          title: "CDC Drug Overdose Data",
+          url: "https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm",
+          description: "Official provisional and final U.S. overdose mortality data",
+          source: "CDC NCHS"
+        },
+        {
+          title: "RAND Drug Policy Research Center",
+          url: "https://www.rand.org/well-being/justice-policy/centers/dprc.html",
+          description: "Non-partisan analysis of drug policy effectiveness",
+          source: "RAND"
+        },
+        {
+          title: "National Institute on Drug Abuse",
+          url: "https://nida.nih.gov",
+          description: "Federal scientific research on addiction and effective treatments",
+          source: "NIDA / NIH"
+        },
+        {
+          title: "Congressional Research Service — Counternarcotics",
+          url: "https://crsreports.congress.gov",
+          description: "Non-partisan analysis of cartel designations and counternarcotics policy",
+          source: "CRS"
+        }
+      ]
+    },
+    openQuestions: {
+      title: "Questions for Thoughtful Debate",
+      questions: [
+        "What's the right balance between supply-side enforcement and demand-side treatment and prevention?",
+        "Should the U.S. military be used against cartels in Mexico—and under what legal authority?",
+        "Has the cartel terrorist designation made the problem easier or harder to manage diplomatically?",
+        "How should we measure progress: overdose deaths, drug seizures, prosecutions, treatment access, or all of the above?",
+        "What role should harm reduction (naloxone, syringe services) play in federal and state policy?",
+        "How can China and the U.S. cooperate to disrupt precursor chemical supply chains?"
+      ]
+    }
+  },
+  {
+    id: "ai-governance",
+    title: "AI Governance & Regulation",
+    category: "government",
+    description: "Artificial intelligence is reshaping the economy, national security, and daily life faster than government can write rules—forcing hard choices about how, and how much, to regulate",
+    explainer: {
+      title: "What's the Challenge?",
+      content: "Artificial intelligence is advancing faster than U.S. law and regulation. The technology touches almost every part of life—healthcare diagnoses, hiring decisions, lending, education, child safety, copyright, elections, and national security—and policy is being made in pieces: federal executive orders, state laws (notably in California, Colorado, and New York), agency guidance, and industry self-regulation. The European Union's AI Act takes a comprehensive risk-based approach; China is pursuing both heavy regulation and aggressive state investment. The U.S. debate centers on whether federal preemption is needed to prevent a patchwork of 50 state rules, what guardrails (if any) apply to the largest frontier models, how to protect children and consumers from AI-driven harms, and how to preserve American leadership against the very real possibility that China overtakes the U.S. in capability."
+    },
+    commonGround: {
+      title: "Where Most Americans Agree",
+      points: [
+        "AI is a transformative technology with both significant benefits and significant risks",
+        "U.S. leadership in AI matters for the economy and national security",
+        "Children and consumers deserve protection from clear AI-driven harms (CSAM, fraud, impersonation)",
+        "AI systems that make consequential decisions (lending, hiring, healthcare) should be auditable",
+        "Election integrity in the face of AI-generated content matters",
+        "Workers displaced by automation deserve support and retraining options",
+        "Government use of AI on citizens should be transparent and accountable"
+      ],
+      surveySource: "Pew Research Center AI Surveys 2024-2025, KFF AI in Health"
+    },
+    perspectives: {
+      left: {
+        title: "Progressive Perspective",
+        points: [
+          "Enforceable federal safety, transparency, and bias-testing standards for high-risk AI systems are needed now—self-regulation has not worked",
+          "AI systems used in hiring, lending, and healthcare must be tested for and prevented from producing discriminatory outcomes",
+          "Workers and creators whose data trains AI deserve compensation, consent, and protection from displacement",
+          "Concentration of AI power in a few large corporations and a few wealthy nations is itself a public-interest problem",
+          "States like California and Colorado have moved ahead because Congress has not; broad federal preemption that wipes them out would be a step backward",
+          "Government use of AI to surveil citizens or make benefits decisions needs strong civil-liberties protections"
+        ]
+      },
+      right: {
+        title: "Conservative Perspective",
+        points: [
+          "Heavy-handed AI regulation risks ceding U.S. leadership to China, with serious national-security consequences",
+          "A patchwork of conflicting state AI laws makes it impossible to build national products and should be preempted by a light-touch federal framework",
+          "Markets, tort liability, and existing law (civil rights, fraud, product safety) cover most AI harms already",
+          "Mandating 'fairness' tests risks turning into ideological speech control over AI outputs",
+          "American AI companies should be supported, not burdened, in a global race",
+          "Parents and individuals, not federal agencies, should be the primary decision-makers about AI use in personal contexts"
+        ]
+      }
+    },
+    keyFacts: {
+      title: "Evidence-Based Facts",
+      facts: [
+        {
+          statement: "In January 2025 the Trump administration rescinded the 2023 Biden AI executive order and issued a new framework emphasizing American AI leadership and reduced regulatory burden",
+          source: "White House executive orders; Congressional Research Service",
+          sourceUrl: "https://crsreports.congress.gov"
+        },
+        {
+          statement: "By 2025, hundreds of AI-related bills had been introduced across U.S. state legislatures; California, Colorado, Texas, and New York have enacted some of the most significant",
+          source: "National Conference of State Legislatures AI tracker",
+          sourceUrl: "https://www.ncsl.org/technology-and-communication/artificial-intelligence-2024-legislation"
+        },
+        {
+          statement: "The EU AI Act, fully effective in stages through 2026-2027, sets risk-tier obligations on AI providers including outright bans on certain uses",
+          source: "European Commission AI Act overview",
+          sourceUrl: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+        },
+        {
+          statement: "Federal agencies—including DOD, NIST, and the FTC—have issued AI guidance under existing authorities; the AI Safety Institute (NIST) coordinates voluntary frontier-model evaluations",
+          source: "NIST; FTC; DOD",
+          sourceUrl: "https://www.nist.gov/aisi"
+        },
+        {
+          statement: "Independent surveys find roughly 6 in 10 Americans favor more government regulation of AI, with majorities in both parties concerned about misuse",
+          source: "Pew Research Center 2024-2025",
+          sourceUrl: "https://www.pewresearch.org/topic/internet-technology/"
+        }
+      ]
+    },
+    resources: {
+      title: "Learn More",
+      links: [
+        {
+          title: "NIST AI Safety Institute",
+          url: "https://www.nist.gov/aisi",
+          description: "U.S. government's technical organization for AI safety testing and standards",
+          source: "NIST"
+        },
+        {
+          title: "Stanford HAI — AI Index",
+          url: "https://aiindex.stanford.edu",
+          description: "Annual non-partisan report on AI capabilities, deployment, and policy",
+          source: "Stanford HAI"
+        },
+        {
+          title: "NCSL Artificial Intelligence Legislation Tracker",
+          url: "https://www.ncsl.org/technology-and-communication/artificial-intelligence-2024-legislation",
+          description: "Non-partisan tracker of state AI legislation",
+          source: "National Conference of State Legislatures"
+        },
+        {
+          title: "Center for AI Safety",
+          url: "https://www.safe.ai",
+          description: "Research on technical and policy aspects of frontier AI risk",
+          source: "Center for AI Safety"
+        }
+      ]
+    },
+    openQuestions: {
+      title: "Questions for Thoughtful Debate",
+      questions: [
+        "Should Congress preempt state AI laws to create a single national framework?",
+        "What categories of AI use (if any) warrant outright bans or pre-deployment approval?",
+        "How do we keep America competitive in AI without abandoning safety guardrails?",
+        "Who should be liable when an AI system causes harm—the developer, the deployer, or the user?",
+        "How should AI-generated content be labeled, especially in political contexts?",
+        "What protections do workers and creators need as AI reshapes their industries?"
+      ]
+    }
+  },
+  {
+    id: "higher-ed-federal-funding",
+    title: "Higher Education, Federal Funding & DEI",
+    category: "education",
+    description: "The 2025 federal funding fights with major universities, antisemitism investigations, and broad rollback of DEI programs have reopened debate about the relationship between Washington and U.S. higher education",
+    explainer: {
+      title: "What's the Challenge?",
+      content: "In 2025 the federal government's relationship with American universities changed dramatically. The Trump administration paused or canceled billions of dollars in federal research grants to elite institutions including Harvard, Columbia, and others; opened or expanded Title VI investigations into campus antisemitism; required universities to make significant policy changes (admissions, discipline, foreign funding disclosure, DEI office structure) as conditions for resuming federal support; and across the executive branch dismantled diversity, equity, and inclusion programs. Supporters argued universities had tolerated antisemitism, hired and admitted on ideological grounds, and grew dependent on federal money while flouting federal civil-rights law; critics argued the funding pressure amounts to political coercion of independent institutions, that broad research cuts harm science and U.S. competitiveness, and that civil-rights enforcement is being weaponized."
+    },
+    commonGround: {
+      title: "Where Most Americans Agree",
+      points: [
+        "Federal research funding has been a critical engine of U.S. scientific and economic leadership",
+        "Antisemitism, racism, and other forms of harassment are wrong and have no place on campus",
+        "Universities accepting federal money should comply with federal civil-rights law",
+        "Free speech and open inquiry are core to what universities are for",
+        "Tuition has grown faster than inflation and student debt is a serious problem",
+        "Universities should be transparent about foreign funding and influence",
+        "Accountability for billions in federal grants is legitimate"
+      ],
+      surveySource: "Pew Research Center Higher Education Surveys 2024-2025, Gallup"
+    },
+    perspectives: {
+      left: {
+        title: "Progressive Perspective",
+        points: [
+          "Using research funding as leverage to coerce universities into ideological compliance is a serious threat to academic freedom",
+          "Pausing billions in NIH, NSF, and other research grants harms cancer research, basic science, and U.S. competitiveness with China",
+          "DEI offices were created in response to real disparities—dismantling them does not make those disparities go away",
+          "Civil-rights enforcement is being used selectively to punish institutions for protected political speech",
+          "International students and scholars are essential to U.S. universities and to American innovation",
+          "Debate over campus protest deserves nuance—not blanket characterizations of all critics of Israeli policy as antisemites"
+        ]
+      },
+      right: {
+        title: "Conservative Perspective",
+        points: [
+          "Universities have a serious antisemitism problem they failed to address; federal action is overdue",
+          "DEI bureaucracies grew into ideological machinery that discriminated based on race and political viewpoint",
+          "After the Supreme Court ended race-based admissions in SFFA v. Harvard (2023), many institutions visibly tried to work around the ruling",
+          "Federal grants come with conditions; if universities don't like the conditions, they don't have to take the money",
+          "Foreign funding from China, Qatar, and elsewhere into U.S. universities raises legitimate national-security concerns",
+          "Conservative scholars and students have faced years of hostile campus climates; federal accountability is balance, not coercion"
+        ]
+      }
+    },
+    keyFacts: {
+      title: "Evidence-Based Facts",
+      facts: [
+        {
+          statement: "Federal research and development obligations to U.S. universities exceeded $50 billion annually before the 2025 funding actions; NIH alone provides more than $30 billion per year in research grants",
+          source: "National Science Foundation; National Institutes of Health",
+          sourceUrl: "https://ncses.nsf.gov"
+        },
+        {
+          statement: "In 2025 the federal government paused or terminated billions of dollars in research funding to Harvard, Columbia, and other institutions, citing antisemitism and related compliance concerns; some actions have been challenged in federal court",
+          source: "Congressional Research Service; federal court filings and rulings",
+          sourceUrl: "https://crsreports.congress.gov"
+        },
+        {
+          statement: "The U.S. Department of Education's Office for Civil Rights has opened a substantially expanded number of Title VI investigations concerning campus antisemitism since late 2023",
+          source: "U.S. Department of Education Office for Civil Rights",
+          sourceUrl: "https://www2.ed.gov/about/offices/list/ocr/"
+        },
+        {
+          statement: "In Students for Fair Admissions v. Harvard (2023), the Supreme Court held that race-based admissions practices at Harvard and the University of North Carolina violated the Equal Protection Clause and Title VI",
+          source: "Supreme Court of the United States",
+          sourceUrl: "https://www.supremecourt.gov"
+        },
+        {
+          statement: "Trust in higher education has declined sharply among Americans across the political spectrum, with the largest drop among Republicans, according to multiple long-running surveys",
+          source: "Gallup; Pew Research Center",
+          sourceUrl: "https://news.gallup.com/poll/508352/americans-confidence-higher-education-down-sharply.aspx"
+        }
+      ]
+    },
+    resources: {
+      title: "Learn More",
+      links: [
+        {
+          title: "Inside Higher Ed",
+          url: "https://www.insidehighered.com",
+          description: "News and analysis on policy, funding, and politics in higher education",
+          source: "Inside Higher Ed"
+        },
+        {
+          title: "American Council on Education",
+          url: "https://www.acenet.edu",
+          description: "Higher education policy analysis and advocacy",
+          source: "ACE"
+        },
+        {
+          title: "FIRE — Foundation for Individual Rights and Expression",
+          url: "https://www.thefire.org",
+          description: "Non-partisan civil liberties organization tracking campus free-speech issues",
+          source: "FIRE"
+        },
+        {
+          title: "Congressional Research Service — Higher Education",
+          url: "https://crsreports.congress.gov",
+          description: "Non-partisan analysis of federal higher-education law and funding",
+          source: "CRS"
+        }
+      ]
+    },
+    openQuestions: {
+      title: "Questions for Thoughtful Debate",
+      questions: [
+        "When does enforcing civil-rights law shade into political coercion of independent institutions?",
+        "Can the federal government withhold research funding to pressure universities without harming science itself?",
+        "What is the right way to address campus antisemitism while protecting legitimate political speech?",
+        "How should universities respond to the Supreme Court's ruling against race-based admissions?",
+        "Did DEI offices serve students or themselves—and what should replace them?",
+        "How should U.S. universities handle foreign funding and influence?"
       ]
     }
   }

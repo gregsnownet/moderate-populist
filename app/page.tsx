@@ -49,10 +49,6 @@ export default function Home() {
 
       {/* ─── Where Do You Stand (featured) ─── */}
       <section id="stand" className="b-stand b-stand-featured">
-        <div className="b-stand-tag">
-          <span className="b-stand-tag-dot" />
-          Featured · The signature interactive
-        </div>
         <div className="b-stand-frame">
           <WhereDoYouStand />
         </div>

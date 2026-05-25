@@ -1,7 +1,5 @@
-"use client";
-
 // app/issues/IssuesIndex.tsx
-// Client-side filter + grid. Reads category from issue data.
+"use client";
 
 import { useMemo, useState } from "react";
 import IssueCard from "@/components/IssueCard";

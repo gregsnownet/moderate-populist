@@ -1,17 +1,24 @@
 // app/about/page.tsx — About
-// Page header → Why this exists → Mission → Values → Standards → Community → Pull quote → Cross-links
+// Header → Why → Creator note → Mission → Values → Standards → FAQ → Contribute → Privacy → Community → Pull quote → Cross-links
 
-import { Check, Mail, Megaphone, Users } from "lucide-react";
+import { Check, Mail, Megaphone, Users, Plus, Bookmark } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import PullQuote from "@/components/PullQuote";
 import CrossLinks from "@/components/CrossLinks";
-import { VALUES, STANDARDS, ICONS } from "@/lib/site-content";
+import { VALUES, STANDARDS, FAQ, ICONS } from "@/lib/site-content";
 
 export const metadata = {
   title: "About",
   description:
     "Who we are and what we're for. A reader-supported civic almanac for the exhausted majority.",
 };
+
+const CONTRIBUTE = [
+  { icon: Megaphone, title: "Suggest a topic",        desc: "Issues you want mapped. Blind spots you've noticed. Perspectives we're missing.", cta: "Send a suggestion", subject: "Topic suggestion" },
+  { icon: Check,     title: "Submit a correction",   desc: "If we got something wrong, tell us. Corrections happen in public, with sources.",   cta: "Report a correction", subject: "Correction" },
+  { icon: Bookmark,  title: "Recommend a source",    desc: "Polling, primary documents, bridging organizations. We read everything readers send.", cta: "Suggest a resource", subject: "Source recommendation" },
+  { icon: Users,     title: "Write for us",          desc: "Have a perspective you think we're missing? Pitch a guest essay.",                  cta: "Pitch an essay", subject: "Essay pitch" },
+];
 
 export default function AboutPage() {
   return (
@@ -32,21 +39,13 @@ export default function AboutPage() {
         <div className="b-why-grid">
           <div className="b-why-text">
             <p className="b-why-lede">
-              Most of us are tired. Tired of being asked to hate our neighbors. Tired
-              of headlines that flatten every conversation into a fight. Tired of
-              feeling like the only sane person in the room.
+              Most of us are tired. Tired of being asked to hate our neighbors. Tired of headlines that flatten every conversation into a fight. Tired of feeling like the only sane person in the room.
             </p>
             <p>
-              This site is for people who refuse to be caricatured by their politics.
-              Who think most Americans want roughly the same things — safe communities,
-              good schools, affordable lives, a country that works — and who suspect
-              the political conversation has been rigged against finding them.
+              This site is for people who refuse to be caricatured by their politics. Who think most Americans want roughly the same things — safe communities, good schools, affordable lives, a country that works — and who suspect the political conversation has been rigged against finding them.
             </p>
             <p>
-              It is built by one person, with the help of a large language model, for
-              the rest of us. There is no investor, no donor class, no editorial board
-              with an agenda. There is one citizen who got tired of waiting for someone
-              else to make this.
+              It is built by one person, with the help of a large language model, for the rest of us. There is no investor, no donor class, no editorial board with an agenda. There is one citizen who got tired of waiting for someone else to make this.
             </p>
           </div>
           <aside className="b-why-pulls">
@@ -63,6 +62,33 @@ export default function AboutPage() {
               <p>The exhausted majority — and anyone willing to disagree without contempt.</p>
             </blockquote>
           </aside>
+        </div>
+      </section>
+
+      {/* Creator note */}
+      <section className="b-creator">
+        <div className="b-creator-card">
+          <div className="b-creator-left">
+            <div className="b-creator-portrait" aria-hidden="true">MP</div>
+            <div className="b-creator-byline">
+              <div className="b-creator-name">A note from the editor</div>
+              <div className="b-creator-role">Founder · The Moderate Populist</div>
+            </div>
+          </div>
+          <div className="b-creator-body">
+            <p>
+              Hi. I&apos;m one person. I started this site because I got tired of feeling like every political conversation in my life was rigged — by social media, by cable news, by people I love repeating slogans I knew they didn&apos;t fully believe.
+            </p>
+            <p>
+              I&apos;m not a journalist. I&apos;m not a pundit. I&apos;m an American who refuses to accept that being in the middle means being passive. If that sounds like you, you&apos;re in the right place.
+            </p>
+            <p>
+              Read what we publish. Argue with it. Tell me where I&apos;m wrong. The newsletter goes out every other Sunday, and every email I get from a reader gets answered.
+            </p>
+            <div className="b-creator-sign">
+              <em>— The Editor</em>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -91,8 +117,7 @@ export default function AboutPage() {
           <div className="b-chapter-title">Eight common-sense commitments.</div>
         </div>
         <p className="b-section-lede">
-          Each of these holds majority support across both parties — yet our politics
-          caricatures every one of them. The point of this paper is to refuse the caricature.
+          Each of these holds majority support across both parties — yet our politics caricatures every one of them. The point of this paper is to refuse the caricature.
         </p>
         <div className="b-values-grid">
           {VALUES.map((v) => {
@@ -134,6 +159,84 @@ export default function AboutPage() {
               </article>
             );
           })}
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="b-faq">
+        <div className="b-chapter">
+          <div className="b-chapter-num">FAQ</div>
+          <div className="b-chapter-rule" />
+          <div className="b-chapter-title">Questions readers ask first.</div>
+        </div>
+        <div className="b-faq-list">
+          {FAQ.map((f, i) => (
+            <details key={i} className="b-faq-item">
+              <summary>
+                <span className="b-faq-num">{String(i + 1).padStart(2, "0")}</span>
+                <span className="b-faq-q">{f.q}</span>
+                <Plus size={18} strokeWidth={1.6} className="b-faq-icon" />
+              </summary>
+              <p>{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      {/* Contribute */}
+      <section className="b-contribute">
+        <div className="b-chapter">
+          <div className="b-chapter-num">Contribute</div>
+          <div className="b-chapter-rule" />
+          <div className="b-chapter-title">Help us widen the conversation.</div>
+        </div>
+        <p className="b-section-lede">
+          This site gets better when readers push back, send things, and pitch in. Four ways.
+        </p>
+        <div className="b-contribute-grid">
+          {CONTRIBUTE.map((w) => {
+            const Ico = w.icon;
+            return (
+              <article key={w.title} className="b-contribute-card">
+                <Ico size={24} strokeWidth={1.5} />
+                <h4>{w.title}</h4>
+                <p>{w.desc}</p>
+                <a href={`mailto:hello@moderatepopulist.org?subject=${encodeURIComponent(w.subject)}`} className="b-contribute-cta">
+                  {w.cta}
+                  <Mail size={14} />
+                </a>
+              </article>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* Privacy */}
+      <section className="b-privacy">
+        <div className="b-chapter">
+          <div className="b-chapter-num">Privacy</div>
+          <div className="b-chapter-rule" />
+          <div className="b-chapter-title">What we don&apos;t do with your data.</div>
+        </div>
+        <div className="b-privacy-grid">
+          <div className="b-privacy-text">
+            <p className="b-privacy-lede">
+              We don&apos;t track you. We don&apos;t sell anything about you. We don&apos;t run ads. We don&apos;t share your email with anyone, ever.
+            </p>
+            <p>
+              If you subscribe to the newsletter, we collect your email address. We use it only to send the newsletter. You can unsubscribe in one click. If you do, we delete the email.
+            </p>
+            <p>
+              This site uses no third-party analytics, no tracking pixels, no fingerprinting scripts. The server logs whether the page loaded — we use that to know if we broke anything. No user profile is built.
+            </p>
+          </div>
+          <ul className="b-privacy-checklist">
+            <li><Check size={16} strokeWidth={2} /> No tracking pixels</li>
+            <li><Check size={16} strokeWidth={2} /> No ads or sponsors</li>
+            <li><Check size={16} strokeWidth={2} /> No data sold or shared</li>
+            <li><Check size={16} strokeWidth={2} /> No profile built</li>
+            <li><Check size={16} strokeWidth={2} /> One-click unsubscribe</li>
+          </ul>
         </div>
       </section>
 

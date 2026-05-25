@@ -81,12 +81,10 @@ export default function RootLayout({
         className={`${funnelDisplay.variable} ${funnelSans.variable} ${geistMono.variable} antialiased`}
       >
         <AuthProvider>
-          <div className="mp">
-            <div className="political-spectrum" />
-            <Header />
-            <main>{children}</main>
-            <Footer />
-          </div>
+          <div className="political-spectrum" />
+          <Header />
+          <main className="mp">{children}</main>
+          <Footer />
         </AuthProvider>
       </body>
     </html>

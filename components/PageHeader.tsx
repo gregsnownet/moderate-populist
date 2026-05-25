@@ -8,16 +8,20 @@ export default function PageHeader({
   eyebrow,
   title,
   lede,
+  backHref = "/",
+  backLabel = "Back to Front Page",
 }: {
   eyebrow: string;
   title: string;
   lede: string;
+  backHref?: string;
+  backLabel?: string;
 }) {
   return (
     <section className="b-page-header">
-      <Link href="/" className="b-page-back">
+      <Link href={backHref} className="b-page-back">
         <ArrowLeft size={14} strokeWidth={1.5} />
-        Back to Front Page
+        {backLabel}
       </Link>
       <div className="b-page-eyebrow">{eyebrow}</div>
       <h1 className="b-page-title">{title}</h1>

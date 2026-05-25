@@ -1,5 +1,7 @@
 // lib/stance-questions.ts
 // Questions powering the "Where Do You Stand" interactive widget on the home page.
+// Each question is mapped to a related issue and talking-point script so the result
+// screen can recommend personalized next steps.
 
 export type StanceQuestion = {
   id: string;
@@ -9,6 +11,16 @@ export type StanceQuestion = {
   right: string;
   distribution: [number, number, number]; // % of Americans in each thirds-bucket
   commonGround: string;
+
+  // Routing for the personalized recommendations on the result screen.
+  // relatedIssueId must match an entry in lib/data/issues.ts.
+  relatedIssueId: string;
+  relatedIssueTitle: string;
+  // relatedScriptTopic matches the `topic` field on TALKING_SCRIPTS in lib/site-content.ts.
+  // The talking-points page exposes anchored sections keyed by the lowercased topic
+  // (e.g. /talking-points#healthcare).
+  relatedScript: string;
+  relatedScriptTopic: string;
 };
 
 export const STANCE_QUESTIONS: StanceQuestion[] = [
@@ -21,6 +33,10 @@ export const STANCE_QUESTIONS: StanceQuestion[] = [
     distribution: [38, 41, 21],
     commonGround:
       "Costs are too high. Prescription prices need to come down. Pre-existing conditions deserve protection.",
+    relatedIssueId: "healthcare-access",
+    relatedIssueTitle: "Healthcare Access & Affordability",
+    relatedScript: "Healthcare",
+    relatedScriptTopic: "healthcare",
   },
   {
     id: "immigration",
@@ -31,6 +47,10 @@ export const STANCE_QUESTIONS: StanceQuestion[] = [
     distribution: [29, 44, 27],
     commonGround:
       "The system is broken. Borders should be secure AND immigration policy humane. Dreamers deserve a path.",
+    relatedIssueId: "immigration-reform",
+    relatedIssueTitle: "Immigration Reform",
+    relatedScript: "Immigration",
+    relatedScriptTopic: "immigration",
   },
   {
     id: "economy",
@@ -41,6 +61,10 @@ export const STANCE_QUESTIONS: StanceQuestion[] = [
     distribution: [34, 39, 27],
     commonGround:
       "Working families are squeezed. Small business should thrive. Wall Street shouldn't write its own rules.",
+    relatedIssueId: "economic-opportunity",
+    relatedIssueTitle: "Economic Opportunity & Job Stability",
+    relatedScript: "Identity",
+    relatedScriptTopic: "identity",
   },
   {
     id: "climate",
@@ -51,6 +75,10 @@ export const STANCE_QUESTIONS: StanceQuestion[] = [
     distribution: [36, 42, 22],
     commonGround:
       "The climate is changing. Clean air, clean water, and energy independence are not partisan goals.",
+    relatedIssueId: "climate-environment",
+    relatedIssueTitle: "Climate & Environmental Protection",
+    relatedScript: "Climate",
+    relatedScriptTopic: "climate",
   },
   {
     id: "education",
@@ -61,6 +89,10 @@ export const STANCE_QUESTIONS: StanceQuestion[] = [
     distribution: [33, 40, 27],
     commonGround:
       "Public schools should work. Teachers deserve respect. Parents deserve a real seat at the table.",
+    relatedIssueId: "education-quality",
+    relatedIssueTitle: "Education Quality & Accessibility",
+    relatedScript: "Identity",
+    relatedScriptTopic: "identity",
   },
   {
     id: "guns",
@@ -71,6 +103,10 @@ export const STANCE_QUESTIONS: StanceQuestion[] = [
     distribution: [40, 38, 22],
     commonGround:
       "Universal background checks and keeping guns from people in crisis enjoy 80%+ support across parties.",
+    relatedIssueId: "gun-rights",
+    relatedIssueTitle: "Gun Rights & Gun Safety",
+    relatedScript: "Guns",
+    relatedScriptTopic: "guns",
   },
   {
     id: "speech",
@@ -81,6 +117,10 @@ export const STANCE_QUESTIONS: StanceQuestion[] = [
     distribution: [42, 45, 13],
     commonGround:
       "Disagreement is healthy. Contempt is not. Most Americans want to be heard, not lectured.",
+    relatedIssueId: "civic-dialogue",
+    relatedIssueTitle: "Constructive Democratic Engagement",
+    relatedScript: "Identity",
+    relatedScriptTopic: "identity",
   },
   {
     id: "trust",
@@ -91,5 +131,9 @@ export const STANCE_QUESTIONS: StanceQuestion[] = [
     distribution: [33, 47, 20],
     commonGround:
       "Checks and balances matter. Free press, fair elections, peaceful transfers. These are not partisan.",
+    relatedIssueId: "electoral-reform",
+    relatedIssueTitle: "Electoral Reform & Voting Systems",
+    relatedScript: "Trust in elections",
+    relatedScriptTopic: "trust-in-elections",
   },
 ];

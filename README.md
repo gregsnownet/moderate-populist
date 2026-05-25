@@ -1,222 +1,125 @@
-# The Moderate Populist
+# Moderate Populist — Redesign port to Next.js
 
-A platform for bridging political divides through fact-based dialogue and finding common ground on the issues that matter.
+This folder contains the production-ready Next.js files implementing the new
+"Common Ground" design. Mirror the folder layout into your repo root.
 
-## About
+## What to copy
 
-The Moderate Populist is a website dedicated to creating constructive dialogue between people with different political identities. Beyond partisan divisions, most Americans share common concerns about healthcare, education, economic opportunity, and community.
+```
+nextjs/
+├── app/
+│   ├── layout.tsx              → replace moderate-populist/app/layout.tsx
+│   ├── globals.css             → replace moderate-populist/app/globals.css
+│   ├── page.tsx                → replace moderate-populist/app/page.tsx
+│   ├── issues/page.tsx         → replace moderate-populist/app/issues/page.tsx (was IssuesClient? check)
+│   ├── solutions/page.tsx      → replace moderate-populist/app/solutions/page.tsx
+│   ├── talking-points/page.tsx → replace moderate-populist/app/talking-points/page.tsx
+│   ├── resources/page.tsx      → replace moderate-populist/app/resources/page.tsx
+│   └── about/page.tsx          → replace moderate-populist/app/about/page.tsx
+├── components/
+│   ├── Header.tsx              → NEW
+│   ├── Footer.tsx              → NEW
+│   ├── PageHeader.tsx          → NEW
+│   ├── PullQuote.tsx           → NEW
+│   ├── CrossLinks.tsx          → NEW
+│   ├── WhereDoYouStand.tsx     → NEW (client component)
+│   └── IssueCard.tsx           → replace moderate-populist/components/IssueCard.tsx
+└── lib/
+    ├── site-content.ts         → NEW (values, 4Cs, scripts, resources, etc.)
+    └── stance-questions.ts     → NEW (WDYS questions)
+```
 
-This platform provides:
-- **Neutral Issue Explainers:** Fact-based information on key political and social issues
-- **Common Ground Highlights:** Survey-backed areas where most Americans agree
-- **Evidence-Based Resources:** Links to reputable, non-partisan sources
-- **Thoughtful Questions:** Prompts for respectful debate and solution-oriented thinking
+## One-time setup steps
 
-## Technology Stack
-
-- **Framework:** Next.js 16 (App Router)
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS
-- **Deployment:** AWS (Amplify or S3 + CloudFront)
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18 or higher
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone <your-repo-url>
-   cd moderate-populist
+1. **Install lucide-react** (used for all line icons):
+   ```
+   npm install lucide-react
    ```
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+2. **Drop the old logo treatments.** `components/Logo.tsx` is no longer used.
+   You can either delete it or leave it unreferenced.
 
-3. Run the development server:
-   ```bash
-   npm run dev
-   ```
+3. **Wire fonts.** `app/layout.tsx` now loads Funnel Display, Funnel Sans, and
+   keeps Geist Mono. Geist Sans is no longer used by the design but Next.js
+   will tree-shake it if you remove the import.
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+4. **Keep AuthProvider.** I've left `<AuthProvider>` wrapping the layout, and
+   `<UserMenu>` is still surfaced via the header's mobile/account slot. Your
+   login/register/admin routes are untouched.
 
-### Build for Production
+5. **Keep your issue data.** `lib/data/issues.ts` is unchanged. The new
+   `components/IssueCard.tsx` reads the same `Issue` type. If you want the new
+   "common ground %" badge to be data-driven, add an optional
+   `commonGroundPercent?: number` field to your `Issue` type and the issues
+   themselves; the card falls back to a default if missing.
 
-```bash
-npm run build
-npm start
-```
-
-## Project Structure
+## After copying
 
 ```
-moderate-populist/
-├── app/                    # Next.js app directory
-│   ├── issues/[id]/       # Dynamic issue pages
-│   ├── resources/         # Resources page
-│   ├── about/             # About page
-│   ├── layout.tsx         # Root layout with header/footer
-│   └── page.tsx           # Homepage
-├── components/            # Reusable React components
-│   ├── IssueCard.tsx     # Issue preview card
-│   ├── IssuePage.tsx     # Issue page template
-│   ├── IssueSection.tsx  # Section component
-│   └── ResourceCard.tsx  # Resource link card
-├── lib/                   # Utilities and data
-│   └── data/
-│       ├── issues.ts     # Issue content and data
-│       └── resources.ts  # Resource links (articles, podcasts, etc.)
-├── types/                 # TypeScript type definitions
-│   ├── issue.ts          # Issue interface
-│   └── resource.ts       # Resource interface
-└── public/               # Static assets
+npm run build       # sanity-check the build
+npm run dev         # see it locally
+git add -A
+git commit -m "Redesign: Common Ground theme, slim home, 5 subpages, WDYS widget"
+git push
 ```
 
-## Adding New Issues
+Amplify (`amplify.yml`) will pick up the push and redeploy automatically.
 
-To add a new issue to the platform:
+## What's new in this version
 
-1. Open `lib/data/issues.ts`
+- **Personalized recommendations** at the end of the WDYS quiz. The widget
+  picks the two topics the user had the strongest opinion on, and offers
+  direct links to the matching issue page + talking-points script + a generic
+  Solutions CTA.
+- **Email capture** on the WDYS result screen and on the home newsletter
+  section. Both POST to `/api/newsletter`.
+- **`app/api/newsletter/route.ts`** scaffolds the endpoint — log-only by
+  default; wire your ESP into the `storeEmail` function.
+- **`relatedIssueId` / `relatedScript` fields** on every stance question in
+  `lib/stance-questions.ts`. Important: these IDs must match `issues` in
+  `lib/data/issues.ts`. The current values assume the IDs below — sanity-check
+  against your data file and adjust if any are missing:
+  - `healthcare-access`, `immigration-reform`, `economic-opportunity`,
+    `climate-environment`, `education-quality`, `gun-rights`,
+    `civic-dialogue`, `electoral-reform`
 
-2. Add a new issue object to the `issues` array following this structure:
+## Files in your repo that are now superseded
 
-```typescript
-{
-  id: "your-issue-slug",
-  title: "Issue Title",
-  category: "category-name",
-  description: "Brief description",
-  explainer: {
-    title: "What's the Challenge?",
-    content: "Neutral explanation of the issue..."
-  },
-  commonGround: {
-    title: "Where Most Americans Agree",
-    points: ["Agreement point 1", "Agreement point 2", ...],
-    surveySource: "Source citation"
-  },
-  keyFacts: {
-    title: "Evidence-Based Facts",
-    facts: [
-      {
-        statement: "Fact statement",
-        source: "Source name",
-        sourceUrl: "https://source.url"
-      },
-      ...
-    ]
-  },
-  resources: {
-    title: "Learn More from Reputable Sources",
-    links: [
-      {
-        title: "Resource title",
-        description: "What this resource provides",
-        url: "https://resource.url",
-        source: "Organization name"
-      },
-      ...
-    ]
-  },
-  openQuestions: {
-    title: "Questions for Thoughtful Debate",
-    questions: ["Question 1?", "Question 2?", ...]
-  }
-}
-```
+These existed in the old version and are no longer used by the redesign. You
+can delete them (or leave them — they're harmless dead code):
 
-3. The new issue will automatically appear on the homepage and be accessible via `/issues/your-issue-slug`
+- `components/Logo.tsx` — old SVG-logo treatment; the new header uses a typographic wordmark.
+- `components/IssueSection.tsx` — section wrapper from the old home page.
+- `app/resources/layout.tsx` — only set metadata; the new `app/resources/page.tsx` exports its own.
+- `public/old/` — old hero / logo assets if present.
 
-## Adding Resources (Articles, Podcasts, Videos)
+## Things you might want to migrate
 
-To add curated resources to the Resources page:
+- **Issue detail pages.** I haven't redesigned `app/issues/[id]/page.tsx` —
+  the existing one will still work but won't match the new theme. Tell me when
+  you want this one polished and I'll do it next.
+- **Search.** The header has a search icon but no implementation. Easy add
+  when you want it.
+- **Auth screens** (`app/login`, `app/register`) are untouched. They'll look
+  different than the rest of the site until restyled. Worth doing eventually.
+- **Newsletter signup.** The home page newsletter form and the WDYS result
+  screen both POST to `/api/newsletter`. A starter route is included at
+  `app/api/newsletter/route.ts` — it validates the email and currently just
+  `console.log`s. Replace the `storeEmail` function with your ESP integration
+  (Mailchimp / Buttondown / ConvertKit / Substack) when ready.
+- **Submit-source form.** The resources page form posts to `/api/submit-source`
+  — not wired yet. Either remove the form, swap to a mailto link, or add a
+  route that emails you the URL.
 
-1. Open `lib/data/resources.ts`
+## Sanity checklist
 
-2. Add a new resource object to the `resources` array:
+After copying everything, this is what should be true:
 
-```typescript
-{
-  id: "unique-slug-for-resource",
-  title: "Resource Title",
-  type: "article" | "podcast" | "video" | "research",
-  description: "Brief description of what this resource covers",
-  url: "https://actual-url.com",
-  source: "Publication/Source Name",
-  author: "Author Name (optional)",
-  publishedDate: "YYYY-MM-DD (optional)",
-  categories: ["healthcare", "economic-opportunity", "education", etc.],
-  tags: ["relevant", "topic", "tags"],
-  featured: true  // Set to true to highlight on homepage (optional)
-}
-```
-
-3. The resource will automatically appear on `/resources` with filtering by type and category
-
-**Resource Types:**
-- `article` - Written articles and blog posts
-- `podcast` - Podcast episodes
-- `video` - Video content and documentaries
-- `research` - Academic papers and research studies
-
-**Categories:**
-- Must match issue categories: `healthcare`, `economic-opportunity`, `education`, `community`, `families`, `public-safety`, `government`, or `general`
-
-## Deployment
-
-See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed instructions on deploying to AWS.
-
-**Quick start options:**
-- **AWS Amplify** (Easiest): Connect your Git repository for automatic deployments
-- **S3 + CloudFront** (Most cost-effective): Static hosting for $1-5/month
-- **Lightsail** (VPS option): Starting at $3.50/month
-
-## Roadmap
-
-### Current Features (v1.0)
-- ✅ Issue pages with structured content
-- ✅ Responsive design
-- ✅ SEO-optimized static generation
-
-### Planned Features
-- 💬 Moderated community discussions
-- 📊 Interactive surveys and polling
-- 👥 User accounts with political identity (optional)
-- 🗺️ Local community action connections
-- 📱 Mobile app
-
-## Contributing
-
-Contributions are welcome! Areas where we'd love help:
-- Additional issue content with reputable sources
-- UI/UX improvements
-- Accessibility enhancements
-- Translation to other languages
-
-## Content Guidelines
-
-When adding or editing issue content:
-
-1. **Neutrality:** Present all perspectives fairly without partisan bias
-2. **Evidence-Based:** Cite reputable, verifiable sources
-3. **Common Ground:** Highlight areas of agreement based on surveys/polls
-4. **Respectful:** Assume good faith and avoid inflammatory language
-5. **Solution-Oriented:** Focus on solving problems, not assigning blame
-
-## License
-
-[Choose appropriate license - MIT, Apache 2.0, etc.]
-
-## Contact
-
-For questions or feedback, please open an issue in this repository.
-
----
-
-**The Moderate Populist** - Seeking knowledge, furthering understanding - Beyond the political Divide.
+- [ ] `npm install lucide-react` succeeds
+- [ ] `npm run build` completes with no errors
+- [ ] `/` shows hero → WDYS widget → 3 featured issues → newsletter
+- [ ] `/issues` shows the full grid with category filter
+- [ ] `/solutions`, `/talking-points`, `/resources`, `/about` all render
+- [ ] Header nav highlights the current page
+- [ ] WDYS widget on home works: drag sliders, advance through 8 questions, see result
+- [ ] Mobile widths still render (might need responsive tweaks; ping me)

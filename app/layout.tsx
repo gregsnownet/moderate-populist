@@ -81,10 +81,15 @@ export default function RootLayout({
         className={`${funnelDisplay.variable} ${funnelSans.variable} ${geistMono.variable} antialiased`}
       >
         <AuthProvider>
-          <div className="political-spectrum" />
-          <Header />
-          <main className="mp">{children}</main>
-          <Footer />
+          {/* The .mp wrapper must contain Header and Footer — every .mp .b-header*
+              and .mp .b-footer* CSS rule scopes through it. Without this, the
+              header and footer render unstyled. Do not move .mp onto <main>. */}
+          <div className="mp">
+            <div className="political-spectrum" />
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </div>
         </AuthProvider>
       </body>
     </html>

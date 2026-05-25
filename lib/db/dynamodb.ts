@@ -46,3 +46,4 @@ export const docClient = new Proxy({} as DynamoDBDocumentClient, {
 
 export const USERS_TABLE = process.env.DYNAMODB_USERS_TABLE || 'ModeratePopulist_Users';
 export const COMMENTS_TABLE = process.env.DYNAMODB_COMMENTS_TABLE || 'ModeratePopulist_Comments';
+export const NEWSLETTER_TABLE = process.env.DYNAMODB_NEWSLETTER_TABLE || 'ModeratePopulist_Newsletter';

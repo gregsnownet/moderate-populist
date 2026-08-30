@@ -1,5 +1,4 @@
 // components/Footer.tsx
-// Site footer. Static. No client interactivity.
 
 import Link from "next/link";
 
@@ -22,14 +21,14 @@ export default function Footer() {
             <Link href="/issues">Issues</Link>
             <Link href="/talking-points">Talking points</Link>
             <Link href="/resources">Resources</Link>
-            <Link href="/issues">Archive</Link>
+            <Link href="/changed-our-minds">Changed our minds</Link>
           </div>
           <div>
             <div className="b-footer-h">Participate</div>
             <Link href="/#stand">Where you stand</Link>
+            <Link href="/midterms">Midterms 2026</Link>
             <Link href="/solutions">Solutions</Link>
             <Link href="/#newsletter">Newsletter</Link>
-            <Link href="/about">Submit a topic</Link>
           </div>
           <div>
             <div className="b-footer-h">About</div>
@@ -42,7 +41,7 @@ export default function Footer() {
             <div className="b-footer-h">Commitments</div>
             <Link href="/about">No corporate donors</Link>
             <Link href="/about">No tracking</Link>
-            <Link href="/about">Corrections policy</Link>
+            <Link href="/changed-our-minds">Corrections policy</Link>
           </div>
         </div>
       </div>

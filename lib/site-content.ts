@@ -228,3 +228,98 @@ I'd appreciate the board considering [SPECIFIC ASK]. Thank you for your service.
 [ADDRESS — required for public comment]`,
   },
 ];
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   MIDTERMS 2026 — hub content
+   ═══════════════════════════════════════════════════════════════════ */
+
+export const ELECTION_DAY = "2026-11-03";
+
+export const BALLOT_STAKES = [
+  { num: "435", label: "House seats", sub: "Every voting seat. All of them. Every two years." },
+  { num: "35",  label: "Senate seats", sub: "33 in regular cycle plus 2 special elections (OH, FL)." },
+  { num: "39",  label: "Governorships", sub: "36 states plus 3 territories." },
+  { num: "∞",   label: "State & local races", sub: "Legislatures, AGs, school boards, judges, ballot measures." },
+];
+
+export const MIDTERM_DATES = [
+  { date: "Sept–Oct 2026", title: "Voter registration deadlines",     note: "Varies by state. Most fall 15–30 days before Election Day. Some states allow same-day." },
+  { date: "Sept–Oct 2026", title: "Mail ballot request deadlines",    note: "Earlier than you think. Request early; don't rely on the last week." },
+  { date: "Oct 2026",      title: "Early voting opens (most states)", note: "Shorter lines, more time to research your down-ballot races." },
+  { date: "Nov 3, 2026",   title: "Election Day",                     note: "Polls close between 7pm and 9pm in most states. If you're in line at closing, stay — you can vote." },
+  { date: "Nov–Dec 2026",  title: "Certification",                    note: "Counting and certification take time. Slow results are normal, not evidence of anything." },
+  { date: "Jan 3, 2027",   title: "120th Congress convenes",          note: "Whoever wins is seated. New terms begin." },
+];
+
+export const VOTER_CHECKLIST = [
+  { step: "01", title: "Check your registration",   body: "Registrations get purged more often than people expect — after a move, a name change, or a few skipped elections. Check even if you're sure.", cta: "Check at vote.org", url: "https://www.vote.org/am-i-registered-to-vote/" },
+  { step: "02", title: "Find your polling place",   body: "Locations change between cycles. Confirm yours the week before, not the morning of.", cta: "Find your location", url: "https://www.vote.org/polling-place-locator/" },
+  { step: "03", title: "Read your whole ballot early", body: "Sample ballots are published in advance. The down-ballot races — judges, county offices, measures — affect your daily life more than the top of the ticket.", cta: "See your sample ballot", url: "https://ballotpedia.org/Sample_Ballot_Lookup" },
+  { step: "04", title: "Make a plan",               body: "Voters who pick a day, a time, and a route show up at dramatically higher rates than voters who just intend to. Write it down.", cta: "Plan your vote", url: "https://www.vote.org/" },
+];
+
+export const CANDIDATE_QUESTIONS = [
+  { num: "01", q: "Name a time you disagreed with your own party.",              why: "Separates governing types from performance types faster than any other question." },
+  { num: "02", q: "What's the strongest argument against your position on ___?", why: "If they can't steelman the other side, they haven't thought it through." },
+  { num: "03", q: "What would you trade to get ___ passed?",                     why: "Legislating is trading. Candidates who won't trade won't legislate." },
+  { num: "04", q: "Who in the other party would you work with, and on what?",    why: "A specific name and a specific bill. Vague goodwill doesn't count." },
+  { num: "05", q: "What did you get wrong in the last two years?",               why: "Everyone gets things wrong. Only some people can say so." },
+  { num: "06", q: "Where does your funding come from?",                          why: "Not a gotcha. A basic question every voter is owed an answer to." },
+  { num: "07", q: "What's one thing government does well that you'd protect?",   why: "Tests whether they have a theory of government or just a grievance." },
+  { num: "08", q: "How will you vote if your party leadership asks you to vote the other way?", why: "The honest answer is 'depends' — followed by what it depends on." },
+  { num: "09", q: "What's your position on ___ that would surprise my neighbors?", why: "Invites specificity instead of a stump speech." },
+  { num: "10", q: "How do I hold you accountable in two years?",                 why: "A good candidate has an answer. A great one gives you a metric." },
+];
+
+export const MIDTERM_MYTHS = [
+  { myth: "Midterms don't matter as much as presidential years.",
+    truth: "Midterms decide who writes and blocks legislation for the next two years, plus most governorships and state legislatures — which draw district maps and set election rules." },
+  { myth: "My one vote won't change anything.",
+    truth: "Midterm turnout runs far below presidential years, and local races are routinely decided by dozens of votes. Your vote is worth more in a midterm, not less." },
+  { myth: "Slow results mean something went wrong.",
+    truth: "Counting mail and provisional ballots takes days by design and by law. Speed was never the standard; accuracy is." },
+  { myth: "Both parties are the same, so why bother.",
+    truth: "On the specific bills that reach a floor vote, they demonstrably aren't. Read the votes, not the branding." },
+];
+
+/* ═══════════════════════════════════════════════════════════════════
+   WHERE WE CHANGED OUR MINDS
+   Running log of revised positions. Add entries as the evidence moves.
+   ═══════════════════════════════════════════════════════════════════ */
+
+export const CHANGED_MINDS = [
+  {
+    date: "March 2026",
+    topic: "Crime & public safety",
+    was: "We framed the post-2020 crime spike as a durable trend and wrote about it as an ongoing emergency.",
+    now: "Violent crime fell sharply through 2023 and 2024, and the framing was wrong. We rewrote the issue page to lead with the decline and kept the original wording visible in the footnotes.",
+    trigger: "FBI and CDC data revisions, plus reader mail pointing out we'd cited only peak-year figures.",
+  },
+  {
+    date: "January 2026",
+    topic: "AI governance",
+    was: "We treated federal preemption of state AI law as obviously preferable to a patchwork.",
+    now: "State laws turned out to be the only meaningful guardrails in force, and several were more careful than the federal proposals. We now argue the patchwork is costly but currently load-bearing.",
+    trigger: "Reading the actual texts of the California and Colorado statutes rather than the summaries.",
+  },
+  {
+    date: "November 2025",
+    topic: "Common-ground methodology",
+    was: "We reported a single common-ground percentage per issue without showing the disagreement.",
+    now: "That was flattering to our thesis and unfair to readers. Every issue now reports the gap alongside the overlap, and the methodology is published.",
+    trigger: "A reader asked how we'd calculated a number and we didn't have a good answer.",
+  },
+];
+
+/* ═══════════════════════════════════════════════════════════════════
+   RESEARCHING NEXT — pipeline (keep current; stale dates read as neglect)
+   ═══════════════════════════════════════════════════════════════════ */
+
+export const UPCOMING_ISSUES = [
+  { title: "Housing Supply & Zoning Reform", eta: "Sept 2026", note: "Drafting — the supply-side fight, where the real bipartisan movement is" },
+  { title: "Childcare & Elder Care Costs",   eta: "Sept 2026", note: "Polling aggregation in progress" },
+  { title: "Energy Abundance & the Grid",    eta: "Oct 2026",  note: "Source review — datacenter demand scrambles the usual coalitions" },
+  { title: "The Local News Collapse",        eta: "Oct 2026",  note: "Reader-requested" },
+  { title: "Term Limits & Congressional Reform", eta: "Nov 2026", note: "Queued — polls above 80%, rarely covered seriously" },
+];

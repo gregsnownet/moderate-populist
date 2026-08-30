@@ -8,27 +8,19 @@ import { usePathname } from "next/navigation";
 import { ArrowRight, Search } from "lucide-react";
 
 const NAV = [
-  { href: "/",                label: "Front Page",   id: "home" },
-  { href: "/",                label: "Issues",       id: "issues",    match: "/issues" },
-  { href: "/solutions",       label: "Solutions",    id: "solutions" },
-  { href: "/talking-points",  label: "Talking Points", id: "talking" },
-  { href: "/resources",       label: "Resources",    id: "resources" },
-  { href: "/about",           label: "About",        id: "about" },
+  { href: "/",               label: "Front Page",     id: "home" },
+  { href: "/issues",         label: "Issues",         id: "issues" },
+  { href: "/midterms",       label: "Midterms",       id: "midterms" },
+  { href: "/solutions",      label: "Solutions",      id: "solutions" },
+  { href: "/talking-points", label: "Talking Points", id: "talking" },
+  { href: "/resources",      label: "Resources",      id: "resources" },
+  { href: "/about",          label: "About",          id: "about" },
 ];
 
 export default function Header() {
   const pathname = usePathname() ?? "/";
-  const current = (item: { href: string; match?: string }) => {
-    if (item.match) return pathname.startsWith(item.match);
-    if (item.href === "/") return pathname === "/";
-    return pathname.startsWith(item.href);
-  };
-
-  // The "Issues" link sits under /issues in the codebase; the home route also lists issues.
-  // We separately fix the Issues link to point to /issues.
-  const navItems = NAV.map((item) =>
-    item.id === "issues" ? { ...item, href: "/issues" } : item,
-  );
+  const isCurrent = (href: string) =>
+    href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   return (
     <header className="b-header">
@@ -38,11 +30,11 @@ export default function Header() {
           <span className="b-mast-name">Moderate Populist</span>
         </Link>
         <nav className="b-nav-inline" aria-label="Primary">
-          {navItems.map((n) => (
+          {NAV.map((n) => (
             <Link
               key={n.id}
               href={n.href}
-              className={current(n) ? "is-current" : ""}
+              className={isCurrent(n.href) ? "is-current" : ""}
             >
               {n.label}
             </Link>

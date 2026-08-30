@@ -1,6 +1,7 @@
 import { Issue } from "@/types/issue";
+import { supplementalIssues } from "./issues-supplement";
 
-export const issues: Issue[] = [
+const baseIssues: Issue[] = [
   {
     id: "healthcare-access",
     title: "Healthcare Access & Affordability",
@@ -3058,6 +3059,8 @@ export const issues: Issue[] = [
     }
   }
 ];
+
+export const issues: Issue[] = [...baseIssues, ...supplementalIssues];
 
 export function getIssueById(id: string): Issue | undefined {
   return issues.find(issue => issue.id === id);

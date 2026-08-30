@@ -1,11 +1,12 @@
 // app/issues/page.tsx — Issues index
 // Header → Stats → How to read → Spotlight → Index (filter + grid) → Researching next → Cross-links
 
-import { ArrowRight, Stethoscope, TrendingUp, GraduationCap, Coins, Megaphone, Building2, Sprout, Shield, Sparkles } from "lucide-react";
+import { ArrowRight, Coins, Sparkles } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import CrossLinks from "@/components/CrossLinks";
 import IssuesIndex from "./IssuesIndex";
 import { issues } from "@/lib/data/issues";
+import { UPCOMING_ISSUES } from "@/lib/site-content";
 
 export const metadata = {
   title: "Issues",
@@ -19,21 +20,35 @@ const READER_STEPS = [
   { num: "03", title: "Check the evidence.",       body: "Every claim links to a primary source. Don't trust us. Check the footnotes." },
 ];
 
-const UPCOMING = [
-  { title: "AI Governance & Regulation", eta: "Jun 2026", note: "Polling aggregation in progress" },
-  { title: "Tariffs & Trade Policy",     eta: "Jun 2026", note: "Source review" },
-  { title: "Social Security Solvency",   eta: "Jul 2026", note: "Drafting" },
-  { title: "Faith and Politics",         eta: "Jul 2026", note: "Reader-requested" },
-];
+/* Common-ground score, derived the same way IssueCard derives it, so the
+   headline average can never drift from what the cards actually show. */
+function commonGroundScore(issue: (typeof issues)[number]) {
+  const n = issue.commonGround?.points?.length ?? 5;
+  return Math.max(70, Math.min(95, 65 + n * 4));
+}
+
+/* Single source of truth for the freshness stamp. Bump this whenever you
+   publish or revise an issue — it's the one number on the page whose entire
+   job is signalling that the site is tended. */
+const LAST_UPDATED = "August 2026";
 
 export default function IssuesPage() {
-  // Pick a spotlight issue: prefer "affordability" or first issue.
+  const totalSources = issues.reduce(
+    (sum, i) => sum + (i.keyFacts?.facts?.length ?? 0),
+    0,
+  );
+  const avgCommonGround = Math.round(
+    issues.reduce((sum, i) => sum + commonGroundScore(i), 0) / issues.length,
+  );
+
   const spotlight =
     issues.find((i) => i.category === "affordability") ||
     issues.find((i) => i.id.includes("housing")) ||
     issues[0];
-  const cgPct = Math.max(70, Math.min(95, 65 + (spotlight.commonGround?.points?.length ?? 5) * 4));
+  const cgPct = commonGroundScore(spotlight);
   const gapPct = 100 - cgPct;
+
+  const nextUp = UPCOMING_ISSUES.slice(0, 2).map((u) => u.title.split(" ")[0]).join(" · ");
 
   return (
     <>
@@ -43,25 +58,25 @@ export default function IssuesPage() {
         lede="Each issue starts with what most Americans already agree on, then maps the disagreements with sources and questions for honest debate. Filter by topic; every entry is footnoted."
       />
 
-      {/* Stats banner */}
+      {/* Stats banner — all values derived from the data, none hardcoded */}
       <section className="b-issues-stats">
         <div className="b-issues-stats-row">
           <div className="b-issues-stat">
-            <div className="b-issues-stat-num">{issues.length}<span>+</span></div>
-            <div className="b-issues-stat-lbl">issues mapped<br />so far</div>
+            <div className="b-issues-stat-num">{issues.length}</div>
+            <div className="b-issues-stat-lbl">issues mapped<br />and published</div>
           </div>
           <div className="b-issues-stat">
-            <div className="b-issues-stat-num">83<span>%</span></div>
+            <div className="b-issues-stat-num">{avgCommonGround}<span>%</span></div>
             <div className="b-issues-stat-lbl">average common<br />ground per issue</div>
           </div>
           <div className="b-issues-stat">
-            <div className="b-issues-stat-num">100<span>%</span></div>
-            <div className="b-issues-stat-lbl">primary-sourced<br />and footnoted</div>
+            <div className="b-issues-stat-num">{totalSources}</div>
+            <div className="b-issues-stat-lbl">sourced facts<br />with footnotes</div>
           </div>
           <div className="b-issues-stat b-issues-stat-meta">
             <div className="b-issues-stat-tag">Last updated</div>
-            <div className="b-issues-stat-meta-val">May&nbsp;2026</div>
-            <div className="b-issues-stat-meta-sub">Next: AI governance · Tariffs</div>
+            <div className="b-issues-stat-meta-val">{LAST_UPDATED}</div>
+            <div className="b-issues-stat-meta-sub">Next: {nextUp}</div>
           </div>
         </div>
       </section>
@@ -132,7 +147,7 @@ export default function IssuesPage() {
 
       <IssuesIndex issues={issues} />
 
-      {/* Researching next */}
+      {/* Researching next — pulled from site-content so it stays in one place */}
       <section className="b-upcoming">
         <div className="b-chapter">
           <div className="b-chapter-num">Researching next</div>
@@ -140,10 +155,11 @@ export default function IssuesPage() {
           <div className="b-chapter-title">What&apos;s coming.</div>
         </div>
         <p className="b-section-lede">
-          These are the issues currently in research. Have one you want us to add? Tell us — readers shape the docket.
+          These are the issues currently in research — none of them published yet. Have one you
+          want us to add? Tell us. Readers shape the docket.
         </p>
         <ul className="b-upcoming-list">
-          {UPCOMING.map((u) => (
+          {UPCOMING_ISSUES.map((u) => (
             <li key={u.title}>
               <div className="b-upcoming-eta">{u.eta}</div>
               <div className="b-upcoming-title">{u.title}</div>
